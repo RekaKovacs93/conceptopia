@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap'); */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -24,69 +25,47 @@
 
 
 body {
+  background-color: rgb(28, 28, 28);
+ 
+}
 
-  background: -moz-linear-gradient(-45deg, #5f90aa 1%, #a5b78b 50%, #a5b78b 50%, #e8c98f 99%); 
-  background: -webkit-linear-gradient(-45deg, #5f90aa 1%,#a5b78b 50%,#a5b78b 50%,#e8c98f 99%); 
-  background: linear-gradient(135deg, #5f90aa 1%,#a5b78b 50%,#a5b78b 50%,#e8c98f 99%); 
-  background-size: cover;
-    background-attachment: fixed;
-    font-family: sans-serif;
-  }
-  p {
-    font-feature-settings: "kern" 2;
-    font-kerning: normal;
-    color: #333;
-    text-align: center;
-  }
-  
-  a { color: #00f; text-decoration: none;}
-  h1 {
-    text-align: center;
-    margin: 10vh 0;
-    color: #333;
-    font-size: 5vw;
-    font-weight: 200;
-  }
-  .mouse-cursor-gradient-tracking {
-     transition: all 0.5s ease;
-    position: relative;
-    background: #ccc;
-    padding: 2rem 4rem;
-    font-size: 1.2rem;
-    border: none;
-    color: #111;
-    cursor: pointer;
-    outline: none;
-    overflow: hidden;
-    width: 50%;
-    margin: 5% auto;
-    display: block;
-  box-shadow: 1px 1px 0 rgba(25,25,25,0.25);
-    
-  }
-  
-  .mouse-cursor-gradient-tracking:hover {
-    box-shadow: 0px 11px 30px rgba(25,25,25,0.25);
-    color: #777;
-    font-size: 1.24em;
-  }
-  
-  
-  .mouse-cursor-gradient-tracking span {
-    position: relative;
-  }
-  .mouse-cursor-gradient-tracking::before {
-    --size: 0;
-    content: '';
-    position: absolute;
-    left: var(--x);
-    top: var(--y);
-    width: var(--size);
-    height: var(--size);
-    background: radial-gradient(circle closest-side, #ffc, transparent);
-    transform: translate(-50%, -50%);
-    transition: width .2s ease, height .2s ease;
-  }
-  .mouse-cursor-gradient-tracking:hover::before {
-    --size:75vw;
-  }
+.grainy-background {
+  position: absolute; /* Ensure it's positioned correctly */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(28, 28, 28);
+  filter: url(#noiseFilter);
+  z-index: -1; /* Send it behind other content */
+}
+
+
+.font {
+  font-size: '9rem';
+  font-family: "Orbitron";
+  color: rgb(28, 28, 28);
+}
+
+
+:root {
+  --gradient-x: 50%;
+  --gradient-y: 50%;
+}
+
+.gradient {
+  background: radial-gradient(circle at var(--gradient-x) var(--gradient-y), rgba(98,94,235,1) 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%);
+
+}
+
+.gradient-text {
+  background: radial-gradient(circle at var(--gradient-x) var(--gradient-y), rgba(98,94,235,1) 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+#navhover:hover {
+  color:blanchedalmond
+}

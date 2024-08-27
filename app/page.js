@@ -1,49 +1,65 @@
-"use client"
-
+"use client";
 
 import { useState, useEffect } from 'react';
+import Hero1 from './components/Hero1'
+import Hero2 from './components/Hero2'
+import NavBar from './components/NavBar'
 
 export default function Home() {
-  const [backgroundStyle, setBackgroundStyle] = useState({
-    background: 'linear-gradient(45deg, #ff7e5f, #feb47b)', // Initial gradient
-  });
-
   useEffect(() => {
     const handleMouseMove = (e) => {
       // Calculate the percentage position of the mouse on the page
-      const xPercent = (e.clientX / window.innerWidth) * 100;
-      const yPercent = (e.clientY / window.innerHeight) * 100;
+      const xPercent = (e.clientX / window.innerWidth) * 1000;
+      const yPercent = (e.clientY / window.innerHeight) * 800;
 
-      // Calculate new gradient angles and colors based on mouse position
-      const newGradient = `linear-gradient(${xPercent + 45}deg, rgba(98,94,235,1), rgba(243,125,206,1) ${yPercent}%)`;
+      // Define the offset you want (in pixels)
+      const offsetX = 100; // Change this value to adjust the horizontal offset
+      const offsetY = 300; // Change this value to adjust the vertical offset
 
-      // Update the background style
-      setBackgroundStyle({
-        background: newGradient,
-      });
+      // Dynamically update CSS variables for the background gradient
+      document.documentElement.style.setProperty('--gradient-x', `${xPercent + offsetX}px`);
+      document.documentElement.style.setProperty('--gradient-y', `${yPercent + offsetY}px`);
     };
 
-    // Attach the mousemove event listener
     window.addEventListener('mousemove', handleMouseMove);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 
   return (
-    <div style={{ ...backgroundStyle, height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <h1 style={{ color: '#fff', fontSize: '3rem' }}>Move your cursor!</h1>
-    </div>
+    <main className="flex min-h-screen flex-col items-center">
+      <div className="grainy-background">
+        <NavBar className="flex flex-col items-end md:flex-row md:items-center" />
+
+        <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter className="opacity-15" id="noiseFilter" x="0" y="0" width="100%" height="100%">
+              <feTurbulence 
+                type="fractalNoise" 
+                baseFrequency="0.8" 
+                numOctaves="1" 
+                result="noise" />
+              <feColorMatrix 
+                type="saturate" 
+                values="0" 
+                result="monoNoise" />
+              <feBlend 
+                in="SourceGraphic" 
+                in2="monoNoise" 
+                mode="multiply" />
+            </filter>
+          </defs>
+        </svg>
+
+        <div id="home" className="w-full h-screen">
+          <Hero1 />
+        </div>
+        <div id="home" className="w-full h-screen">
+          <Hero2 />
+        </div>
+      </div>
+    </main>
   );
 }
-
-
-// export default function Home() {
-//   return (
-//     <main class="mouse-cursor-gradient-tracking">
-
-//     </main>
-//   );
-// }
