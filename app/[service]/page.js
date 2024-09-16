@@ -119,14 +119,14 @@ const services = [
 
 // Generate static paths for the dynamic routes
 export async function generateStaticParams() {
-  return services.map((service) => ({
+  return services.map((service, index) => ({
     service: encodeURIComponent(service.title.toLowerCase()), // Encode the title
   }));
 }
 
 // Server Component
 export default function ServicePage({ params }) {
-  const { service } = params;
+  const { service, index } = params;
 
   // Decode the service parameter
   const decodedService = decodeURIComponent(service);
