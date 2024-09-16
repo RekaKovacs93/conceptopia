@@ -4,7 +4,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap'); */
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --dark-rgb: 28, 28, 28;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -47,6 +47,12 @@ body {
   color: rgb(28, 28, 28);
 }
 
+.font-light {
+  font-size: '9rem';
+  font-family: "Orbitron";
+  color: blanchedalmond
+}
+
 
 :root {
   --gradient-x: 50%;
@@ -68,4 +74,9 @@ body {
 
 #navhover:hover {
   color:blanchedalmond
+}
+
+a{
+  text-align: center;
+  text-decoration: none;
 }

@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
@@ -47,19 +46,19 @@ export default function NavBar() {
         </Link>
 
         <div className="hidden md:flex flex-grow items-center justify-end space-x-4">
-          <Link  href="/"  className="block md:inline-block mt-4 md:mt-0">
-            <h3 id="navhover">RÓLUNK</h3>
+          <Link href="/#about" className="block md:inline-block mt-4 md:mt-0">
+            RÓLUNK
           </Link>
-          <Link id="navhover" href="./elado"  className="block md:inline-block mt-4 md:mt-0">
+          {/* <Link  href="./elado"  className="block md:inline-block mt-4 md:mt-0">
             ELADÓKNAK
+          </Link> */}
+          <Link href="/#szolgaltatasok" className="block md:inline-block mt-4 md:mt-0">
+            SZOLGÁLTATÁSOK
           </Link>
-          <Link id="navhover" href="./vevo"  className="block md:inline-block mt-4 md:mt-0">
-            VEVŐKNEK
+          <Link href="./BLOG" className="block md:inline-block mt-4 md:mt-0">
+            BLOG
           </Link>
-          <Link id="navhover" href="./ingatlanok"  className="block md:inline-block mt-4 md:mt-0">
-            INGATLANOK
-          </Link>
-          <Link id="navhover" href="./kapcsolat"  className="block md:inline-block mt-4 md:mt-0">
+          <Link href="./kapcsolat" className="block md:inline-block mt-4 md:mt-0">
             KAPCSOLAT
           </Link>
         {/* </div> */}
@@ -89,14 +88,14 @@ export default function NavBar() {
             <Link href="/#about" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               RÓLUNK
             </Link>
-            <Link href="./elado" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+            {/* <Link href="/#szolgaltatasok" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               ELADÓKNAK
+            </Link> */}
+            <Link href="/#szolgaltatasok" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+              SZOLGÁLTATÁSOK
             </Link>
-            <Link href="./vevo" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
-              VEVŐKNEK
-            </Link>
-            <Link href="./ingatlanok" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
-              KÍNÁLAT
+            <Link href="./blog" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+              BLOG
             </Link>
             <Link href="./kapcsolat" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               KAPCSOLAT

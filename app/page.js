@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import Hero1 from './components/Hero1'
-import Hero2 from './components/Hero2'
+import About from './components/About'
 import NavBar from './components/NavBar'
+import Services from './components/Services';
+import Values from './components/Values';
 
 export default function Home() {
   useEffect(() => {
@@ -29,9 +31,9 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="flex flex-col items-center">
       <div className="grainy-background">
-        <NavBar className="flex flex-col items-end md:flex-row md:items-center" />
+        <NavBar className="flex flex-col items-end md:flex-row md:items-center z-20" />
 
         <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -56,8 +58,14 @@ export default function Home() {
         <div id="home" className="w-full h-screen">
           <Hero1 />
         </div>
-        <div id="home" className="w-full h-screen">
-          <Hero2 />
+        <div id="about" className="w-full h-screen gradient ">
+          <About />
+        </div>
+        <div className="w-full h-screen bg-dark">
+          <Values />
+        </div>
+        <div id="szolgaltatasok" className="w-full h-screen gradient">
+          <Services />
         </div>
       </div>
     </main>
