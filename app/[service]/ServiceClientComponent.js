@@ -27,9 +27,9 @@ export default function ServiceClientComponent({ service }) {
       }, []);
     
   return (
-    <main className="flex min-h-screen flex-col items-center">
-      <div className="grainy-background bg-dark">
-        <NavBar className="flex flex-col items-end md:flex-row md:items-center" />
+    <main className="flex flex-col items-center">
+      <div className="grainy-background">
+        <NavBar className="flex flex-col items-end md:flex-row md:items-center z-20" />
 
         <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -56,10 +56,10 @@ export default function ServiceClientComponent({ service }) {
       <div className=" w-screen flex flex-wrap gap-5 items-center justify-center">
       {service.features.map((feature, index) => (
                 
-            <div key={index} className=" h-48 w-96 md:h-48 md:w-96 rounded-2xl gradient bg-opacity-60">
+            <div key={index} className=" h-48 w-96 md:h-48 md:w-96 rounded-2xl gradient ">
                 <div className="w-full h-full hover:scale-125 flex flex-col items-center justify-center">
                 <h1 id="title" className="text-3xl font opacity-100 text-center">{feature.title}</h1>
-                <h1 id="title" className=" font-light opacity-100 text-center">{feature.desc}</h1>
+                <h1 id="title" className="  opacity-100 text-center">{feature.desc}</h1>
                 </div>
           </div>
           

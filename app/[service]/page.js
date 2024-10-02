@@ -34,7 +34,7 @@ const services = [
             },
             {
                 title: "Eseményfotózás",
-                desc: "Rendezvények dokumentálása."
+                desc: "Rendezvények dokumentálása"
             },
         
         ]
@@ -53,7 +53,7 @@ const services = [
             },
             {
                 title: "Eseményfotózás",
-                desc: "Rendezvények dokumentálása."
+                desc: "Rendezvények dokumentálása"
             },
         
         ] 
@@ -140,7 +140,7 @@ export default function ServicePage({ params }) {
   }
 
   return (
-    <div className="h-screen w-screen flex items-center justify-center">
+    <div >
       <ServiceClientComponent service={foundService} />
     </div>
   );
