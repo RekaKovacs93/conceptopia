@@ -57,7 +57,7 @@ export default function Contact() {
           <div className="flex flex-col items-start w-full">
             <label className="mb-1 font">Name</label>
             <input
-              className="w-full h-10 textarea rounded-lg pl-4"
+              className="w-full h-10 textarea rounded-lg px-4"
               type="text"
               name="name"
               value={formData.name}
@@ -69,7 +69,7 @@ export default function Contact() {
           <div className="flex flex-col items-start w-full">
             <label className="mb-1 font">Email</label>
             <input
-              className="w-full h-10 textarea rounded-lg pl-4"
+              className="w-full h-10 textarea rounded-lg px-4"
               type="email"
               name="email"
               value={formData.email}
@@ -81,7 +81,7 @@ export default function Contact() {
           <div className="flex flex-col items-start w-full">
             <label className="mb-1 font">Message</label>
             <textarea
-              className="w-96 h-40 textarea rounded-lg pl-4"
+              className="w-96 h-40 textarea rounded-lg px-4 py-2"
               name="message"
               value={formData.message}
               onChange={handleInputChange}
