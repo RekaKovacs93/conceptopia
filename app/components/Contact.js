@@ -89,7 +89,7 @@ export default function Contact() {
             ></textarea>
           </div>
   
-          <button className="mt-4 rounded-lg" type="submit">Send</button>
+          <button className="my-4 rounded-lg" type="submit">Send</button>
   
         </div>
       </form>
