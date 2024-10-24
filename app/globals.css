@@ -39,7 +39,7 @@ body {
   height: 100%;
   background-color: rgb(28, 28, 28);
   filter: url(#noiseFilter);
-  z-index: -1; /* Send it behind other content */
+  /* Send it behind other content */
 }
 
 
