@@ -6,6 +6,8 @@ import About from './components/About'
 import NavBar from './components/NavBar'
 import Services from './components/Services';
 import Values from './components/Values';
+import Contact from './components/Contact';
+import Footer from './components/Footer'
 
 export default function Home() {
   useEffect(() => {
@@ -66,6 +68,12 @@ export default function Home() {
         </div>
         <div id="szolgaltatasok" className="w-full h-screen gradient">
           <Services />
+        </div>
+        <div id="contact" className="w-full h-screen gradient">
+          <Contact />
+        </div>
+        <div id="footer" className="w-full bg-dark">
+          <Footer />
         </div>
       </div>
     </main>

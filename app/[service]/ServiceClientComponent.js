@@ -1,7 +1,9 @@
 "use client"; // Ensure this is a Client Component
-import { useEffect } from "react";
 
+import { useEffect } from "react";
 import NavBar from "../components/NavBar";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer"
 
 export default function ServiceClientComponent({ service }) {
     useEffect(() => {
@@ -27,7 +29,7 @@ export default function ServiceClientComponent({ service }) {
       }, []);
     
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center h-full">
       <div className="grainy-background">
         <NavBar className="flex flex-col items-end md:flex-row md:items-center z-20" />
 
@@ -50,21 +52,32 @@ export default function ServiceClientComponent({ service }) {
             </filter>
           </defs>
         </svg>
-    <div className="flex flex-col justify-center items-center mt-40">
+    <div className="flex flex-col justify-center items-center mt-40 ">
       <h1 className="gradient-text font text-9xl">{service.title}</h1>
-      <p className="mt-4 mb-10 text-xl font-light">{service.desc}</p>
-      <div className=" w-screen flex flex-wrap gap-5 items-center justify-center">
+      <p className="mt-4 mb-20 text-xl font-light">{service.desc}</p>
+      <div className=" w-screen h-full flex flex-wrap gap-5 items-center justify-center pb-10">
       {service.features.map((feature, index) => (
                 
-            <div key={index} className=" h-48 w-96 md:h-48 md:w-96 rounded-2xl gradient ">
-                <div className="w-full h-full hover:scale-125 flex flex-col items-center justify-center">
-                <h1 id="title" className="text-3xl font opacity-100 text-center">{feature.title}</h1>
-                <h1 id="title" className="  opacity-100 text-center">{feature.desc}</h1>
+            <div key={index} className=" h-48 w-96 md:h-48 md:w-96 rounded-2xl gradient">
+                <div className="w-full h-full flex flex-col items-center justify-evenly">
+                <div className="h-16 flex items-center">
+                  <h1 id="title" className=" text-3xl font text-center">{feature.title}</h1>
+                </div>
+                <div className="w-48 h-0.5 bg-dark" />
+                <div>
+                  <h1 id="title" className="mb-5  opacity-100 text-center">{feature.desc}</h1>
+                </div>
                 </div>
           </div>
           
         ))}
     </div>
+    </div>
+    <div id="contact" className="w-full h-screen gradient">
+          <Contact />
+    </div>
+    <div id="footer" className="w-full bg-dark">
+          <Footer />
     </div>
     </div>
     </main>

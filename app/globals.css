@@ -42,7 +42,7 @@ body {
 
 
 .font {
-  font-size: '9rem';
+  
   font-family: "Orbitron";
   color: rgb(28, 28, 28);
 }
@@ -80,4 +80,19 @@ body {
 a{
   text-align: center;
   text-decoration: none;
+}
+
+.textarea {
+  background-color: blanchedalmond;
+  color: rgb(28, 28, 28);
+  
+}
+
+button {
+  background-color: rgb(28, 28, 28);
+  color: blanchedalmond;
+  font-family: "Orbitron";
+  width: 100px;
+  padding: 5px;
+    
 }

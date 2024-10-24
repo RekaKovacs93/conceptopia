@@ -140,7 +140,7 @@ export default function ServicePage({ params }) {
   }
 
   return (
-    <div >
+    <div className="min-h-screen" >
       <ServiceClientComponent service={foundService} />
     </div>
   );
