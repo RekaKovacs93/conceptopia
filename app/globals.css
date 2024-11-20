@@ -75,7 +75,7 @@ body {
 }
 
 .text-grad{
-  background: linear-gradient( rgba(98,94,235,1) 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%);
+  background: linear-gradient(45deg, rgba(98,94,235,1) 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -108,8 +108,17 @@ button {
 }
 
 .buttonlg {
-  background-color: rgb(28, 28, 28);
+  background-color: rgba(28, 28, 28,1);
   /* color: radial-gradient(circle at var(--gradient-x) var(--gradient-y), rgba(98,94,235,1) 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%); */
+  font-family: "Orbitron";
+  width: 400px;
+  /* padding: 5px; */
+    
+}
+
+.buttonlight {
+  background-color: blanchedalmond;
+  color: rgba(28, 28, 28,1);
   font-family: "Orbitron";
   width: 400px;
   /* padding: 5px; */
@@ -129,3 +138,4 @@ button {
   font-weight: 300;
   font-style: normal;
 }
+

@@ -73,6 +73,9 @@ export default function NavBar() {
           <Link href="./kapcsolat" className="block md:inline-block mt-4 md:mt-0">
             KAPCSOLAT
           </Link>
+          <Link href="./snake" className="block md:inline-block mt-4 md:mt-0">
+            ?
+          </Link>
         {/* </div> */}
         </div>
 
