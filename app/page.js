@@ -34,7 +34,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center">
-      <div className="grainy-background">
+      <div className="grainy-background min-h-screen">
         <NavBar className="flex flex-col items-end md:flex-row md:items-center z-20" />
 
         <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
@@ -57,13 +57,13 @@ export default function Home() {
           </defs>
         </svg>
 
-        <div id="home" className="w-full h-screen">
+        <div id="home" className="w-full min-h-screen">
           <Hero1 />
         </div>
-        <div id="about" className="w-full h-screen gradient ">
+        <div id="about" className="w-full min-h-screen gradient ">
           <About />
         </div>
-        <div className="w-full h-screen bg-dark">
+        <div className="w-full min-h-screen bg-dark">
           <Values />
         </div>
         <div id="szolgaltatasok" className="w-full h-screen gradient">

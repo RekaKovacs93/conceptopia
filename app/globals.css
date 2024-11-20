@@ -74,6 +74,14 @@ body {
   color: transparent;
 }
 
+.text-grad{
+  background: linear-gradient( rgba(98,94,235,1) 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 
 #navhover:hover {
   color:blanchedalmond
@@ -97,4 +105,27 @@ button {
   width: 100px;
   padding: 5px;
     
+}
+
+.buttonlg {
+  background-color: rgb(28, 28, 28);
+  /* color: radial-gradient(circle at var(--gradient-x) var(--gradient-y), rgba(98,94,235,1) 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%); */
+  font-family: "Orbitron";
+  width: 400px;
+  /* padding: 5px; */
+    
+}
+
+#card:hover #desc{
+  opacity: 100%;
+}
+
+#card:hover #title{
+  opacity: 0%;
+}
+
+.textfont {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }

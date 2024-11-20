@@ -47,8 +47,7 @@ export default function NavBar() {
             src="/Logo.svg"
                 alt='kep'
                 width={50}
-                
-                height={70}
+                height={20}
                 priority={true}
                 className='md:rounded-lg rounded scale-110 md:scale-100'
                 quality={80}
