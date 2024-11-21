@@ -8,6 +8,7 @@ import Services from './components/Services';
 import Values from './components/Values';
 import Contact from './components/Contact';
 import Footer from './components/Footer'
+import Facts from './components/Facts';
 
 export default function Home() {
   useEffect(() => {
@@ -68,6 +69,9 @@ export default function Home() {
         </div>
         <div id="szolgaltatasok" className="w-full h-screen gradient">
           <Services />
+        </div>
+        <div id="szolgaltatasok" className="w-full h-96 bg-dark">
+          <Facts />
         </div>
         <div id="contact" className="w-full h-screen gradient">
           <Contact />

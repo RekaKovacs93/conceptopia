@@ -19,6 +19,38 @@ const Snake = () => {
   const tileSize = 20; // Size of each grid tile in pixels
   const speed = 200; // Speed of the game, in milliseconds
 
+  const foodSound = useRef(null);
+  const wallSound = useRef(null);
+
+  // Initialize the food sound
+  useEffect(() => {
+    foodSound.current = new Audio("/food.mp3");
+    foodSound.current.volume = 1; // Set volume to 50%
+  }, []);
+
+  useEffect(() => {
+    wallSound.current = new Audio("/bang.mp3");
+    wallSound.current.volume = 1; // Set volume to 50%
+  }, []);
+
+    // Enable audio playback after user interaction
+    useEffect(() => {
+      const enableAudio = () => {
+        if (foodSound.current && wallSound.current) {
+          foodSound.current.play().catch(() => {
+            // Ignore errors caused by restrictions
+          });
+          wallSound.current.play().catch(() => {
+
+          });
+          window.removeEventListener("click", enableAudio);
+        }
+      };
+      window.addEventListener("click", enableAudio);
+      return () => window.removeEventListener("click", enableAudio);
+    }, []);
+
+
   // Function to update the snake's position
   const moveSnake = () => {
     const snake = snakeRef.current;
@@ -37,6 +69,12 @@ const Snake = () => {
     if (head.x === foodRef.current.x && head.y === foodRef.current.y) {
       // Increase score
       setScore((prevScore) => prevScore + 1);
+
+      if (foodSound.current) {
+        foodSound.current.currentTime = 0; // Reset playback position
+        foodSound.current.play();
+      }
+
 
       // Generate new food position
       foodRef.current = {
@@ -58,6 +96,8 @@ const Snake = () => {
         (segment) => segment.x === head.x && segment.y === head.y
       )
     ) {
+      wallSound.current.currentTime = 0; // Reset playback position
+      wallSound.current.play();
       setGameOver(true);
     }
 
@@ -157,7 +197,7 @@ const Snake = () => {
   return (
     <div className="flex flex-col items-center justify-center bg-dark">
       <h1 className="font text-4xl text-center text-grad mt-40 mb-10">???</h1>
-      <h2 className="font text-2xl text-center text-grad mb-20">Score: {score}</h2>
+      <h2 className="font text-2xl text-center font-light mb-20">Score: {score}</h2>
       <div className="relative">
       <canvas
         ref={canvasRef}
@@ -173,7 +213,7 @@ const Snake = () => {
       {gameOver && (
         <div className="absolute inset-0 text-4xl bg-dark">
           <p className="font text-4xl text-center text-grad mb-10">Looser</p>
-          <button className="buttonlight" onClick={restartGame}>Restart</button>
+          <button className="buttonlight rounded-lg" onClick={restartGame}>Restart</button>
         </div>
       )}
       </div>
