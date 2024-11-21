@@ -55,6 +55,12 @@ body {
   color: blanchedalmond
 }
 
+.text-light {
+  font-size: '9rem';
+  
+  color: blanchedalmond
+}
+
 
 :root {
   --gradient-x: 50%;

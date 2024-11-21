@@ -67,13 +67,13 @@ export default function Home() {
         <div className="w-full min-h-screen bg-dark">
           <Values />
         </div>
-        <div id="szolgaltatasok" className="w-full h-screen gradient">
+        <div id="szolgaltatasok" className="w-full min-h-screen gradient">
           <Services />
         </div>
         <div id="szolgaltatasok" className="w-full h-96 bg-dark">
           <Facts />
         </div>
-        <div id="contact" className="w-full h-screen gradient">
+        <div id="contact" className="w-full min-h-screen gradient">
           <Contact />
         </div>
         <div id="footer" className="w-full bg-dark">

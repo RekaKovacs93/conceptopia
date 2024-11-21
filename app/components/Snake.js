@@ -190,6 +190,7 @@ const Snake = () => {
       { x: 6, y: 5 },
     ];
     foodRef.current = { x: 4, y: 4 };
+    directionRef.current = "RIGHT"
     setScore(0);
     setGameOver(false);
   };

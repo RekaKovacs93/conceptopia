@@ -1,4 +1,8 @@
 import ServiceClientComponent from './ServiceClientComponent';
+import NavBar from '../components/NavBar'
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+
 
 // Define services array
 const services = [
@@ -79,19 +83,39 @@ const services = [
     },
     {
         title: "Webfejlesztés",
-        desc: "Webfejlesztés service description...",
+        desc: "A modern üzleti világban  weboldalad az egyik legfontosabb eleme vállalkozásodnak. Ez nem csupán egy online bemutatkozás, hanem a digitális arculatod, amely számos előnnyel jár.",
         features: [
             {
-                title: "Konzultáció & Tervezés",
-                desc: "Ügyféligények felmérése, tervezés"
+                title: "Elérhetőség és láthatóság",
+                desc: "A weboldalad segítségével 24/7 elérhetővé válhatsz az ügyfeleid számára. A potenciális vásárlók könnyen rátalálnak a vállalkozásodra, ami növeli a forgalmadat és a bevételeidet."
             },
             {
-                title: "Fejlesztés",
-                desc: "Design, frontend és backend fejlesztés"
+                title: "Márkaépítés és hitelesség",
+                desc: "Egy professzionálisan megtervezett weboldal erősíti a márkádat és bizalmat ébreszt a potenciális ügyfelekben. Az online jelenlét nélkülözhetetlen ahhoz, hogy a vállalkozásod megbízhatónak és elérhetőnek tűnjön."
             },
             {
-                title: "Tesztelés és átadás",
-                desc: "Végső tesztelés, élesítés"
+                title: "Ügyfélkapcsolatok és kommunikáció",
+                desc: "A weboldal lehetőséget biztosít arra, hogy közvetlen kapcsolatot építs ki az ügyfeleiddel. Az online kapcsolatfelvételi űrlapok, hírlevél feliratkozások és chat funkciók mind segítenek abban, hogy a látogatók könnyen elérjenek téged."
+            },
+            {
+                title: "Marketing és értékesítés",
+                desc: "A weboldalad nem csupán egy információs platform; ez az értékesítési csatornád is. Integrálhatod a közösségi média kampányaidat, SEO technikákat, és online boltodat is, hogy maximalizáld az eladásokat."
+            },
+            {
+                title: "Adatgyűjtés és elemzés",
+                desc: "A weboldal lehetőséget biztosít a látogatói adatok gyűjtésére, amelyek segítségével jobban megértheted a közönséged igényeit. Az elemzések révén optimalizálhatod a marketingstratégiáidat, és így hatékonyabban célozhatod meg a potenciális ügyfeleket."
+            },
+            {
+                title: "Versenyelőny",
+                desc: "A megfelelő weboldal kiemel a versenytársaid közül. A kreatív dizájn és a felhasználóbarát funkciók nemcsak a látogatók számát növelik, hanem azok elköteleződését is, ami hosszú távú előnyöket biztosít a vállalkozásod számára."
+            },
+            {
+                title: "Rugalmasság és alkalmazkodás",
+                desc: "A weboldal könnyen frissíthető és bővíthető, így mindig naprakész maradhatsz. Legyen szó új termékekről, szolgáltatásokról vagy eseményekről, egy weboldal segítségével gyorsan és egyszerűen kommunikálhatsz a változásokról."
+            },
+            {
+                title: "Személyre szabott megoldások",
+                desc: "Az egyedi fejlesztés lehetővé teszi, hogy teljes mértékben a saját igényeidre szabhasd a weboldaladat, míg a WordPress gyors és rugalmas megoldást kínál, amely lehetővé teszi, hogy gyorsan elindulj, és bármikor bővítsd a weboldalad funkcióit."
             },
         
         ]  
@@ -140,8 +164,43 @@ export default function ServicePage({ params }) {
   }
 
   return (
-    <div className="min-h-screen" >
+    <main className="flex flex-col items-center">
+      <div className="grainy-background min-h-screen">
+        <NavBar className="flex flex-col items-end md:flex-row md:items-center z-20" />
+
+        <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter className="opacity-15" id="noiseFilter" x="0" y="0" width="100%" height="100%">
+              <feTurbulence 
+                type="fractalNoise" 
+                baseFrequency="0.8" 
+                numOctaves="1" 
+                result="noise" />
+              <feColorMatrix 
+                type="saturate" 
+                values="0" 
+                result="monoNoise" />
+              <feBlend 
+                in="SourceGraphic" 
+                in2="monoNoise" 
+                mode="multiply" />
+            </filter>
+          </defs>
+        </svg>
+
+        
+        <div className="min-h-screen" >
       <ServiceClientComponent service={foundService} />
+      
     </div>
+    <div id="contact" className="w-full h-screen gradient">
+          <Contact />
+        </div>
+        <div id="footer" className="w-full bg-dark">
+          <Footer />
+        </div>
+      </div>
+    </main>
+    
   );
 }

@@ -55,7 +55,7 @@ export default function Services (){
 
         ))}
         </div>
-        <button className="buttonlg rounded-lg mt-10 p-2">Ingyenes konzultáció</button>
+        <button className="buttonlg rounded-lg my-10 p-2">Ingyenes konzultáció</button>
         </div>
     )
 }
