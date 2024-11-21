@@ -7,77 +7,90 @@ import Footer from "../components/Footer";
 // Define services array
 const services = [
     { title: "Grafika",
-        desc: "Grafika service description...",
+        desc: "A grafikai tervezés nem csupán esztétika – ez a vállalkozásod vizuális identitása, amely segít a közönséged figyelmének felkeltésében és a márkád üzenetének hatékony kommunikálásában.",
         features: [
         {
-            title: "Logótervezés",
-            desc: "Egyedi logók és arculat tervezése"
+            title: "Vizuális identitás",
+            desc: "Erős és következetes vizuális megjelenés kialakítása, amely megkülönböztet a versenytársaktól."
         },
         {
-            title: "Marketing anyagok",
-            desc: "Szórólapok, brosúrák, plakátok"
+            title: "Kreatív kommunikáció",
+            desc: "A megfelelő grafikai elemek segítségével hatékonyabban közvetítheted a márkád üzenetét és értékeit."
         },
         {
-            title: "Digitális grafika",
-            desc: "Közösségi média grafikák, webdesign elemek"
+            title: "Ügyfélélmény fokozása",
+            desc: "A jól megtervezett grafikai anyagok hozzájárulnak a pozitív vásárlói élményhez, erősítve a márkához való kötődést."
+        },
+        {
+            title: "Rugalmasság és sokszínűség",
+            desc: "Dizájn megoldásaink különböző platformokhoz és kampányokhoz igazíthatók, hogy mindig a legjobbat nyújthassuk"
+        },
+        {
+            title: "Professzionális megjelenés",
+            desc: "A minőségi anyagok növelik a márkád hitelességét és vonzerejét."
         },
 
         ]
     },
     { 
         title: "Fotózás",
-        desc: "Fotózás service description...",
+        desc: "A fotózás nem csupán képek készítése; ez a márkád vizuális történetének megörökítése, amely segít kifejezni az értékeidet és elérni a közönségedet. A professzionális fényképezés kulcsfontosságú a márkád hitelességének és vonzerejének növelésében.",
         features: [
             {
-                title: "Termékfotózás",
-                desc: "Magas minőségű termékfotók"
+                title: "Első benyomás",
+                desc: "Az emberek először a képeket látják. A professzionális fotók segítenek abban, hogy pozitív első benyomást keltsenek, ami elengedhetetlen a potenciális vásárlók figyelmének felkeltéséhez."
             },
             {
-                title: "Portréfotózás",
-                desc: "Professzionális vállalati portrék"
+                title: "Márkaidentitás",
+                desc: "A jól megtervezett vizuális anyagok hozzájárulnak a márkád azonosíthatóságához. Az egyedi és vonzó képek segítenek abban, hogy a vásárlóid könnyen megjegyezzék a márkádat."
             },
             {
-                title: "Eseményfotózás",
-                desc: "Rendezvények dokumentálása"
+                title: "Termékkiemelés",
+                desc: "A kiváló minőségű képek lehetővé teszik, hogy termékeid valóban a középpontba kerüljenek. A részletek kiemelése és a termékek vonzó bemutatása növeli a vásárlási kedvet."
+            },
+            {
+                title: "Történetmesélés",
+                desc: "A fotózás egy hatékony módja a történetmesélésnek. Az érzékletes képek révén a vásárlóid jobban azonosulnak a márkáddal és annak üzenetével."
+            },
+            {
+                title: "Közösségi média",
+                desc: "Időről időre professzionális fényképek elengedhetetlenek a közösségi média sikeréhez. Nem szükséges, hogy minden tartalom profi fotós által készített kép legyen, azonban erősen ajánlott, hogy időnként megjelenjenek a feed-en. A vonzó tartalom segít elérni és elkötelezni a közönségedet, és növeli a márkád láthatóságát."
+            },
+            {
+                title: "Webshop konverzió",
+                desc: "A minőségi fotók nemcsak vonzóbbá teszik a termékeidet, hanem növelik a vásárlási konverziókat is. A vásárlók nagyobb valószínűséggel vásárolnak olyan termékekből, amelyeket részletes, profi fotók kísérnek. Az online vásárlás során a képek segítenek a termékek valósághű bemutatásában, csökkentve ezzel a vásárlási kockázat érzését."
             },
         
         ]
     },
-    { 
-        title: "Arculattervezés",
-        desc: "Arculattervezés service description...",
-        features: [
-            {
-                title: "Termékfotózás",
-                desc: "Magas minőségű termékfotók"
-            },
-            {
-                title: "Portréfotózás",
-                desc: "Professzionális vállalati portrék"
-            },
-            {
-                title: "Eseményfotózás",
-                desc: "Rendezvények dokumentálása"
-            },
-        
-        ] 
-    },
     {
-        title: "Social Media", 
-        desc: "Social Media service description...",
+        title: "Közösségi média", 
+        desc: "A közösségi média nem csupán egy platform, ez a vállalkozásod hangja, amely lehetőséget ad arra, hogy közvetlen kapcsolatot építs ki a közönségeddel. A hatékony közösségi média menedzsment elengedhetetlen a márkád fejlődéséhez, hiszen ez a digitális világ szíve."
+,
         features: [
             {
-                title: "Stratégia & Tartalomkészítés",
-                desc: "A személyre szabott stratégia és magas minőségű kreatív tartalmak segítségével maximalizáljuk a közösségi média jelenléted hatékonyságát."
+                title: "Kapcsolatépítés és elköteleződés",
+                desc: " A közösségi média lehetőséget biztosít arra, hogy közvetlen kapcsolatot létesíts a vásárlóiddal. Aktív részvétel a közösségi platformokon nemcsak növeli a márkád láthatóságát, hanem lehetőséget teremt az ügyfélkapcsolatok erősítésére is."            },
+            {
+                title: "Célzott elérés",
+                desc: "A megfelelő stratégiával könnyedén elérheted a célpiacodat, legyen szó demográfiai adatok vagy érdeklődési körök alapján történő célzásról. Ezzel maximalizálhatod a kampányaid hatékonyságát."
             },
             {
-                title: "Posztolás & Közösségépítés",
-                desc: "Rendszeres és következetes posztolás, időzítés optimalizálása és erős és elkötelezett közösséget építése"
+                title: "Márkaépítés",
+                desc: "A közösségi média segítségével építheted a márkád identitását és hitelességét. A konzisztens és kifejező tartalom révén a vásárlóid jobban azonosulnak a márkáddal."
             },
             {
-                title: "Analitika & jelentés",
-                desc: "Részletes elemzések a közösségi média kampányok teljesítményéről ami alapján folyamatosan finomítjuk stratégiánkat"
+                title: "Tartalommarketing",
+                desc: "A közösségi média tökéletes platform a tartalom megosztására, legyen az blogbejegyzés, videó vagy infografika. Az értékes tartalom nemcsak figyelmet vonz, hanem közönséged is aktívan részese lesz a márkádnak."
             },
+            {
+                title: "Piaci trendek követése",
+                desc: "A közösségi média lehetőséget biztosít a piaci trendek nyomon követésére. A látogatói visszajelzések és a közönség reakciói segítenek abban, hogy a vállalkozásod mindig naprakész maradjon."
+            },
+            {
+                title: "Versenyelőny",
+                desc: "A jól megvalósított közösségi média stratégiával kiemelkedhetsz a versenytársaid közül. A kreatív kampányok és a tartalom folyamatos frissítése hosszú távon elkötelezi a közönségedet."
+            }
         
         ] 
     },
@@ -119,26 +132,8 @@ const services = [
             },
         
         ]  
-    },
-    {   
-        title: "Marketing",
-        desc: "Marketing service description...",
-        features: [
-            {
-                title: "Konzultáció & Tervezés",
-                desc: "Ügyféligények felmérése, tervezés"
-            },
-            {
-                title: "Fejlesztés",
-                desc: "Design, frontend és backend fejlesztés"
-            },
-            {
-                title: "Tesztelés és átadás",
-                desc: "Végső tesztelés, élesítés"
-            },
-        
-        ] 
-    },
+    }
+    
 ];
 
 // Generate static paths for the dynamic routes

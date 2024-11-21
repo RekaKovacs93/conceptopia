@@ -14,7 +14,7 @@ let services = [
     //     desc: ""
     // },
     {
-        title: "Social Media",
+        title: "Közösségi média",
         desc: "A közösségi média platformok a modern marketing szíve. Stratégiai megközelítésünkkel, rendszeres és vonzó tartalomkészítéssel, valamint aktív ügyfélkapcsolat-kezeléssel biztosítjuk, hogy a márkád folyamatosan jelen legyen és elérje a célközönségedet."
     },
     {
