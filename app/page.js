@@ -5,7 +5,7 @@ import Hero1 from './components/Hero1'
 import About from './components/About'
 import NavBar from './components/NavBar'
 import Services from './components/Services';
-import Values from './components/Values';
+import Values1 from './components/Values1';
 import Contact from './components/Contact';
 import Footer from './components/Footer'
 import Facts from './components/Facts';
@@ -64,13 +64,13 @@ export default function Home() {
         <div id="about" className="w-full min-h-screen gradient ">
           <About />
         </div>
-        <div className="w-full min-h-screen bg-dark">
-          <Values />
+        <div id="values" className="w-full min-h-screen bg-dark">
+          <Values1 />
         </div>
         <div id="szolgaltatasok" className="w-full min-h-screen gradient">
           <Services />
         </div>
-        <div id="szolgaltatasok" className="w-full h-96 bg-dark">
+        <div id="facts" className="w-full h-96 bg-dark">
           <Facts />
         </div>
         <div id="contact" className="w-full min-h-screen gradient">
