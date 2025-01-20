@@ -6,7 +6,8 @@ import Footer from "../components/Footer";
 
 // Define services array
 const services = [
-    { title: "Grafika",
+    {   title: "Grafika",
+        url: "Grafika",
         desc: "A grafikai tervezés nem csupán esztétika – ez a vállalkozásod vizuális identitása, amely segít a közönséged figyelmének felkeltésében és a márkád üzenetének hatékony kommunikálásában.",
         features: [
         {
@@ -34,6 +35,7 @@ const services = [
     },
     { 
         title: "Fotózás",
+        url: "Fotozas",
         desc: "A fotózás nem csupán képek készítése; ez a márkád vizuális történetének megörökítése, amely segít kifejezni az értékeidet és elérni a közönségedet. A professzionális fényképezés kulcsfontosságú a márkád hitelességének és vonzerejének növelésében.",
         features: [
             {
@@ -65,6 +67,7 @@ const services = [
     },
     {
         title: "Közösségi média", 
+        url: "Kozossegi media", 
         desc: "A közösségi média nem csupán egy platform, ez a vállalkozásod hangja, amely lehetőséget ad arra, hogy közvetlen kapcsolatot építs ki a közönségeddel. A hatékony közösségi média menedzsment elengedhetetlen a márkád fejlődéséhez, hiszen ez a digitális világ szíve."
 ,
         features: [
@@ -96,6 +99,7 @@ const services = [
     },
     {
         title: "Webfejlesztés",
+        url: "Webfejlesztes",
         desc: "A modern üzleti világban  weboldalad az egyik legfontosabb eleme vállalkozásodnak. Ez nem csupán egy online bemutatkozás, hanem a digitális arculatod, amely számos előnnyel jár.",
         features: [
             {
@@ -138,7 +142,7 @@ const services = [
 
 export async function generateStaticParams() {
     return services.map((service) => ({
-      service: encodeURIComponent(service.title.toLowerCase()), // Encode the title
+      service: encodeURIComponent(service.url.toLowerCase()), // Encode the title
     }));
   }
   
@@ -151,12 +155,12 @@ export async function generateStaticParams() {
   
     // Ensure correct handling of special characters
     const foundService = services.find(
-      (s) => encodeURIComponent(s.title.toLowerCase().normalize('NFD')) === decodedService.toLowerCase().normalize('NFD')
+      (s) => encodeURIComponent(s.url.toLowerCase()) === decodedService.toLowerCase()
     );
   
     if (!foundService) {
       return <div>Service not found</div>;
-    }
+    }  
   
 //     return (
 //       <div>
