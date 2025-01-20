@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero1() {
   
   return (
-    <div className="min-h-screen w-screen flex flex-col items-center justify-center">
+    <div className="min-h-screen w-screen flex flex-col items-center justify-center px-4">
        {/* <Image
                 src="/bg.webp"
                 alt="Interior Photo"
@@ -11,7 +11,7 @@ export default function Hero1() {
                 objectFit="cover"
                 className="absolute inset-0 opacity-5 z-0"
             /> */}
-      <h1 className="font text-9xl text-center gradient-text">
+      <h1 className="font text-4xl md:text-9xl text-center gradient-text">
         CONCEPTOPIA
       </h1>
       <h1 className="font text-3xl text-center gradient-text mt-5">

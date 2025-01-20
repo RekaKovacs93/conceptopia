@@ -136,27 +136,35 @@ const services = [
     
 ];
 
-// Generate static paths for the dynamic routes
 export async function generateStaticParams() {
-  return services.map((service, index) => ({
-    service: encodeURIComponent(service.title.toLowerCase()), // Encode the title
-  }));
-}
-
-// Server Component
-export default function ServicePage({ params }) {
-  const { service, index } = params;
-
-  // Decode the service parameter
-  const decodedService = decodeURIComponent(service);
-
-  const foundService = services.find(
-    (s) => s.title.toLowerCase() === decodedService.toLowerCase()
-  );
-
-  if (!foundService) {
-    return <div>Service not found</div>;
+    return services.map((service) => ({
+      service: encodeURIComponent(service.title.toLowerCase()), // Encode the title
+    }));
   }
+  
+  // Server Component
+  export default function ServicePage({ params }) {
+    const { service } = params;
+  
+    // Decode the service parameter
+    const decodedService = decodeURIComponent(service);
+  
+    // Ensure correct handling of special characters
+    const foundService = services.find(
+      (s) => encodeURIComponent(s.title.toLowerCase()) === decodedService.toLowerCase()
+    );
+  
+    if (!foundService) {
+      return <div>Service not found</div>;
+    }
+  
+//     return (
+//       <div>
+//         <h1>{foundService.title}</h1>
+//         <p>{foundService.description}</p>
+//       </div>
+//     );
+//   }
 
   return (
     <main className="flex flex-col items-center">
