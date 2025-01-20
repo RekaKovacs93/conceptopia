@@ -39,7 +39,7 @@ export default function Services (){
                 {services.map((service, index) => (            
                     <div key={index} className="h-48 w-96 md:w-96 rounded-2xl">
 
-                <Link href={`/${encodeURIComponent(service.title.toLowerCase())}`} passHref>
+                <Link href={`/${encodeURIComponent(service.title.toLowerCase().normalize('NFD'))}`} passHref>
                 {/* <div className="w-full h-full hover:scale-125 flex flex-col items-center justify-center">
                 <h1 id="title" className="text-3xl font-light opacity-100 text-center">{service.title}</h1>
                 </div> */}

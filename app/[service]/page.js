@@ -151,7 +151,7 @@ export async function generateStaticParams() {
   
     // Ensure correct handling of special characters
     const foundService = services.find(
-      (s) => encodeURIComponent(s.title.toLowerCase()) === decodedService.toLowerCase()
+      (s) => encodeURIComponent(s.title.toLowerCase().normalize('NFD')) === decodedService.toLowerCase().normalize('NFD')
     );
   
     if (!foundService) {
