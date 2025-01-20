@@ -3,10 +3,12 @@ import Link from "next/link"
 let services = [
     {
         title: "Grafika",
+        url: "Grafika",
         desc: "A vizuális identitás kulcsfontosságú a márkád megkülönböztetésében. Kreatív grafikusaink segítenek létrehozni a márkádhoz illeszkedő egyedi logókat, hirdetéseket, közösségi média posztokat és egyéb vizuális anyagokat, amelyek hatékonyan kommunikálják a vállalkozásod üzenetét."
     },
     {
         title: "Fotózás",
+        url: "Fotozas",
         desc: "A professzionális fotók elengedhetetlenek a vizuális kommunikációban. Szolgáltatásaink közé tartozik az üzleti portrék, termékfotók és eseményfotók készítése, amelyek segítenek kiemelni a vállalkozásod egyediségét és vonzerejét."
     },
     // {
@@ -15,10 +17,12 @@ let services = [
     // },
     {
         title: "Közösségi média",
+        url: "Kozossegi media",
         desc: "A közösségi média platformok a modern marketing szíve. Stratégiai megközelítésünkkel, rendszeres és vonzó tartalomkészítéssel, valamint aktív ügyfélkapcsolat-kezeléssel biztosítjuk, hogy a márkád folyamatosan jelen legyen és elérje a célközönségedet."
     },
     {
         title: "Webfejlesztés",
+        url: "Webfejlesztes",
         desc: "Az online jelenlét alapja egy jól megtervezett és felhasználóbarát weboldal. Szolgáltatásaink között szerepel a testreszabott weboldalak készítése, a WordPress és WooCommerce platformokra épített megoldások, valamint a reszponzív dizájn, amely biztosítja, hogy weboldalad minden eszközön tökéletesen működjön."
     },
     // {
