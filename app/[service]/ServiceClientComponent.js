@@ -23,17 +23,31 @@ export default function ServiceClientComponent({ service }) {
   }, []);
 
   return (
-    <main className="flex flex-col items-center w-screen">
-      <div className="flex flex-col justify-center items-center mt-40">
-        <div className="">
-          <h1 className="gradient-text font text-9xl">{service.title}</h1>
-          <p className="mt-4 mb-20 font-light text-center">{service.desc}</p>
-        </div>
-        <div className="w-screen flex flex-wrap gap-20 items-center justify-center p-10 bg-dark mx-40">
+    <main className="flex flex-col items-center ">
+      <div className="flex flex-col justify-center items-center mt-60 bg-dark">
+        {/* <div className="flex flex-col bg-dark"></div> */}
+          <h1 className="gradient-text font text-9xl mb-10">{service.title}</h1>
+          <p className="mx-40 font-light text-center pb-60">{service.desc}</p>
+        <div className="flex flex-wrap gap-20 items-center justify-center px-20 gradient pt-20">
           {service.features.map((feature, index) => (
-            <div key={index} className="relative h-[320px] w-[500px] flex items-center justify-center">
-              {/* SVG Rectangle */}
-              <svg width="500" height="320" xmlns="http://www.w3.org/2000/svg" className="absolute top-0 left-0">
+            <div key={index} className="relative w-96 h-72 flex items-center justify-center bg-dark rounded-lg p-10">
+             
+
+              <div className="relative z-10 flex flex-col items-center justify-center text-center">
+                <h1 className="text-2xl gradient-text">{feature.title}</h1>
+                <div className="w-96 h-0.5 gradient my-4" />
+                <p className="text-light text-sm font-light">{feature.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div> 
+      </div>
+    </main>
+  );
+}
+
+
+ {/* <svg width="500" height="320" xmlns="http://www.w3.org/2000/svg" className="absolute top-0 left-0">
                 <defs>
                   <linearGradient
                     id="gradient"
@@ -60,18 +74,4 @@ export default function ServiceClientComponent({ service }) {
                   stroke="url(#gradient)"
                   strokeWidth="5"
                 />
-              </svg>
-
-              {/* Centered Text */}
-              <div className="relative z-10 flex flex-col items-center justify-center text-center">
-                <h1 className="text-2xl gradient-text">{feature.title}</h1>
-                <div className="w-40 h-0.5 bg-dark my-4" />
-                <p className="text-light text-sm font-light">{feature.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </main>
-  );
-}
+              </svg> */}

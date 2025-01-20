@@ -17,7 +17,7 @@ let services = [
     // },
     {
         title: "Közösségi média",
-        url: "Kozossegi media",
+        url: "Kozossegimedia",
         desc: "A közösségi média platformok a modern marketing szíve. Stratégiai megközelítésünkkel, rendszeres és vonzó tartalomkészítéssel, valamint aktív ügyfélkapcsolat-kezeléssel biztosítjuk, hogy a márkád folyamatosan jelen legyen és elérje a célközönségedet."
     },
     {
@@ -39,7 +39,7 @@ export default function Services (){
                 Megoldásaink
             </h1>
             <h1 className="text-xl text-center text-dark mx-60 mb-20">Megoldások, nem csak szolgáltatások. Mi a Conceptopia Kreatív Ügynökségnél nem csupán a megszokott szolgáltatásokat kínálunk, hanem komplex megoldásokat, amelyek a vállalkozásod egyedi igényeihez igazodnak. Az általunk kínált megoldások nemcsak az eseti feladatok elvégzésére fókuszálnak, hanem arra is, hogy hosszú távú értéket teremtsenek a márkád számára. Legyen szó weboldal fejlesztésről, közösségi média stratégiáról vagy grafikai tervezésről, célunk, hogy egy átfogó, integrált megközelítést alkalmazzunk, amely segít kiemelkedni a versenytársak közül. Ezzel nemcsak időt és energiát takarítasz meg, hanem biztos lehetsz abban is, hogy minden részlet harmonikusan illeszkedik a vállalkozásod összképébe.</h1>
-            <div className=" w-screen flex flex-wrap gap-5 items-center justify-center px-40">
+            <div className=" w-screen flex flex-wrap gap-5 items-center justify-center px-40 mb-20">
                 {services.map((service, index) => (            
                     <div key={index} className="h-48 w-96 md:w-96 rounded-2xl">
 

@@ -3,7 +3,7 @@
 export default function Facts() {
   
     return (
-      <div className=" w-screen h-full bg-dark flex flex-col items-center justify-center">
+      <div className=" h-full bg-dark flex flex-col items-center justify-center">
 
         <div className="flex justify-between items-center my-20 gap-96">
             <div className=" text-center relative bg-red w-full flex flex-col justify-center items-center">

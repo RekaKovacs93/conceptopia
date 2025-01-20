@@ -67,7 +67,7 @@ const services = [
     },
     {
         title: "Közösségi média", 
-        url: "Kozossegi media", 
+        url: "Kozossegimedia", 
         desc: "A közösségi média nem csupán egy platform, ez a vállalkozásod hangja, amely lehetőséget ad arra, hogy közvetlen kapcsolatot építs ki a közönségeddel. A hatékony közösségi média menedzsment elengedhetetlen a márkád fejlődéséhez, hiszen ez a digitális világ szíve."
 ,
         features: [
@@ -171,9 +171,9 @@ export async function generateStaticParams() {
 //   }
 
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center w-screen">
       <div className="grainy-background min-h-screen">
-        <NavBar className="flex flex-col items-end md:flex-row md:items-center z-20" />
+        <NavBar className="flex flex-col items-center z-20" />
 
         <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -196,15 +196,14 @@ export async function generateStaticParams() {
         </svg>
 
         
-        <div className="min-h-screen" >
-      <ServiceClientComponent service={foundService} />
-      
-    </div>
-    <div id="contact" className="w-full h-screen gradient">
-          <Contact />
+        <div  className="bg-dark">
+            <ServiceClientComponent service={foundService} />
+        </div>
+        <div id="contact" className="h-screen gradient">
+            <Contact />
         </div>
         <div id="footer" className="w-full bg-dark">
-          <Footer />
+            <Footer />
         </div>
       </div>
     </main>

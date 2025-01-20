@@ -3,7 +3,7 @@
 export default function Values() {
   
     return (
-      <div className="h-screen w-screen flex flex-col items-center justify-center">
+      <div className="h-screen  flex flex-col items-center justify-center">
         <h1 className="font text-4xl text-center gradient-text mb-36">
         Mire számíthatsz?
         </h1>
