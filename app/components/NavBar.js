@@ -40,7 +40,7 @@ export default function NavBar() {
 
   return (
     <nav className={`bg-dark fixed top-0 w-full z-10 transition-opacity duration-500 fade-in ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
-      <div className="flex items-center justify-between px-10 md:px-8 py-3 md:py-6 font gradient-text">
+      <div className="flex items-start justify-between px-10 md:px-8 py-3 md:py-6 font gradient-text">
       {/* <div > */}
       <Link href="/" className="font-bold text-xl">
           <Image
@@ -53,20 +53,24 @@ export default function NavBar() {
                 quality={80}
           />
         </Link>
-        <Link href="/" className="font-bold text-xl">
-          
-        </Link>
+  
 
-        <div className="hidden md:flex flex-grow items-center justify-end space-x-4">
+        <div className="hidden md:flex flex-grow items-start justify-end space-x-4">
           <Link href="/#about" className="block md:inline-block mt-4 md:mt-0">
             RÓLUNK
           </Link>
-          {/* <Link  href="./elado"  className="block md:inline-block mt-4 md:mt-0">
-            ELADÓKNAK
-          </Link> */}
-          <Link href="/#szolgaltatasok" className="block md:inline-block mt-4 md:mt-0">
-            SZOLGÁLTATÁSOK
-          </Link>
+          <span href="/#szolgaltatasok" className="group block md:inline-block mt-4 md:mt-0" id="video-link">
+            SZOLGÁLTATÁSOK &#9660;
+            <div className="hidden group-hover:flex flex-col items-end right-0 mt-2 w-50 rounded-lg">
+              {/* <div className="py-1"> */}
+                <a href="./grafika" className="block px-4 py-2 text-sm">GRAFIKA</a>
+                <a href="./fotozas" className="block px-4 py-2 text-sm">FOTÓZÁS</a>
+                <a href="./kozossegimedia" className="block px-4 py-2 text-sm">KÖZÖSSÉGI MÉDIA</a>
+                <a href="./webfejlesztes" className="block px-4 py-2 text-sm">WEBFEJLESZTÉS</a>
+              {/* </div> */}
+            </div>
+          </span>
+          {/* </div> */}
           <Link href="./BLOG" className="block md:inline-block mt-4 md:mt-0">
             BLOG
           </Link>
@@ -84,13 +88,13 @@ export default function NavBar() {
         <div className="md:hidden relative">
           <input type="checkbox" id="toggle" className="hidden" />
 
-          <label htmlFor="toggle" className="relative z-10">
+          <label htmlFor="toggle" className=" z-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 cursor-pointer"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="linear-gradient(45deg, rgba(98,94,235,1) 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%)"
               onClick={toggleMenu}
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />

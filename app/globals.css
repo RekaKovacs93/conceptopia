@@ -88,6 +88,11 @@ body {
   color: transparent;
 }
 
+.grad{
+  border: linear-gradient(45deg, rgba(98,94,235,1) 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%);
+
+}
+
 
 #navhover:hover {
   color:blanchedalmond
@@ -154,4 +159,39 @@ button {
 
 .aborder {
   border: 2px solid rgba(28, 28, 28,1);
+}
+
+/* .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 21%;
+  z-index: 9999; 
+
+#video-link:hover .dropdown-menu {
+  display: block;
+
+} */
+
+.marquee {
+  width: 100%; /* Full width */
+  overflow: hidden; /* Hide overflowing text */
+  white-space: nowrap; /* Prevent text wrapping */
+  box-sizing: border-box; /* Ensure padding and borders don't affect size */
+
+}
+
+.marquee span {
+  display: inline-block; /* Keep content inline */
+  padding-left: 100%; /* Start the text off-screen */
+  animation: scroll-text 50s linear infinite; /* Define the animation */
+}
+
+@keyframes scroll-text {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move off-screen to the left */
+  }
 }

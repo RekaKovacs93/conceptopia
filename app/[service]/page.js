@@ -1,4 +1,5 @@
 import ServiceClientComponent from './ServiceClientComponent';
+import Animation from '../components/Animation';
 import NavBar from '../components/NavBar'
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -198,6 +199,9 @@ export async function generateStaticParams() {
         
         <div  className="bg-dark">
             <ServiceClientComponent service={foundService} />
+        </div>
+        <div  className="bg-dark">
+            <Animation />
         </div>
         <div id="contact" className="h-screen gradient">
             <Contact />
