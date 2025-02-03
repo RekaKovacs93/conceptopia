@@ -10,7 +10,7 @@ export default function About() {
                 objectFit="cover"
                 className="absolute inset-0 opacity-10 z-0"
             /> */}
-            <div className="relative z-10 gap-x-10 flex justify-center items-center h-full mx-20">
+            <div className="relative z-10 gap-x-10 md:flex hidden justify-center items-center h-full mx-20">
                 {/* <h1 className="font text-2xl md:text-4xl text-dark mb-10 md:ml-40 mt-10 md:mt-0">
                     Üdvözlünk a Conceptopia Kreatív Ügynökség oldalán!
                 </h1> */}

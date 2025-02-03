@@ -10,14 +10,8 @@ export default function Values() {
         <div className="flex items-center justify-center gap-40 mx-40">
           
           <div className="flex flex-col gap-24 w-2/5">
-          <div className=" text-center relative bg-red w-full flex flex-col justify-center items-center">
-                <svg width="500" height="100" xmlns="http://www.w3.org/2000/svg" className="pos">
-                    <defs>
-                    <linearGradient id="gradient" cx="0%" cy="0%" r="100%" fx="0%" fy="50%" gradientTransform="rotate(45)">
-                                                    <stop offset="0%" style={{ stopColor: 'rgba(98, 94, 235, 1)', stopOpacity: 1 }} />
-                                                    <stop offset="50%" style={{ stopColor: 'rgba(243, 125, 206, 1)', stopOpacity: 1 }} />
-                                                    <stop offset="100%" style={{ stopColor: 'rgba(252, 206, 144, 1)', stopOpacity: 1 }} />
-                                                    </linearGradient>
+            <div className=" text-center relative bg-red w-full flex flex-col justify-center items-center">
+                <svg width="500" height="100" xmlns="http://www.w3.org/2000/svg" className="pos"><defs><linearGradient id="gradient" cx="0%" cy="0%" r="100%" fx="0%" fy="50%" gradientTransform="rotate(45)"><stop offset="0%" style={{ stopColor: 'rgba(98, 94, 235, 1)', stopOpacity: 1 }} /><stop offset="50%" style={{ stopColor: 'rgba(243, 125, 206, 1)', stopOpacity: 1 }} /><stop offset="100%" style={{ stopColor: 'rgba(252, 206, 144, 1)', stopOpacity: 1 }} /></linearGradient>
                     </defs>
                     <rect
                         x="10"

@@ -61,24 +61,25 @@ export default function Home() {
         <div id="home" className=" min-h-screen">
           <Hero1 />
         </div>
-        {/* <div id="about" className="w-full min-h-screen gradient ">
+        <div id="about" className="w-full min-h-screen gradient ">
           <About />
         </div>
         <div id="values" className="w-full min-h-screen bg-dark">
           <Values1 />
-        </div> */}
+        </div>
         <div id="szolgaltatasok" className="w-full min-h-screen gradient">
           <Services />
         </div>
         {/* <div id="facts" className="w-full h-96 bg-dark">
           <Facts />
         </div> */}
-        {/* <div id="contact" className="w-full min-h-screen gradient">
+        <div className='h-20 bg-dark'></div>
+        <div id="contact" className="w-full md:min-h-screen gradient">
           <Contact />
-        </div> */}
-        {/* <div id="footer" className="w-full bg-dark">
+        </div>
+        <div id="footer" className="w-full bg-dark">
           <Footer />
-        </div> */}
+        </div>
       </div>
     </main>
   );

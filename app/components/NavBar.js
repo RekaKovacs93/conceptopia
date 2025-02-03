@@ -65,7 +65,9 @@ export default function NavBar() {
               {/* <div className="py-1"> */}
                 <a href="./grafika" className="block px-4 py-2 text-sm">GRAFIKA</a>
                 <a href="./fotozas" className="block px-4 py-2 text-sm">FOTÓZÁS</a>
-                <a href="./kozossegimedia" className="block px-4 py-2 text-sm">KÖZÖSSÉGI MÉDIA</a>
+                <a href="./kozossegimediamenedzment" className="block px-4 py-2 text-sm">KÖZÖSSÉGI MÉDIA MENEDZSMENT</a>
+                <a href="./tartalomgyartas" className="block px-4 py-2 text-sm">TARTALOMGYÁRTÁS</a>
+                <a href="./mozgografika" className="block px-4 py-2 text-sm">MOZGÓGRAFIKA</a>
                 <a href="./webfejlesztes" className="block px-4 py-2 text-sm">WEBFEJLESZTÉS</a>
               {/* </div> */}
             </div>
@@ -101,22 +103,40 @@ export default function NavBar() {
             </svg>
           </label>
 
-          <div className={`menu fixed top-0 right-0 w-full h-full z-20 px-5 py-10 pt-40 bg-dark transform transition-transform ease-in-out duration-1600 ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'} ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
+          <div className={` menu fixed top-0 right-0 w-full h-full z-20 px-5 py-10 pt-40 bg-dark transform transition-transform ease-in-out duration-1600 ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'} ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
 
-            <button onClick={closeMenu} className="fixed top-0 right-1 px-5 py-5 text-xs text-grad">X  Bezárás</button>
-            <Link href="/#about" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b text-grad">
+            <button onClick={closeMenu} className="fixed top-0 right-1 px-5 py-5 text-xl text-grad">X</button>
+            <Link href="/#about" onClick={closeMenu} className=" text-left block pb-2 py-5 px-5 border-b text-grad text-xl">
               RÓLUNK
             </Link>
             {/* <Link href="/#szolgaltatasok" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               ELADÓKNAK
             </Link> */}
-            <Link href="/#szolgaltatasok" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b text-grad">
+            <Link href="/#szolgaltatasok" onClick={closeMenu} className="text-left block pb-2 py-5 px-5 border-b text-grad text-xl">
               SZOLGÁLTATÁSOK
+            </Link>
+            <Link href="./grafika" onClick={closeMenu} className="text-left block pb-2 py-3 px-5 pl-10 border-b text-sm text-grad">
+              GRAFIKA
+            </Link>
+            <Link href="./fotozas" onClick={closeMenu} className="text-left block pb-2 py-3 px-5 pl-10 border-b text-sm text-grad">
+              FOTÓZÁS
+            </Link>
+            <Link href="./tartalomgyartas" onClick={closeMenu} className="text-left block pb-2 py-3 px-5 pl-10 border-b text-sm text-grad">
+              TARTALOMKÉSZÍTÉS
+            </Link>
+            <Link href="./kozossegimediamenedzsment" onClick={closeMenu} className="text-left block pb-2 py-3 px-5 pl-10 border-b text-sm text-grad">
+              KÖZÖSSÉGI MÉDIA MENEDZSMENT
+            </Link>
+            <Link href="./mozgografika" onClick={closeMenu} className="text-left block pb-2 py-3 px-5 pl-10 border-b text-sm text-grad">
+              MOZGÓGRAFIKA
+            </Link>
+            <Link href="./webfejlesztes" onClick={closeMenu} className="text-left block pb-2 py-3 px-5 pl-10 border-b text-sm text-grad">
+              WEBFEJLESZTÉS
             </Link>
             {/* <Link href="./blog" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               BLOG
             </Link> */}
-            <Link href="./kapcsolat" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b text-grad">
+            <Link href="./kapcsolat" onClick={closeMenu} className="text-left block pb-2 py-5 px-5 border-b text-grad text-xl">
               KAPCSOLAT
             </Link>
           </div>

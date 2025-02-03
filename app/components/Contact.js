@@ -48,11 +48,11 @@ export default function Contact() {
   };
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center">
+    <div className="md:h-screen flex flex-col items-center md:justify-center md:pt-0 pt-20">
       <h1 className="font text-center text-4xl my-10">Contact Us</h1>
       
       <form onSubmit={handleSubmit}>
-        <div className="flex flex-col justify-center items-center space-y-4">
+        <div className="flex flex-col justify-center items-center space-y-4 pb-20 md:pb-0">
           
           <div className="flex flex-col items-start w-full">
             <label className="mb-1 font">Name</label>
@@ -89,7 +89,7 @@ export default function Contact() {
             ></textarea>
           </div>
   
-          <button className="my-4 rounded-lg" type="submit">Send</button>
+          <button className="my-4 rounded-lg " type="submit">Send</button>
   
         </div>
       </form>

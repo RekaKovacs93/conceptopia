@@ -6,7 +6,7 @@ export default function About(){
                 <a>
                     <div className="flex">
                         <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 0 448 512">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 448 512">
                             <defs>
                                 <linearGradient id="gradient" cx="0%" cy="0%" r="100%" fx="0%" fy="50%" gradientTransform="rotate(45)">
                                 <stop offset="0%" style={{ stopColor: 'rgba(98, 94, 235, 1)', stopOpacity: 1 }} />
@@ -20,7 +20,7 @@ export default function About(){
                             />
                         </svg>                        
                         </div>
-                        <div className="ml-2 mt-0.5">
+                        <div className="ml-2 mr-4 md:mr-0 mt-0.5">
                         <p className="font-light">conceptopia</p>
                         </div>
                     </div>   
@@ -48,7 +48,7 @@ export default function About(){
                         </svg>                        
                     </div>
                     <div className="ml-2 mt-0.5">
-                        <p className="font-light">conceptopia</p>
+                        <p className="font-light ">conceptopia</p>
                     </div>
                 </div>   
             </a>
@@ -56,7 +56,7 @@ export default function About(){
     </div>
 
                 <div>
-                    <a className="font-light">Adatkezelési Tájékoztató</a>
+                    <a className="md:block hidden font-light text-base">Adatkezelési Tájékoztató</a>
                 </div>
         </div>
     )
