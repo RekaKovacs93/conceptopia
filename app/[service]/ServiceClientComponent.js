@@ -25,13 +25,15 @@ export default function ServiceClientComponent({ service }) {
   return (
     <main className="flex flex-col items-center ">
       <div className="flex flex-col justify-center items-center mt-60 bg-dark">
-          <h1 className="gradient-text font text-9xl mb-10">{service.title}</h1>
+          <h1 className="gradient-text font text-9xl mb-5">{service.title}</h1>
+          <h1 className="font md:text-2xl text-lg text-center md:gradient-text text-grad mb-5">{service.slogan}</h1>
           <p className="mx-40 font-light text-center pb-60">{service.desc}</p>
         <div className="flex flex-wrap gap-20 items-center justify-center px-20 gradient py-20">
           {service.features.map((feature, index) => (
             <div key={index} className="relative w-96 h-72 flex items-center justify-center bg-dark rounded-lg p-10">
               <div className="relative z-10 flex flex-col items-center justify-center text-center">
                 <h1 className="text-2xl gradient-text">{feature.title}</h1>
+                
                 <div className="w-96 h-0.5 gradient my-4" />
                 <p className="text-light text-sm font-light p-2">{feature.desc}</p>
               </div>

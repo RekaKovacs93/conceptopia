@@ -34,8 +34,8 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex flex-col items-center">
-      <div className="grainy-background min-h-screen">
+    <main className="flex-col flex min-h-screen items-center justify-between lg:px-24 px-10">
+      <div className="grainy-background min-h-screen overflow-x-clip">
         <NavBar className="flex flex-col items-end md:flex-row md:items-center z-20" />
 
         <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
@@ -61,24 +61,24 @@ export default function Home() {
         <div id="home" className=" min-h-screen">
           <Hero1 />
         </div>
-        <div id="about" className="w-full min-h-screen gradient ">
+        {/* <div id="about" className="w-full min-h-screen gradient ">
           <About />
         </div>
         <div id="values" className="w-full min-h-screen bg-dark">
           <Values1 />
-        </div>
+        </div> */}
         <div id="szolgaltatasok" className="w-full min-h-screen gradient">
           <Services />
         </div>
         {/* <div id="facts" className="w-full h-96 bg-dark">
           <Facts />
         </div> */}
-        <div id="contact" className="w-full min-h-screen gradient">
+        {/* <div id="contact" className="w-full min-h-screen gradient">
           <Contact />
-        </div>
-        <div id="footer" className="w-full bg-dark">
+        </div> */}
+        {/* <div id="footer" className="w-full bg-dark">
           <Footer />
-        </div>
+        </div> */}
       </div>
     </main>
   );

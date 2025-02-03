@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 // Define services array
 const services = [
     {   title: "Grafika",
+        slogan: "Vállalkozásod vizuális sikere",
         url: "Grafika",
         desc: "A grafikai tervezés nem csupán esztétika – ez a vállalkozásod vizuális identitása, amely segít a közönséged figyelmének felkeltésében és a márkád üzenetének hatékony kommunikálásában.",
         features: [
@@ -36,6 +37,7 @@ const services = [
     },
     { 
         title: "Fotózás",
+        slogan:"A márkád vizuális történetének megörökítése",
         url: "Fotozas",
         desc: "A fotózás nem csupán képek készítése; ez a márkád vizuális történetének megörökítése, amely segít kifejezni az értékeidet és elérni a közönségedet. A professzionális fényképezés kulcsfontosságú a márkád hitelességének és vonzerejének növelésében.",
         features: [
@@ -66,34 +68,86 @@ const services = [
         
         ]
     },
+    { 
+        title: "Mozgógrafika",
+        slogan:"A figyelem megragadásának művészete",
+        url: "Mozgografika",
+        desc: "A közösségi média és az online marketing világában a statikus tartalmak már nem mindig elegendőek ahhoz, hogy igazán kitűnj. Professzionális mozgó grafikákkal segítünk kiemelkedni a digitális zajból. Legyen szó logó animációról vagy közösségi média tartalmakról, az egyedi és kreatív megoldásokban gondolkodunk. Célunk, hogy a mozgó grafika hatékonyan közvetítse az üzenetedet, miközben a néző figyelmét is magával ragadja, ezáltal erősítve a márkád online jelenlétét.",
+        features: [
+            {
+                title: "Azonnal leköti a figyelmet",
+                desc: "Az emberek gyorsan görgetnek, de egy mozgó elem megállítja őket. A mozgógrafika vizuálisan izgalmas és könnyen emészthető, így nagyobb eséllyel éred el a célközönségedet."
+            },
+            {
+                title: "Egyszerű bemutatás",
+                desc: "Egy jól megtervezett animáció pillanatok alatt képes bemutatni egy termék működését, egy szolgáltatás előnyeit vagy egy márka történetét."
+            },
+            {
+                title: "Erősíti a márkaidentitást",
+                desc: "A megfelelő színek, formák és mozgásvilág révén a márkád felismerhetőbbé válik."
+            },
+            {
+                title: "Növeli az elköteleződést",
+                desc: "A videók és animációk nagyobb elérést és interakciót generálnak, mint a statikus képek, így segítenek növelni a közönséged aktivitását."
+            }
+        
+        ]
+    },
+    { 
+        title: "Tartalomgyártás",
+        slogan:"Segítünk, hogy a márkád szóhoz jusson",
+        url: "Tartalomgyartas",
+        desc: "A közösségi média egy olyan dinamikusan változó világ, ahol a figyelemért való verseny egyre erősebbé válik. A sikerhez nem csupán az kell, hogy a vállalkozásod jelen legyen, hanem hogy folyamatosan értékes, figyelemfelkeltő és releváns tartalommal találkozzanak a követőid. Itt jövünk mi!",
+        features: [
+            {
+                title: "Erős márkaépítés",
+                desc: "A közösségi média az egyik legfontosabb eszköze annak, hogy a márkád valódi kapcsolatot alakítson ki a közönségeddel. Az általad megosztott tartalmaknak nemcsak vonzónak kell lenniük, hanem meg kell mutatniuk a márkád egyediségét és értékeit is."
+            },
+            {
+                title: "Történetmesélés",
+                desc: "A közösségi média nemcsak egy képről vagy videóról szól – egy jól megírt történet felkelti az érdeklődést és érzelmeket vált ki. Mi segítünk abban, hogy a márkád története szórakoztató, releváns és megnyerő módon jusson el a közönségedhez."
+            },
+            {
+                title: "Láthatóság és elérés",
+                desc: "A megfelelő időben és formában megosztott tartalom segít abban, hogy több emberhez juss el, és hogy az ő figyelmük hosszú távon megmaradjon."
+            },
+            {
+                title: "Kapcsolatépítés",
+                desc: "A kreatív tartalom tartalom nemcsak arról szól, hogy elmondod, mit csinálsz, hanem arról is, hogy interakcióba lépsz a közönségeddel, reagálsz a kérdéseikre, és építed a bizalmat."
+            }
+        
+        ]
+    },
     {
-        title: "Közösségi média", 
-        url: "Kozossegimedia", 
-        desc: "A közösségi média nem csupán egy platform, ez a vállalkozásod hangja, amely lehetőséget ad arra, hogy közvetlen kapcsolatot építs ki a közönségeddel. A hatékony közösségi média menedzsment elengedhetetlen a márkád fejlődéséhez, hiszen ez a digitális világ szíve."
+        title: "Közösségi média menedzsment", 
+        url: "Kozossegimediamenedzsment",
+        slogan:"Több időd marad arra, ami igazán fontos", 
+        desc: "A közösségi média ma már a vállalkozások életében kulcsszerepet játszik, de a kezelése rengeteg időt és energiát emészt fel. Nem lenne jobb, ha mindez a kezedben maradna, mégis megszabadulnál a napi teendők terhétől?"
 ,
         features: [
             {
-                title: "Kapcsolatépítés és elköteleződés",
-                desc: " A közösségi média lehetőséget biztosít arra, hogy közvetlen kapcsolatot létesíts a vásárlóiddal. Aktív részvétel a közösségi platformokon nemcsak növeli a márkád láthatóságát, hanem lehetőséget teremt az ügyfélkapcsolatok erősítésére is."            },
-            {
-                title: "Célzott elérés",
-                desc: "A megfelelő stratégiával könnyedén elérheted a célpiacodat, legyen szó demográfiai adatok vagy érdeklődési körök alapján történő célzásról. Ezzel maximalizálhatod a kampányaid hatékonyságát."
+                title: "Idő",
+                desc: "Több időd marad az ügyfeleidre, miközben a közösségi oldalad naprakész és hatékony marad."            
             },
             {
-                title: "Márkaépítés",
-                desc: "A közösségi média segítségével építheted a márkád identitását és hitelességét. A konzisztens és kifejező tartalom révén a vásárlóid jobban azonosulnak a márkáddal."
+                title: "Nyugalom",
+                desc: "Nem kell azon aggódnod, mikor és mit posztolj – mi mindent kézben tartunk."
             },
             {
-                title: "Tartalommarketing",
-                desc: "A közösségi média tökéletes platform a tartalom megosztására, legyen az blogbejegyzés, videó vagy infografika. Az értékes tartalom nemcsak figyelmet vonz, hanem közönséged is aktívan részese lesz a márkádnak."
+                title: "Kapcsolat",
+                desc: "A kommentek, üzenetek és visszajelzések gyors és professzionális kezelése segít ügyfeleid bizalmát erősíteni"
             },
             {
-                title: "Piaci trendek követése",
-                desc: "A közösségi média lehetőséget biztosít a piaci trendek nyomon követésére. A látogatói visszajelzések és a közönség reakciói segítenek abban, hogy a vállalkozásod mindig naprakész maradjon."
+                title: "Átgondolt stratégia",
+                desc: "Nem csak posztolunk. Minden lépésünknek célja van: növeljük a láthatóságot és elérjük a potenciális ügyfeleidet."
             },
             {
-                title: "Versenyelőny",
-                desc: "A jól megvalósított közösségi média stratégiával kiemelkedhetsz a versenytársaid közül. A kreatív kampányok és a tartalom folyamatos frissítése hosszú távon elkötelezi a közönségedet."
+                title: "Ügyféltámogatás",
+                desc: "Foglalkozunk a kommentekkel, üzenetekkel, hogy az ügyfeleid érezzék, mindig ott vagy számukra."
+            },
+            {
+                title: "Adatok, amelyek számítanak",
+                desc: "Rendszeresen megosztjuk veled az eredményeket, hogy lásd, hogyan segítik a céljaidat a közösségi oldalaid."
             }
         
         ] 

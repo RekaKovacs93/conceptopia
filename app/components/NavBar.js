@@ -71,9 +71,9 @@ export default function NavBar() {
             </div>
           </span>
           {/* </div> */}
-          <Link href="./BLOG" className="block md:inline-block mt-4 md:mt-0">
+          {/* <Link href="./BLOG" className="block md:inline-block mt-4 md:mt-0">
             BLOG
-          </Link>
+          </Link> */}
           <Link href="./kapcsolat" className="block md:inline-block mt-4 md:mt-0">
             KAPCSOLAT
           </Link>
@@ -88,35 +88,35 @@ export default function NavBar() {
         <div className="md:hidden relative">
           <input type="checkbox" id="toggle" className="hidden" />
 
-          <label htmlFor="toggle" className=" z-10">
+          <label htmlFor="toggle" className=" z-10 grad">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 cursor-pointer"
+              className="h-6 w-6 cursor-pointer grad"
               fill="none"
               viewBox="0 0 24 24"
               stroke="white"
               onClick={toggleMenu}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+              <path className='grad' strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
           </label>
 
-          <div className={`menu fixed top-0 right-0 w-full h-full z-20 px-5 py-10 transform transition-transform ease-in-out duration-1600 ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'} ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
+          <div className={`menu fixed top-0 right-0 w-full h-full z-20 px-5 py-10 pt-40 bg-dark transform transition-transform ease-in-out duration-1600 ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'} ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
 
-            <button onClick={closeMenu} className="fixed top-0 right-1 px-5 py-5 text-xs">X  Bezárás</button>
-            <Link href="/#about" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+            <button onClick={closeMenu} className="fixed top-0 right-1 px-5 py-5 text-xs text-grad">X  Bezárás</button>
+            <Link href="/#about" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b text-grad">
               RÓLUNK
             </Link>
             {/* <Link href="/#szolgaltatasok" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               ELADÓKNAK
             </Link> */}
-            <Link href="/#szolgaltatasok" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+            <Link href="/#szolgaltatasok" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b text-grad">
               SZOLGÁLTATÁSOK
             </Link>
-            <Link href="./blog" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+            {/* <Link href="./blog" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
               BLOG
-            </Link>
-            <Link href="./kapcsolat" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">
+            </Link> */}
+            <Link href="./kapcsolat" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b text-grad">
               KAPCSOLAT
             </Link>
           </div>

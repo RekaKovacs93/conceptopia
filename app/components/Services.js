@@ -11,24 +11,27 @@ let services = [
         url: "Fotozas",
         desc: "A professzionális fotók elengedhetetlenek a vizuális kommunikációban. Szolgáltatásaink közé tartozik az üzleti portrék, termékfotók és eseményfotók készítése, amelyek segítenek kiemelni a vállalkozásod egyediségét és vonzerejét."
     },
-    // {
-    //     title: "Arculattervezés",
-    //     desc: ""
-    // },
     {
-        title: "Közösségi média",
-        url: "Kozossegimedia",
+        title: "Közösségi média menedzsment",
+        url: "Kozossegimediamenedzsment",
         desc: "A közösségi média platformok a modern marketing szíve. Stratégiai megközelítésünkkel, rendszeres és vonzó tartalomkészítéssel, valamint aktív ügyfélkapcsolat-kezeléssel biztosítjuk, hogy a márkád folyamatosan jelen legyen és elérje a célközönségedet."
+    },
+    {
+        title: "Tartalomgyártás",
+        url: "Tartalomgyartas",
+        desc: "A közösségi média platformok a modern marketing szíve. Stratégiai megközelítésünkkel, rendszeres és dinamikus tartalomkészítéssel, valamint aktív ügyfélkapcsolat-kezeléssel biztosítjuk, hogy a márkád folyamatosan szem előtt legyen és elérje a célközönségedet."
+
     },
     {
         title: "Webfejlesztés",
         url: "Webfejlesztes",
         desc: "Az online jelenlét alapja egy jól megtervezett és felhasználóbarát weboldal. Szolgáltatásaink között szerepel a testreszabott weboldalak készítése, a WordPress és WooCommerce platformokra épített megoldások, valamint a reszponzív dizájn, amely biztosítja, hogy weboldalad minden eszközön tökéletesen működjön."
     },
-    // {
-    //     title: "Marketing",
-    //     desc: ""
-    // },
+    {
+        title: "Mozgó grafika",
+        url: "Mozgografika",
+        desc: "Professzionális mozgó grafikákkal segítünk kiemelkedni a digitális zajból. Legyen szó logó animációról, vagy közösségi média tartalmakról, az egyedi és kreatív megoldásokban gondolkodunk. Célunk, hogy a mozgó grafika hatékonyan közvetítse az üzenetedet, miközben a néző figyelmét is magával ragadja, ezáltal erősítve a márkád online jelenlétét."
+    }
     
 ]
 
@@ -49,7 +52,7 @@ export default function Services (){
                 <h1 id="title" className="text-3xl font-light opacity-100 text-center">{service.title}</h1>
                 </div> */}
                 <div id="card" className=" w-full h-full flex flex-col items-center justify-center bg-dark rounded-2xl">
-                <h1 id="title" className="absolute text-3xl font-light opacity-100 text-center">{service.title}</h1>
+                <h1 id="title" className="absolute text-3xl font-light opacity-100 text-center w-96">{service.title}</h1>
                 <div id="desc" className="opacity-0">
                   <h1 className="text-center text-2xl font-light">{service.title}</h1>
                   <p className="font-light text-sm text-center px-5 pt-2 textfont">{service.desc}</p>
