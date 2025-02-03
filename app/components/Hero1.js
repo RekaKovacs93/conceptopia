@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero1() {
   
   return (
-    <div className="min-h-screen w-screen flex flex-col items-center justify-center px-4">
+    <div className="min-h-screen  flex flex-col items-center justify-center px-4">
        {/* <Image
                 src="/bg.webp"
                 alt="Interior Photo"

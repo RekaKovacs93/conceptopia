@@ -39,7 +39,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className={`bg-dark fixed top-0 w-full z-10 transition-opacity duration-500 fade-in ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
+    <nav className={`bg-dark fixed top-0 w-full z-10 overflow-hidden transition-opacity duration-500 fade-in ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
       <div className="flex items-start justify-between px-10 md:px-8 py-3 md:py-6 font gradient-text">
       {/* <div > */}
       <Link href="/" className="font-bold text-xl">
@@ -94,14 +94,14 @@ export default function NavBar() {
               className="h-6 w-6 cursor-pointer"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="linear-gradient(45deg, rgba(98,94,235,1) 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%)"
+              stroke="white"
               onClick={toggleMenu}
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
           </label>
 
-          <div className={`menu fixed top-0 right-0 w-full h-full bg-white z-20 px-5 py-10 transform transition-transform ease-in-out duration-1600 ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'} ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
+          <div className={`menu fixed top-0 right-0 w-full h-full z-20 px-5 py-10 transform transition-transform ease-in-out duration-1600 ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'} ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
 
             <button onClick={closeMenu} className="fixed top-0 right-1 px-5 py-5 text-xs">X  Bezárás</button>
             <Link href="/#about" onClick={closeMenu} className="block pb-2 py-5 px-2 border-b">

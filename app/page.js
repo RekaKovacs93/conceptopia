@@ -58,7 +58,7 @@ export default function Home() {
           </defs>
         </svg>
 
-        <div id="home" className="w-full min-h-screen">
+        <div id="home" className=" min-h-screen">
           <Hero1 />
         </div>
         <div id="about" className="w-full min-h-screen gradient ">
@@ -70,9 +70,9 @@ export default function Home() {
         <div id="szolgaltatasok" className="w-full min-h-screen gradient">
           <Services />
         </div>
-        <div id="facts" className="w-full h-96 bg-dark">
+        {/* <div id="facts" className="w-full h-96 bg-dark">
           <Facts />
-        </div>
+        </div> */}
         <div id="contact" className="w-full min-h-screen gradient">
           <Contact />
         </div>

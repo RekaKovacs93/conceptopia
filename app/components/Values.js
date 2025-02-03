@@ -106,9 +106,9 @@ export default function Values() {
                         strokeWidth="5"
                     />
                 </svg>
-                <div className="w-96 pos flex flex-col justify-center items-center">
+                {/* <div className="w-96 pos flex flex-col justify-center items-center">
                     <h1 className="font gradient-text mb-2 text-3xl">Kapcsolat</h1>
-                </div>
+                </div> */}
             </div>
           </div>
           <div className="w-2/5">
