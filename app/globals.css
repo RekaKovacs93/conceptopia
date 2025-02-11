@@ -161,6 +161,20 @@ button {
   border: 2px solid rgba(28, 28, 28,1);
 }
 
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  
+  
+  z-index: 9999; /* Ensure dropdown is on top of other elements */
+}
+
+#szolgaltatas-link:hover .dropdown-menu {
+  display: block;
+}
+
 /* .dropdown-menu {
   display: none;
   position: absolute;

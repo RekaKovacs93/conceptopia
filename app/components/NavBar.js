@@ -59,16 +59,16 @@ export default function NavBar() {
           <Link href="/#about" className="block md:inline-block mt-4 md:mt-0">
             RÓLUNK
           </Link>
-          <span href="/#szolgaltatasok" className="group block md:inline-block mt-4 md:mt-0" id="video-link">
+          <span href="/#szolgaltatasok" className="group block md:inline-block mt-4 md:mt-0 overflow-visible w-52">
             SZOLGÁLTATÁSOK &#9660;
-            <div className="hidden group-hover:flex flex-col items-end right-0 mt-2 w-50 rounded-lg">
+            <div className="hidden group-hover:flex flex-col place-items-end mt-2 rounded-lg">
               {/* <div className="py-1"> */}
-                <a href="./grafika" className="block px-4 py-2 text-sm">GRAFIKA</a>
-                <a href="./fotozas" className="block px-4 py-2 text-sm">FOTÓZÁS</a>
-                <a href="./kozossegimediamenedzment" className="block px-4 py-2 text-sm">KÖZÖSSÉGI MÉDIA MENEDZSMENT</a>
-                <a href="./tartalomgyartas" className="block px-4 py-2 text-sm">TARTALOMGYÁRTÁS</a>
-                <a href="./mozgografika" className="block px-4 py-2 text-sm">MOZGÓGRAFIKA</a>
-                <a href="./webfejlesztes" className="block px-4 py-2 text-sm">WEBFEJLESZTÉS</a>
+                <a href="./grafika" className=" py-2 text-xs">GRAFIKA</a>
+                <a href="./fotozas" className=" py-2 text-xs">FOTÓZÁS</a>
+                <a href="./kozossegimediamenedzment" className=" py-2 text-xs text-right">KÖZÖSSÉGI MÉDIA MENEDZSMENT</a> 
+                <a href="./tartalomgyartas" className=" py-2 text-xs">TARTALOMGYÁRTÁS</a>
+                <a href="./mozgografika" className=" py-2 text-xs">MOZGÓGRAFIKA</a>
+                <a href="./webfejlesztes" className=" py-2 text-xs">WEBFEJLESZTÉS</a>
               {/* </div> */}
             </div>
           </span>
