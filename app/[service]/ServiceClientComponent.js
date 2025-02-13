@@ -23,11 +23,11 @@ export default function ServiceClientComponent({ service }) {
   }, []);
 
   return (
-    <main className="flex flex-col items-center bg-dark">
-      <div className="flex flex-col justify-center items-center mt-60 bg-dark">
+    <main className="flex flex-col items-center bg-dark ">
+      <div className="flex flex-col justify-center items-center mt-60 bg-dark min-h-screen">
           <h1 className="gradient-text text-center font text-4xl md:text-9xl mb-5">{service.title}</h1>
           <h1 className="font md:text-2xl text-lg text-center gradient-text mb-5">{service.slogan}</h1>
-          <p className="mx-40 font-light text-center pb-60">{service.desc}</p>
+          <p className="md:mx-40 mx-10 font-light text-center pb-60">{service.desc}</p>
         {/* <div className="flex flex-wrap gap-20 items-center justify-center px-20 gradient py-20">
           {service.features.map((feature, index) => (
             <div key={index} className="relative w-96 h-72 flex items-center justify-center bg-dark rounded-lg p-10">
@@ -45,15 +45,15 @@ export default function ServiceClientComponent({ service }) {
         <div className=" w-screen flex flex-wrap gap-5 items-center justify-center md:px-40 px-10 mb-20 pt-20 ">
        
                 {service.features.map((feature, index) => (            
-                    <div key={index} className="h-48 w-96 md:w-96 rounded-2xl">
+                    <div key={index} className="md:h-48 w-96 rounded-2xl">
 
                 {/* <Link href={`/${encodeURIComponent(service.url.toLowerCase())}`} passHref> */}
                 {/* <div className="w-full h-full hover:scale-125 flex flex-col items-center justify-center">
                 <h1 id="title" className="text-3xl font-light opacity-100 text-center">{service.title}</h1>
                 </div> */}
-                <div id="card" className=" w-full h-full flex flex-col items-center justify-center bg-dark rounded-2xl">
-                <h1 id="title" className="absolute text-3xl font-light opacity-100 text-center w-96">{feature.title}</h1>
-                <div id="desc" className="opacity-0">
+                <div id="card" className=" w-full h-full flex flex-col items-center justify-center bg-dark rounded-2xl py-10 md:py-0">
+                <h1 id="title" className="absolute text-3xl px-5 font-light md:opacity-100 opacity-0 text-center w-96">{feature.title}</h1>
+                <div id="desc" className="md:opacity-0 opacity-100">
                   <h1 className="text-center text-2xl font-light">{feature.title}</h1>
                   <p className="font-light text-sm text-center px-5 pt-2 textfont">{feature.desc}</p>
                 </div>

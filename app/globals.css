@@ -80,6 +80,14 @@ body {
   color: transparent;
 }
 
+@media (max-width: 768px) {
+  .gradient-text {
+    background: linear-gradient(160deg, rgba(98,94,235,1) 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%);    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+}
 .text-grad{
   background: linear-gradient(160deg, rgba(98,94,235,1) 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%);
   background-clip: text;

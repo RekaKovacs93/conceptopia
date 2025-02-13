@@ -233,9 +233,9 @@ export async function generateStaticParams() {
 //   }
 
   return (
-    <main className="flex flex-col items-center w-screen">
-      <div className="grainy-background min-h-screen">
-        <NavBar className="flex flex-col items-center z-20 overflow-x-clip" />
+    <main className="flex flex-col items-center w-screen min-h-screen">
+      <div className="grainy-background  overflow-x-clip">
+        <NavBar className="flex flex-col items-center z-20 " />
 
         <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
           <defs>

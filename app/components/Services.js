@@ -45,15 +45,15 @@ export default function Services (){
             </h1>
             <div className=" w-screen flex flex-wrap gap-5 items-center justify-center md:px-40 px-10 mb-20">
                 {services.map((service, index) => (            
-                    <div key={index} className="h-48 w-96 md:w-96 rounded-2xl">
+                    <div key={index} className="md:h-48 w-96 md:w-96 rounded-2xl ">
 
                 <Link href={`/${encodeURIComponent(service.url.toLowerCase())}`} passHref>
                 {/* <div className="w-full h-full hover:scale-125 flex flex-col items-center justify-center">
                 <h1 id="title" className="text-3xl font-light opacity-100 text-center">{service.title}</h1>
                 </div> */}
-                <div id="card" className=" w-full h-full flex flex-col items-center justify-center bg-dark rounded-2xl">
-                <h1 id="title" className="absolute text-3xl font-light opacity-100 text-center w-96">{service.title}</h1>
-                <div id="desc" className="opacity-0">
+                <div id="card" className=" w-full h-full flex flex-col items-center justify-center bg-dark rounded-2xl py-10 md:py-0">
+                <h1 id="title" className="absolute text-3xl font-light md:opacity-100 opacity-0 text-center w-96">{service.title}</h1>
+                <div id="desc" className="md:opacity-0 opacity-100">
                   <h1 className="text-center text-2xl font-light">{service.title}</h1>
                   <p className="font-light text-sm text-center px-5 pt-2 textfont">{service.desc}</p>
                 </div>
