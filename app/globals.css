@@ -175,17 +175,6 @@ button {
   display: block;
 }
 
-/* .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  right: 21%;
-  z-index: 9999; 
-
-#video-link:hover .dropdown-menu {
-  display: block;
-
-} */
 
 .marquee {
   width: 100%; /* Full width */
@@ -209,3 +198,4 @@ button {
     transform: translateX(-100%); /* Move off-screen to the left */
   }
 }
+

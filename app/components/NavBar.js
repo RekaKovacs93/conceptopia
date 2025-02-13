@@ -63,12 +63,12 @@ export default function NavBar() {
             SZOLGÁLTATÁSOK &#9660;
             <div className="hidden group-hover:flex flex-col place-items-end mt-2 rounded-lg">
               {/* <div className="py-1"> */}
-                <a href="./grafika" className=" py-2 text-xs">GRAFIKA</a>
-                <a href="./fotozas" className=" py-2 text-xs">FOTÓZÁS</a>
-                <a href="./kozossegimediamenedzment" className=" py-2 text-xs text-right">KÖZÖSSÉGI MÉDIA MENEDZSMENT</a> 
-                <a href="./tartalomgyartas" className=" py-2 text-xs">TARTALOMGYÁRTÁS</a>
-                <a href="./mozgografika" className=" py-2 text-xs">MOZGÓGRAFIKA</a>
-                <a href="./webfejlesztes" className=" py-2 text-xs">WEBFEJLESZTÉS</a>
+                <a href="./grafika" className=" py-1 text-xs">GRAFIKA</a>
+                <a href="./fotozas" className=" py-1 text-xs">FOTÓZÁS</a>
+                <a href="./kozossegimediamenedzsment" className=" py-1 text-xs text-right">KÖZÖSSÉGI MÉDIA MENEDZSMENT</a> 
+                <a href="./tartalomgyartas" className=" py-1 text-xs">TARTALOMGYÁRTÁS</a>
+                <a href="./mozgografika" className=" py-1 text-xs">MOZGÓGRAFIKA</a>
+                <a href="./webfejlesztes" className=" py-1 text-xs">WEBFEJLESZTÉS</a>
               {/* </div> */}
             </div>
           </span>

@@ -23,12 +23,12 @@ export default function ServiceClientComponent({ service }) {
   }, []);
 
   return (
-    <main className="flex flex-col items-center ">
+    <main className="flex flex-col items-center bg-dark">
       <div className="flex flex-col justify-center items-center mt-60 bg-dark">
-          <h1 className="gradient-text font text-9xl mb-5">{service.title}</h1>
-          <h1 className="font md:text-2xl text-lg text-center md:gradient-text text-grad mb-5">{service.slogan}</h1>
+          <h1 className="gradient-text text-center font text-4xl md:text-9xl mb-5">{service.title}</h1>
+          <h1 className="font md:text-2xl text-lg text-center gradient-text mb-5">{service.slogan}</h1>
           <p className="mx-40 font-light text-center pb-60">{service.desc}</p>
-        <div className="flex flex-wrap gap-20 items-center justify-center px-20 gradient py-20">
+        {/* <div className="flex flex-wrap gap-20 items-center justify-center px-20 gradient py-20">
           {service.features.map((feature, index) => (
             <div key={index} className="relative w-96 h-72 flex items-center justify-center bg-dark rounded-lg p-10">
               <div className="relative z-10 flex flex-col items-center justify-center text-center">
@@ -39,7 +39,31 @@ export default function ServiceClientComponent({ service }) {
               </div>
             </div>
           ))}
-        </div> 
+        </div>  */}
+        <div className="gradient text-3xl text-center font py-20">
+        <h1>Miért fontos a professzionális {service.title} a vállalkozásod számára?</h1>
+        <div className=" w-screen flex flex-wrap gap-5 items-center justify-center md:px-40 px-10 mb-20 pt-20 ">
+       
+                {service.features.map((feature, index) => (            
+                    <div key={index} className="h-48 w-96 md:w-96 rounded-2xl">
+
+                {/* <Link href={`/${encodeURIComponent(service.url.toLowerCase())}`} passHref> */}
+                {/* <div className="w-full h-full hover:scale-125 flex flex-col items-center justify-center">
+                <h1 id="title" className="text-3xl font-light opacity-100 text-center">{service.title}</h1>
+                </div> */}
+                <div id="card" className=" w-full h-full flex flex-col items-center justify-center bg-dark rounded-2xl">
+                <h1 id="title" className="absolute text-3xl font-light opacity-100 text-center w-96">{feature.title}</h1>
+                <div id="desc" className="opacity-0">
+                  <h1 className="text-center text-2xl font-light">{feature.title}</h1>
+                  <p className="font-light text-sm text-center px-5 pt-2 textfont">{feature.desc}</p>
+                </div>
+                </div>
+                {/* </Link> */}
+          </div>
+
+        ))}
+        </div>
+        </div>
       </div>
     </main>
   );

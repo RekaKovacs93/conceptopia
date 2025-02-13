@@ -3,6 +3,8 @@ import Animation from '../components/Animation';
 import NavBar from '../components/NavBar'
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Hiba404 from '../components/Hiba404';
+import Timeline from '../components/Timeline';
 
 
 // Define services array
@@ -214,7 +216,12 @@ export async function generateStaticParams() {
     );
   
     if (!foundService) {
-      return <div>Service not found</div>;
+      return <div className="min-h-screen  flex flex-col items-center justify-center px-4">
+
+     <Hiba404/>
+    
+     
+   </div>;
     }  
   
 //     return (
@@ -228,7 +235,7 @@ export async function generateStaticParams() {
   return (
     <main className="flex flex-col items-center w-screen">
       <div className="grainy-background min-h-screen">
-        <NavBar className="flex flex-col items-center z-20" />
+        <NavBar className="flex flex-col items-center z-20 overflow-x-clip" />
 
         <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -251,11 +258,14 @@ export async function generateStaticParams() {
         </svg>
 
         
-        <div  className="bg-dark">
+        <div  className=" gradient">
             <ServiceClientComponent service={foundService} />
         </div>
-        <div  className="bg-dark">
+        {/* <div  className="bg-dark">
             <Animation />
+        </div> */}
+        <div>
+            <Timeline/>
         </div>
         <div id="contact" className="h-screen gradient">
             <Contact />
