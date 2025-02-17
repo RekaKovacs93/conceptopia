@@ -248,7 +248,7 @@ const services = [
                 desc:"Ha bármi nem felel meg teljes mértékben az elvárásaidnak, biztosítok egy alkalmat a tartalom módosítására díjmentesen, hogy teljesen elégedett legyél."
             },
             {
-                title:"Kész tartalmak átadása és rugalmas együttműködés",
+                title:"Kész tartalmak átadása",
                 desc:"A fejlesztési folyamat végén alapos tesztelést végzünk, hogy minden zökkenőmentesen működjön, majd élesben is elindítjuk a weboldalt."
             },
             {
