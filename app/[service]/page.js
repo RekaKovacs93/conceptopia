@@ -1,7 +1,7 @@
 import ServiceClientComponent from './ServiceClientComponent';
 import Animation from '../components/Animation';
 import NavBar from '../components/NavBar'
-import Contact from "../components/Contact";
+import ContactService from "../components/ContactService";
 import Footer from "../components/Footer";
 import Hiba404 from '../components/Hiba404';
 import Timeline from '../components/Timeline';
@@ -12,40 +12,72 @@ const services = [
     {   title: "Grafika",
         slogan: "Vállalkozásod vizuális sikere",
         url: "Grafika",
-        desc: "A grafikai tervezés nem csupán esztétika – ez a vállalkozásod vizuális identitása, amely segít a közönséged figyelmének felkeltésében és a márkád üzenetének hatékony kommunikálásában.",
+        desc: "A grafika az egyik legerősebb eszköz, amivel kapcsolatot teremthetsz a közönségeddel. Érzelmeket kelt, kapcsolatot teremt, és segít megmutatni, hogy ki vagy, mit képviselsz, és miért érdemes veled dolgozni. A jól megtervezett vizuális anyagok képesek felkelteni a figyelmet, bizalmat építeni és tartós hatást elérni. Ha erős a vizuális identitásod, az nemcsak vonzóvá tesz, hanem kiemel a versenytársaid közül.",
         features: [
         {
-            title: "Vizuális identitás",
-            desc: "Erős és következetes vizuális megjelenés kialakítása, amely megkülönböztet a versenytársaktól."
+            title: "Vizuális identitás, ami kitűnik",
+            desc: "Egy erős arculat nemcsak megkülönböztet a versenytársaktól, de meg is győzi a közönséget, hogy téged válasszanak. Egy letisztult, átgondolt vizuális nyelv egyértelmű üzenetet közvetít: itt egy megbízható, profi márka van a háttérben."
         },
         {
-            title: "Kreatív kommunikáció",
-            desc: "A megfelelő grafikai elemek segítségével hatékonyabban közvetítheted a márkád üzenetét és értékeit."
+            title: "Egyedi és stratégiai branding",
+            desc: "A logótól kezdve a színvilágig minden grafikai elem azt kommunikálja, hogy ki vagy és mit képviselsz. Mi nem sablonokban gondolkodunk – az arculatod minden részletét a márkád céljaira és üzenetére szabjuk."
         },
         {
-            title: "Ügyfélélmény fokozása",
-            desc: "A jól megtervezett grafikai anyagok hozzájárulnak a pozitív vásárlói élményhez, erősítve a márkához való kötődést."
+            title: "Erős első benyomás",
+            desc: "Az emberek másodpercek alatt eldöntik, hogy egy márka számukra szimpatikus-e. Egy jól megtervezett vizuális világ azonnal bizalmat épít, és segít abban, hogy a közönséged emlékezzen rád."
         },
         {
-            title: "Rugalmasság és sokszínűség",
-            desc: "Dizájn megoldásaink különböző platformokhoz és kampányokhoz igazíthatók, hogy mindig a legjobbat nyújthassuk"
+            title: "Platformokon átívelő megoldások",
+            desc: "Legyen szó közösségi média grafikákról, weboldal dizájnról, nyomtatott anyagokról vagy csomagolástervezésről, a grafikai anyagaink minden csatornán megállják a helyüket."
         },
         {
-            title: "Professzionális megjelenés",
-            desc: "A minőségi anyagok növelik a márkád hitelességét és vonzerejét."
+            title: "Ügyfélélmény növelése",
+            desc: "A minőségiEgy harmonikus vizuális megjelenés nemcsak szebb, hanem élvezetesebb is az ügyfelek számára. Ez növeli a márkád iránti elköteleződést, és pozitív élményt nyújt a vásárlóidnak. anyagok növelik a márkád hitelességét és vonzerejét."
         },
 
-        ]
+        ],
+        timeline: [
+            {
+                title:"Ingyenes konzultáció",
+                desc:"Meghallgatjuk az elképzeléseidet, és közösen feltérképezzük, hogy mire van szüksége a márkádnak."
+            },
+            {
+                title:"Stratégiai tervezés",
+                desc:"Az arculatod nemcsak szép lesz, hanem funkcionális is – minden elem mögött egy átgondolt stratégia áll."
+            },
+            {
+                title:"Egyedi dizájn",
+                desc:"Az anyagok mindig a te márkádról szólnak – nem készítünk semmit sablonokból."
+            },
+            {
+                title:"Finomhangolás és tesztelés",
+                desc:"Minden grafikai anyagot tesztelünk, hogy tökéletesen illeszkedjen a céljaidhoz és platformjaidhoz."
+            },
+            {
+                title:"Kész tartalmak átadása és rugalmas együttműködés",
+                desc:"A fejlesztési folyamat végén alapos tesztelést végzünk, hogy minden zökkenőmentesen működjön, majd élesben is elindítjuk a weboldalt."
+            },
+            {
+                title:"Optimalizálás",
+                desc:"Az eredmények alapján finomítunk, hogy a grafikai elemeid mindig a legjobban teljesítsenek."
+            },
+        ],
+        kapcsolat: 
+            {
+            title: "NINCS SZLOGEN",
+            text: "Foglalj egy ingyenes konzultációt, és nézzük meg, hogyan tehetjük a vizuális kommunikációdat igazán ütőssé!"  
+            }
+        
     },
     { 
         title: "Fotózás",
         slogan:"A márkád vizuális történetének megörökítése",
         url: "Fotozas",
-        desc: "A fotózás nem csupán képek készítése; ez a márkád vizuális történetének megörökítése, amely segít kifejezni az értékeidet és elérni a közönségedet. A professzionális fényképezés kulcsfontosságú a márkád hitelességének és vonzerejének növelésében.",
+        desc: "A márkád vizuális történetének megörökítése segít kifejezni az értékeidet és elérni a közönségedet. A professzionális fényképezés kulcsfontosságú a márkád hitelességének és vonzerejének növelésében.",
         features: [
             {
-                title: "Első benyomás",
-                desc: "Az emberek először a képeket látják. A professzionális fotók segítenek abban, hogy pozitív első benyomást keltsenek, ami elengedhetetlen a potenciális vásárlók figyelmének felkeltéséhez."
+                title: "Rugalmasság és különleges pillanatok",
+                desc: "A professzionális fotók segítenek megörökíteni azokat a pillanatokat, amelyek a legjobban képviselik vállalkozásodat. Ezek a képek nem csupán esztétikusak, hanem hitelesek is, így az emberek könnyen kapcsolódhatnak hozzájuk."
             },
             {
                 title: "Márkaidentitás",
@@ -68,33 +100,112 @@ const services = [
                 desc: "A minőségi fotók nemcsak vonzóbbá teszik a termékeidet, hanem növelik a vásárlási konverziókat is. A vásárlók nagyobb valószínűséggel vásárolnak olyan termékekből, amelyeket részletes, profi fotók kísérnek. Az online vásárlás során a képek segítenek a termékek valósághű bemutatásában, csökkentve ezzel a vásárlási kockázat érzését."
             },
         
-        ]
-    },
-    { 
-        title: "Mozgógrafika",
-        slogan:"A figyelem megragadásának művészete",
-        url: "Mozgografika",
-        desc: "A közösségi média és az online marketing világában a statikus tartalmak már nem mindig elegendőek ahhoz, hogy igazán kitűnj. Professzionális mozgó grafikákkal segítünk kiemelkedni a digitális zajból. Legyen szó logó animációról vagy közösségi média tartalmakról, az egyedi és kreatív megoldásokban gondolkodunk. Célunk, hogy a mozgó grafika hatékonyan közvetítse az üzenetedet, miközben a néző figyelmét is magával ragadja, ezáltal erősítve a márkád online jelenlétét.",
-        features: [
+        ],
+        timeline: [
             {
-                title: "Azonnal leköti a figyelmet",
-                desc: "Az emberek gyorsan görgetnek, de egy mozgó elem megállítja őket. A mozgógrafika vizuálisan izgalmas és könnyen emészthető, így nagyobb eséllyel éred el a célközönségedet."
+                title:"Konzultáció és igényfelmérés",
+                desc:"Személyre szabott konzultáció során feltérképezzük a fotózással kapcsolatos elképzeléseidet és céljaidat. Ez lehetőséget ad arra, hogy a legjobban megértsük, hogyan tudunk a legjobban segíteni neked."
             },
             {
-                title: "Egyszerű bemutatás",
-                desc: "Egy jól megtervezett animáció pillanatok alatt képes bemutatni egy termék működését, egy szolgáltatás előnyeit vagy egy márka történetét."
+                title:"Stratégiai tervezés",
+                desc:"A megbeszéltek alapján kidolgozzuk a fotózási stratégiát, amely figyelembe veszi a márkád identitását és a célcsoportod igényeit. Itt figyelembe vesszük a stílust, a hangulatot és a képek üzenetét."
             },
             {
-                title: "Erősíti a márkaidentitást",
-                desc: "A megfelelő színek, formák és mozgásvilág révén a márkád felismerhetőbbé válik."
+                title:"Helyszín kiválasztása",
+                desc:"A megfelelő környezet kiválasztása kulcsfontosságú a hatékony fotózáshoz. Segítünk megtalálni a legjobb helyszíneket, legyen szó stúdióról vagy szabadtéri helyszínekről, hogy a képek igazán egyediek és vonzóak legyenek."
             },
             {
-                title: "Növeli az elköteleződést",
-                desc: "A videók és animációk nagyobb elérést és interakciót generálnak, mint a statikus képek, így segítenek növelni a közönséged aktivitását."
+                title:"Fotózás lebonyolítása",
+                desc:"Tapasztalt fotósunk megörökíti a legjobb pillanatokat, figyelmet fordítva a részletekre és az esztétikai szempontokra. A professzionális felszerelés garantálja a magas minőséget, amely a márkád vizuális identitását erősíti."
+            },
+            {
+                title:"Képszerkesztés",
+                desc:"A fotózás után a képek utómunkálatai következnek, ahol a legjobb eredmény érdekében finomítjuk a felvételeket. A professzionális képszerkesztés segít abban, hogy a képek valóban kitűnjenek a tömegből."
+            },
+            {
+                title:"Eredmények átadása",
+                desc:"Az elkészült, véglegesített képeket átadjuk neked, kísérőanyagokkal, amelyek segítenek a felhasználásukban. A képek készen állnak arra, hogy felhasználhasd őket a weboldaladon, a közösségi média csatornáidon, és egyéb marketing anyagaidban."
+            },
+        ],
+        kapcsolat: 
+            {
+            title: "Szeretnéd, ha a márkád vizuálisan is kiemelkedne a tömegből?",
+            text: "Tudd meg, hogyan segíthetünk professzionális fotóinkkal a márkád történetének elmesélésében és a közönséged megszólításában. Foglalj egy ingyenes konzultációt, és beszéljük át, hogyan készíthetünk olyan képeket, amelyek valóban tükrözik a márkád egyedi értékeit!"  
             }
         
-        ]
     },
+    {
+        title: "Webfejlesztés",
+        url: "Webfejlesztes",
+        desc: "A weboldal nem csupán egy online jelenlét – ez a vállalkozásod digitális otthona, ahol a potenciális vásárlóid az első benyomást alkotják rólad. Egy professzionálisan megtervezett és felépített weboldal egyben vonzó és működőképes,, segítve a céged növekedését és elérhetőségeinek bővítését.",
+        features: [
+            {
+                title: "Első benyomás",
+                desc: "Az online térben a weboldalad az első benyomás, amit a potenciális vásárlók a márkáddal kapcsolatban szereznek. Egy modern, jól megtervezett weboldal nemcsak vonzó, hanem a vállalkozásod hitelességét is erősíti, így biztosítva, hogy a látogatók hosszabb ideig maradjanak."
+            },
+            {
+                title: "Felhasználóbarát élmény",
+                desc: "Egy jól felépített weboldal egyben szép és könnyen navigálható is. A felhasználói élmény (UX) javítása azt jelenti, hogy a látogatók könnyen megtalálják, amit keresnek, és szívesen visszatérnek."
+            },
+            {
+                title: "Reszponzív dizájn",
+                desc: "Ma már elengedhetetlen, hogy a weboldalad minden eszközön – okostelefonon, tableten, asztali gépen – is tökéletesen működjön. A reszponzív dizájn biztosítja, hogy bárhol, bármikor elérhető legyél."
+            },
+            {
+                title: "Márkaépítés",
+                desc: "A weboldalad a márkád digitális reprezentációja. Az egységes vizuális megjelenés és a márkád üzenetével összhangban lévő tartalom segít a vásárlók bizalmának megnyerésében, miközben erősíti a márkaidentitásodat."
+            },
+            {
+                title: "Webshop és online vásárlás",
+                desc: "Ha termékeket árulsz online, a weboldalad kulcsfontosságú a vásárlások lebonyolításában. Az intuitív, biztonságos és gyors vásárlási élmény növeli a konverziós arányokat és a vásárlók elégedettségét."
+            },
+            {
+                title: "Adatgyűjtés és elemzés",
+                desc: "A weboldal lehetőséget biztosít a látogatói adatok gyűjtésére, amelyek segítségével jobban megértheted a közönséged igényeit. Az elemzések révén optimalizálhatod a marketingstratégiáidat, és így hatékonyabban célozhatod meg a potenciális ügyfeleket."
+            },
+            {
+                title: "Versenyelőny",
+                desc: "A megfelelő weboldal kiemel a versenytársaid közül. A kreatív dizájn és a felhasználóbarát funkciók nemcsak a látogatók számát növelik, hanem azok elköteleződését is, ami hosszú távú előnyöket biztosít a vállalkozásod számára."
+            },
+            {
+                title: "Személyre szabott megoldások",
+                desc: "Az egyedi fejlesztés lehetővé teszi, hogy teljes mértékben a saját igényeidre szabhasd a weboldaladat, míg a WordPress gyors és rugalmas megoldást kínál, amely lehetővé teszi, hogy gyorsan elindulj, és bármikor bővítsd a weboldalad funkcióit."
+            },
+        
+        ],
+        timeline: [
+            {
+                title:"Konzultáció és igényfelmérés",
+                desc:"Az első lépés a közös munka során egy személyre szabott konzultáció, ahol feltérképezzük a vállalkozásod digitális igényeit és céljait. Itt megbeszéljük, hogyan tudunk segíteni a sikeres weboldal kialakításában."
+            },
+            {
+                title:"Stratégiai tervezés",
+                desc:"Az igényeid alapján kidolgozzuk a weboldal fejlesztésének stratégiáját, figyelembe véve a versenytársakat, a célcsoportot és a piaci trendeket."
+            },
+            {
+                title:"Design és fejlesztés",
+                desc:"A tervezési fázis után csapatunk megalkotja a weboldal dizájnját és felépítését, miközben ügyelünk arra, hogy a dizájn és a funkcionalitás tökéletesen illeszkedjen a márkádhoz."
+            },
+            {
+                title:"Reszponzív megoldás",
+                desc:"Gondoskodunk arról, hogy az elkészült weblap minden eszközön tökéletesen működjön"
+            },
+            {
+                title:"Tesztelés és indítás",
+                desc:"A fejlesztési folyamat végén alapos tesztelést végzünk, hogy minden zökkenőmentesen működjön, majd élesben is elindítjuk a weboldalt."
+            },
+            {
+                title:"Eredmények mérése és finomhangolás",
+                desc:"A weboldal elindítása után folyamatosan nyomon követjük a teljesítményt, és ha szükséges, finomhangoljuk a stratégiát a legjobb eredmények érdekében."
+            },
+        ],
+        kapcsolat: 
+            {
+            title: "IDE KENE SZLOGEN",
+            text: "Ha készen állsz arra, hogy a vállalkozásod számára egyedi és eredményorientált weboldalt építsünk, kérj tőlünk ingyenes konzultációt, és tudd meg, hogyan segíthetünk a sikeres digitális jelenlét kialakításában!"  
+            }
+        
+        },
     { 
         title: "Tartalomgyártás",
         slogan:"Segítünk, hogy a márkád szóhoz jusson",
@@ -118,7 +229,39 @@ const services = [
                 desc: "A kreatív tartalom tartalom nemcsak arról szól, hogy elmondod, mit csinálsz, hanem arról is, hogy interakcióba lépsz a közönségeddel, reagálsz a kérdéseikre, és építed a bizalmat."
             }
         
-        ]
+        ],
+        timeline: [
+            {
+                title:"Konzultáció és igényfelmérés",
+                desc:"Az első lépés a közös munka során egy személyre szabott konzultáció, ahol meghatározzuk a céljaidat és a márkádhoz legjobban illeszkedő tartalomformátumokat. Megbeszéljük, hogy milyen típusú tartalom segíthet leginkább elérni a kívánt hatást."
+            },
+            {
+                title:"Stratégiai tervezés",
+                desc:"Az igényeid és céljaid alapján kidolgozzuk a tartalomgyártás stratégiáját. A tartalom tervezése során figyelembe vesszük a trendeket, a célcsoportot és a legújabb közösségi média algoritmusokat."
+            },
+            {
+                title:"Kreatív tartalomkészítés",
+                desc:"Az előzetes tervek és egyeztetések alapján elkészítem a szükséges tartalmakat – legyen szó videós (Reels) vagy képes anyagról. A tartalmak a vállalkozásod arculatához és céljaihoz illeszkedve készülnek el, és mindig arra törekszem, hogy a legjobb minőséget biztosítsam."
+            },
+            {
+                title:"Díjmentes javítás",
+                desc:"Ha bármi nem felel meg teljes mértékben az elvárásaidnak, biztosítok egy alkalmat a tartalom módosítására díjmentesen, hogy teljesen elégedett legyél."
+            },
+            {
+                title:"Kész tartalmak átadása és rugalmas együttműködés",
+                desc:"A fejlesztési folyamat végén alapos tesztelést végzünk, hogy minden zökkenőmentesen működjön, majd élesben is elindítjuk a weboldalt."
+            },
+            {
+                title:"Eredmények mérése és finomhangolás",
+                desc:"A weboldal elindítása után folyamatosan nyomon követjük a teljesítményt, és ha szükséges, finomhangoljuk a stratégiát a legjobb eredmények érdekében."
+            },
+        ],
+        kapcsolat: 
+            {
+            title: "Szeretnéd, ha a tartalom, amit készítesz, valóban megszólítaná a közönséged?",
+            text: "Tudd meg, hogyan segíthetünk a márkád hatékonyabb kommunikációjában – foglalj egy ingyenes konzultációt!"  
+            }
+        
     },
     {
         title: "Közösségi média menedzsment", 
@@ -152,48 +295,99 @@ const services = [
                 desc: "Rendszeresen megosztjuk veled az eredményeket, hogy lásd, hogyan segítik a céljaidat a közösségi oldalaid."
             }
         
-        ] 
+        ],
+        timeline: [
+            {
+                title:"EZT MEG KELL IRNI MEG",
+                desc:"Az első lépés a közös munka során egy személyre szabott konzultáció, ahol feltérképezzük a vállalkozásod digitális igényeit és céljait. Itt megbeszéljük, hogyan tudunk segíteni a sikeres weboldal kialakításában."
+            },
+            {
+                title:"Stratégiai tervezés",
+                desc:"Az igényeid alapján kidolgozzuk a weboldal fejlesztésének stratégiáját, figyelembe véve a versenytársakat, a célcsoportot és a piaci trendeket."
+            },
+            {
+                title:"Design és fejlesztés",
+                desc:"A tervezési fázis után csapatunk megalkotja a weboldal dizájnját és felépítését, miközben ügyelünk arra, hogy a dizájn és a funkcionalitás tökéletesen illeszkedjen a márkádhoz."
+            },
+            {
+                title:"Reszponzív megoldás",
+                desc:"Gondoskodunk arról, hogy az elkészült weblap minden eszközön tökéletesen működjön"
+            },
+            {
+                title:"Tesztelés és indítás",
+                desc:"A fejlesztési folyamat végén alapos tesztelést végzünk, hogy minden zökkenőmentesen működjön, majd élesben is elindítjuk a weboldalt."
+            },
+            {
+                title:"Eredmények mérése és finomhangolás",
+                desc:"A weboldal elindítása után folyamatosan nyomon követjük a teljesítményt, és ha szükséges, finomhangoljuk a stratégiát a legjobb eredmények érdekében."
+            },
+        ],
+        kapcsolat: 
+            {
+            title: "NINCS SZLOGEN",
+            text: "Tudd meg, hogyan segíthetünk a márkád hatékonyabb kommunikációjában – foglalj egy ingyenes konzultációt!"  
+            }
+        
     },
-    {
-        title: "Webfejlesztés",
-        url: "Webfejlesztes",
-        desc: "A modern üzleti világban  weboldalad az egyik legfontosabb eleme vállalkozásodnak. Ez nem csupán egy online bemutatkozás, hanem a digitális arculatod, amely számos előnnyel jár.",
+    
+    { 
+        title: "Mozgógrafika",
+        slogan:"A figyelem megragadásának művészete",
+        url: "Mozgografika",
+        desc: "A közösségi média és az online marketing világában a statikus tartalmak már nem mindig elegendőek ahhoz, hogy igazán kitűnj. Professzionális mozgó grafikákkal segítünk kiemelkedni a digitális zajból. Legyen szó logó animációról vagy közösségi média tartalmakról, az egyedi és kreatív megoldásokban gondolkodunk. Célunk, hogy a mozgó grafika hatékonyan közvetítse az üzenetedet, miközben a néző figyelmét is magával ragadja, ezáltal erősítve a márkád online jelenlétét.",
         features: [
             {
-                title: "Elérhetőség és láthatóság",
-                desc: "A weboldalad segítségével 24/7 elérhetővé válhatsz az ügyfeleid számára. A potenciális vásárlók könnyen rátalálnak a vállalkozásodra, ami növeli a forgalmadat és a bevételeidet."
+                title: "Azonnal leköti a figyelmet",
+                desc: "Az emberek gyorsan görgetnek, de egy mozgó elem megállítja őket. A mozgógrafika vizuálisan izgalmas és könnyen emészthető, így nagyobb eséllyel éred el a célközönségedet."
             },
             {
-                title: "Márkaépítés és hitelesség",
-                desc: "Egy professzionálisan megtervezett weboldal erősíti a márkádat és bizalmat ébreszt a potenciális ügyfelekben. Az online jelenlét nélkülözhetetlen ahhoz, hogy a vállalkozásod megbízhatónak és elérhetőnek tűnjön."
+                title: "Egyszerű bemutatás",
+                desc: "Egy jól megtervezett animáció pillanatok alatt képes bemutatni egy termék működését, egy szolgáltatás előnyeit vagy egy márka történetét."
             },
             {
-                title: "Ügyfélkapcsolatok és kommunikáció",
-                desc: "A weboldal lehetőséget biztosít arra, hogy közvetlen kapcsolatot építs ki az ügyfeleiddel. Az online kapcsolatfelvételi űrlapok, hírlevél feliratkozások és chat funkciók mind segítenek abban, hogy a látogatók könnyen elérjenek téged."
+                title: "Erősíti a márkaidentitást",
+                desc: "A megfelelő színek, formák és mozgásvilág révén a márkád felismerhetőbbé válik."
             },
             {
-                title: "Marketing és értékesítés",
-                desc: "A weboldalad nem csupán egy információs platform; ez az értékesítési csatornád is. Integrálhatod a közösségi média kampányaidat, SEO technikákat, és online boltodat is, hogy maximalizáld az eladásokat."
-            },
-            {
-                title: "Adatgyűjtés és elemzés",
-                desc: "A weboldal lehetőséget biztosít a látogatói adatok gyűjtésére, amelyek segítségével jobban megértheted a közönséged igényeit. Az elemzések révén optimalizálhatod a marketingstratégiáidat, és így hatékonyabban célozhatod meg a potenciális ügyfeleket."
-            },
-            {
-                title: "Versenyelőny",
-                desc: "A megfelelő weboldal kiemel a versenytársaid közül. A kreatív dizájn és a felhasználóbarát funkciók nemcsak a látogatók számát növelik, hanem azok elköteleződését is, ami hosszú távú előnyöket biztosít a vállalkozásod számára."
-            },
-            {
-                title: "Rugalmasság és alkalmazkodás",
-                desc: "A weboldal könnyen frissíthető és bővíthető, így mindig naprakész maradhatsz. Legyen szó új termékekről, szolgáltatásokról vagy eseményekről, egy weboldal segítségével gyorsan és egyszerűen kommunikálhatsz a változásokról."
-            },
-            {
-                title: "Személyre szabott megoldások",
-                desc: "Az egyedi fejlesztés lehetővé teszi, hogy teljes mértékben a saját igényeidre szabhasd a weboldaladat, míg a WordPress gyors és rugalmas megoldást kínál, amely lehetővé teszi, hogy gyorsan elindulj, és bármikor bővítsd a weboldalad funkcióit."
-            },
+                title: "Növeli az elköteleződést",
+                desc: "A videók és animációk nagyobb elérést és interakciót generálnak, mint a statikus képek, így segítenek növelni a közönséged aktivitását."
+            }
         
-        ]  
+        ],
+        timeline: [
+            {
+                title:"Konzultáció és igényfelmérés",
+                desc:"Megismerjük a céljaidat, a márkád arculatát és a kívánt üzenetet. Átbeszéljük, milyen típusú mozgógrafikára van szükséged, hogy a lehető legjobban illeszkedjen a stratégiádhoz."
+            },
+            {
+                title:"Stratégiai tervezés",
+                desc:"Az igényeid alapján kidolgozzuk a koncepciót. Meghatározzuk a vizuális stílust, az animáció dinamikáját és a kulcselemeket, hogy a végeredmény hatékony és figyelemfelkeltő legyen."
+            },
+            {
+                title:"Látványterv és storyboard",
+                desc:"A projekt méretétől függően előzetes terveket készítünk, hogy már a kezdetektől lásd, hogyan fog kinézni és működni az animációd. Ez biztosítja, hogy az animáció minden részlete a márkáddal és az üzeneteddel összhangban legyen."
+            },
+            {
+                title:"Animáció elkészítése",
+                desc:"Ezen a ponton kel életre a mozgógrafika. A látványterveket mozgásba hozzuk, finomhangoljuk az átmeneteket, és szükség esetén szöveget, ikonokat vagy egyéb vizuális elemeket is beépítünk."
+            },
+            {
+                title:"Hang és finomhangolás",
+                desc:"Ha szükséges, zenei aláfestést, narrációt vagy hangeffekteket adunk az animációhoz. Az utolsó simításokat követően átnézzük és véglegesítjük a videót."
+            },
+            {
+                title:"Eredmények átadása",
+                desc:"A kész animációt a kívánt formátumban és méretben kapod meg, hogy gond nélkül felhasználhasd a weboldaladon, közösségi médiában vagy hirdetéseidben. A teljes folyamat során végig figyelünk arra, hogy az animáció ne csak látványos legyen, hanem valódi értéket is teremtsen a márkád számára."
+            },
+        ],
+        kapcsolat: 
+            {
+            title: "Szeretnéd, ha a márkád üzenete ne csak elérné a közönséged, hanem igazán meg is maradna bennük?",
+            text: "Tudd meg, hogyan segíthetünk dinamikus, figyelemfelkeltő mozgógrafikákkal elérni a közönséged! Foglalj egy ingyenes konzultációt, és beszéljük át, milyen animációk segíthetik a márkád növekedését!"  
+            }
+        
     }
+    
     
 ];
 
@@ -265,10 +459,10 @@ export async function generateStaticParams() {
             <Animation />
         </div> */}
         <div>
-            <Timeline/>
+            <Timeline service={foundService}/>
         </div>
-        <div id="contact" className="h-screen gradient">
-            <Contact />
+        <div id="contact" className="min-h-screen gradient">
+            <ContactService service={foundService} />
         </div>
         <div id="footer" className="w-full bg-dark">
             <Footer />
