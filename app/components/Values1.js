@@ -30,7 +30,7 @@ export default function Values1() {
   
     return (
       <div className="h-screen w-screen flex flex-col items-center justify-center">
-        <h1 className="font text-4xl text-center gradient-text mb-36">
+        <h1 className="font text-4xl text-center gradient-text mb-10">
           Kiemelt értékeink
         </h1>
         <div className="flex items-center justify-center gap-4">

@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react';
 import Hero1 from './components/Hero1'
 import About from './components/About'
+import About1 from './components/About1'
+import Mireszamit from './components/Mireszamit';
 import NavBar from './components/NavBar'
 import Services from './components/Services';
 import Values1 from './components/Values1';
@@ -63,6 +65,12 @@ export default function Home() {
         </div>
         <div id="about" className="w-full min-h-screen gradient ">
           <About />
+        </div>
+        <div id="about" className="w-full min-h-screen  ">
+          <About1 />
+        </div>
+        <div id="about" className="w-full min-h-screen gradient ">
+          <Mireszamit />
         </div>
         <div id="values" className="w-full min-h-screen bg-dark">
           <Values1 />
