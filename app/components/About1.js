@@ -21,13 +21,12 @@ export default function About() {
                     {/* <h1 className="font text-2xl md:text-6xl text-dark">
                     Rólad
                     </h1> */}
-                
-                    <h1 className=" text-light rounded-lg p-5  ">
-                A Conceptopia Kreatív Ügynökség azért jött létre, hogy segítsen neked átugrani ezeket az akadályokat, és lehetővé tegye, hogy kiaknázhasd vállalkozásod valódi potenciálját. A kreatív feladatok sokszorosára nőnek a növekedéssel, és ebben kulcsfontosságú, hogy egy profi csapat támogasson. Mi a tervezéstől a kivitelezésig mindent elvégezünk, hogy erősítsük a márkád jelenlétét. Eközben gondoskodunk arról is, hogy mindezt költséghatékony módon valósíthasd meg, így te nyugodtan a növekedésre összpontosíthatsz. Mi minden másról gondoskodunk, hogy sikeresen építhesd a jövődet.
-                </h1>
-                <h1 className="font text-2xl md:text-6xl gradient-text">
+                    <h1 className="font text-4xl  gradient-text">
                     Rólunk
                     </h1>
+                    <h1 className=" text-light p-5 text-xl">
+                    A Conceptopia Kreatív Ügynökség azért jött létre, hogy segítsen neked átugrani ezeket az akadályokat, és lehetővé tegye, hogy kiaknázhasd vállalkozásod valódi potenciálját. A kreatív feladatok sokszorosára nőnek a növekedéssel, és ebben kulcsfontosságú, hogy egy profi csapat támogasson. A tervezéstől a kivitelezésig mindent elvégezünk, hogy erősítsük a márkád jelenlétét. Nem csak szolgáltatásokat kínálunk – teljes körű megoldásokat biztosítunk a vállalkozásod számára. Mivel számodra a leghatékonyabb megoldás a legfontosabb, az együttműködés mindig személyre szabott, és egy igazi közös munkán alapul. Az őszinte kommunikáció, a folyamatos fejlődés és a teljes mértékű szakmai és emberi hozzájárulás mind a te sikeredért van. Eközben gondoskodunk arról is, hogy mindezt költséghatékony módon valósíthasd meg, így te nyugodtan a növekedésre összpontosíthatsz. Mi minden másról gondoskodunk, hogy sikeresen építhesd a jövődet.                     </h1>
+                
                       </div>
                 {/* <div className="flex flex-col ">
                     <h1 className="font text-2xl md:text-6xl text-dark">

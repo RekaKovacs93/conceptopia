@@ -32,7 +32,7 @@ const services = [
         },
         {
             title: "Ügyfélélmény növelése",
-            desc: "A minőségiEgy harmonikus vizuális megjelenés nemcsak szebb, hanem élvezetesebb is az ügyfelek számára. Ez növeli a márkád iránti elköteleződést, és pozitív élményt nyújt a vásárlóidnak. anyagok növelik a márkád hitelességét és vonzerejét."
+            desc: "Egy harmonikus vizuális megjelenés nemcsak szebb, hanem élvezetesebb is az ügyfelek számára. Ez növeli a márkád iránti elköteleződést, és pozitív élményt nyújt a vásárlóidnak. anyagok növelik a márkád hitelességét és vonzerejét."
         },
 
         ],
@@ -62,6 +62,7 @@ const services = [
                 desc:"Az eredmények alapján finomítunk, hogy a grafikai elemeid mindig a legjobban teljesítsenek."
             },
         ],
+        
         kapcsolat: 
             {
             title: "NINCS SZLOGEN",

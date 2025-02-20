@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Michroma:wght@400..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Michroma:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 
 :root {
   --dark-rgb: 28, 28, 28;
@@ -9,13 +11,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+
 
 @layer utilities {
   .text-balance {
@@ -26,7 +22,7 @@
 
 body {
   background-color: rgb(28, 28, 28);
-  font-family: "Orbitron";
+  font-family: "Ubuntu";
   overflow-x: hidden;
  
 }
@@ -45,21 +41,22 @@ body {
 
 .font {
   
-  font-family: "Orbitron";
+  font-family: "Michroma";
   color: rgb(28, 28, 28);
 }
 
+.text-light {
+  color: blanchedalmond;
+  font-family: "Ubuntu";
+}
+
+
 .font-light {
-  font-size: '9rem';
-  font-family: "Orbitron";
+  font-size: 'rem';
+  font-family: "Michroma";
   color: blanchedalmond
 }
 
-.text-light {
-  font-size: '9rem';
-  
-  color: blanchedalmond
-}
 
 
 :root {
@@ -120,7 +117,7 @@ a{
 button {
   background-color: rgb(28, 28, 28);
   color: blanchedalmond;
-  font-family: "Orbitron";
+  font-family: "Michroma";
   width: 100px;
   padding: 5px;
     
@@ -129,7 +126,7 @@ button {
 .buttonlg {
   background-color: rgba(28, 28, 28,1);
   /* color: radial-gradient(circle at var(--gradient-x) var(--gradient-y), rgba(98,94,235,1) 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%); */
-  font-family: "Orbitron";
+  font-family: "Michroma";
   width: 400px;
   /* padding: 5px; */
     
@@ -138,7 +135,7 @@ button {
 .buttonlight {
   background-color: blanchedalmond;
   color: rgba(28, 28, 28,1);
-  font-family: "Orbitron";
+  font-family: "Michroma";
   width: 400px;
   /* padding: 5px; */
     
@@ -153,7 +150,7 @@ button {
 }
 
 .textfont {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Michroma", sans-serif;
   font-weight: 300;
   font-style: normal;
 }

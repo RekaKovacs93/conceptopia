@@ -64,37 +64,9 @@ export default function ServiceClientComponent({ service }) {
         ))}
         </div>
         </div>
+        
       </div>
     </main>
   );
 }
 
-
- {/* <svg width="500" height="320" xmlns="http://www.w3.org/2000/svg" className="absolute top-0 left-0">
-                <defs>
-                  <linearGradient
-                    id="gradient"
-                    cx="0%"
-                    cy="0%"
-                    r="100%"
-                    fx="0%"
-                    fy="50%"
-                    gradientTransform="rotate(45)"
-                  >
-                    <stop offset="0%" style={{ stopColor: "rgba(98, 94, 235, 1)", stopOpacity: 1 }} />
-                    <stop offset="50%" style={{ stopColor: "rgba(243, 125, 206, 1)", stopOpacity: 1 }} />
-                    <stop offset="100%" style={{ stopColor: "rgba(252, 206, 144, 1)", stopOpacity: 1 }} />
-                  </linearGradient>
-                </defs>
-                <rect
-                  x="10"
-                  y="10"
-                  rx="20"
-                  ry="20"
-                  width="400"
-                  height="300"
-                  fill="none"
-                  stroke="url(#gradient)"
-                  strokeWidth="5"
-                />
-              </svg> */}

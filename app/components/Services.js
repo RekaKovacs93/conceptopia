@@ -41,7 +41,7 @@ export default function Services (){
             <h1 className="font text-4xl text-center text-dark mb-10 md:pt-20 pt-20">
                 Megoldásaink
             </h1>
-            <h1 className="text-xl text-center text-dark md:mx-60 mx-10 mb-20">Mi nem csak szolgáltatásokat kínálunk – teljes körű megoldásokat biztosítunk a vállalkozásod számára. Tudjuk, hogy minden vállalkozás egyedi, ezért minden ajánlatunkat személyre szabjuk, hogy a legjobban illeszkedjen a te igényeidhez. Legyen szó weboldal fejlesztésről, közösségi média menedzsmentről vagy grafikai tervezésről, minden megoldásunk arra összpontosít, hogy miközben elvégezzük a feladatot, valódi értéket adjunk hozzá márkádhoz. A te sikered a mi sikerünk, és mindent azért teszünk, hogy a legjobb eredményeket érjük el együtt.
+            <h1 className="text-xl text-center text-dark md:mx-20 mx-10 mb-20">Mi nem csak szolgáltatásokat kínálunk – teljes körű megoldásokat biztosítunk a vállalkozásod számára. Tudjuk, hogy minden vállalkozás egyedi, ezért minden ajánlatunkat személyre szabjuk, hogy a legjobban illeszkedjen a te igényeidhez. Legyen szó weboldal fejlesztésről, közösségi média menedzsmentről vagy grafikai tervezésről, minden megoldásunk arra összpontosít, hogy miközben elvégezzük a feladatot, valódi értéket adjunk hozzá márkádhoz. A te sikered a mi sikerünk, és mindent azért teszünk, hogy a legjobb eredményeket érjük el együtt.
             </h1>
             <div className=" w-screen flex flex-wrap gap-5 items-center justify-center md:px-40 px-10 mb-20">
                 {services.map((service, index) => (            
@@ -55,7 +55,7 @@ export default function Services (){
                 <h1 id="title" className="absolute text-3xl font-light md:opacity-100 opacity-0 text-center w-96">{service.title}</h1>
                 <div id="desc" className="md:opacity-0 opacity-100">
                   <h1 className="text-center text-2xl font-light">{service.title}</h1>
-                  <p className="font-light text-sm text-center px-5 pt-2 textfont">{service.desc}</p>
+                  <p className="text-light text-sm text-center px-5 pt-2 ">{service.desc}</p>
                 </div>
                 </div>
                 </Link>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <div className="h-screen w-screen relative ">
+        <div className=" w-screen  ">
             {/* <Image
                 src="https://cdn.pixabay.com/photo/2017/06/14/13/11/background-2402133_640.png"
                 alt="Interior Photo"
@@ -10,22 +10,31 @@ export default function About() {
                 objectFit="cover"
                 className="absolute inset-0 opacity-10 z-0"
             /> */}
-            <div className="relative z-10 gap-x-5 md:flex hidden justify-center items-center h-full mx-20">
+            {/* <div className=" z-10 gap-x-5  justify-center items-center h-full mx-20"> */}
                 {/* <h1 className="font text-2xl md:text-4xl text-dark mb-10 md:ml-40 mt-10 md:mt-0">
                     Üdvözlünk a Conceptopia Kreatív Ügynökség oldalán!
                 </h1> */}
                 {/* <h1 className="text-xl text-dark">
                     Szakértőket keresel kreatív megoldások terén? Bízd ránk projektjeidet a közösségi média menedzsmenttől a webfejlesztésen át a fotózásig és grafikáig, és emeld új szintre vállalkozásodat!
                 </h1> */}
-                <div className="flex gap-x-20">
-                    <h1 className="font text-2xl md:text-6xl text-dark">
+                <div className="text-center flex gap-y-5 flex-col justify-center items-center pt-20 px-40">
+                    {/* <h1 className="font text-2xl md:text-6xl text-dark">
                     Rólad
-                    </h1>
+                    </h1> */}
                 
-                    <h1 className="  text-dark p-5">
-                    Úgy érzed, hogy a vállalkozásodban ott rejlik a lehetőség, de a figyelemért vívott harcban gyakran alulmaradsz? Talán nincs időd minden marketing feladatot kézben tartani, vagy úgy érzed, hogy a márkád nem tükrözi azt az indentitást, amit valójában képviselsz? Elképzelhető, hogy hiányoznak azok a vizuális vagy online eszközök, amelyekkel magabiztosan megszólíthatnád a közönségedet?
-                    Ezek nem egyedi problémák. Kis- és középvállalkozóként rengeteg szerepet töltesz be egyszerre, és nem csoda, hogy nehéz mindent egyszerre profi módon megvalósítani. Mi azért vagyunk itt, hogy ezekben támogassunk, mert hiszünk abban, hogy a vállalkozásod megérdemli, hogy a legjobbat mutassa magából.                    </h1>
-                </div>
+                    <div className="bg-dark rounded-lg">
+                        <h1 className="text-xl gradient-text p-5">Úgy érzed, hogy a vállalkozásodban ott rejlik a lehetőség, de a figyelemért vívott harcban gyakran alulmaradsz? </h1>
+                    </div>
+                    <div className="bg-dark rounded-lg">
+                        <h1 className="text-xl gradient-text p-5">Talán nincs időd minden marketing feladatot kézben tartani, vagy úgy érzed, hogy a márkád nem tükrözi azt az indentitást, amit valójában képviselsz?</h1>
+                    </div>
+                    <div className="bg-dark rounded-lg">
+                        <h1 className="text-xl gradient-text p-5">Ezek nem egyedi problémák. Kis- és középvállalkozóként rengeteg szerepet töltesz be egyszerre, és nem csoda, hogy nehéz mindent egyszerre profi módon megvalósítani. Mi azért vagyunk itt, hogy ezekben támogassunk, mert hiszünk abban, hogy a vállalkozásod megérdemli, hogy a legjobbat mutassa magából.                 </h1>
+                    </div>    
+                        <h1 className="text-6xl text-dark font rotate-90 hover:scale-120 transition-transform">
+                            <a href="/#about1">&gt;</a>
+                            </h1>
+                    </div>
                 {/* <div className="flex flex-col ">
                     <h1 className="font text-2xl md:text-6xl text-dark">
                     Rólunk
@@ -38,7 +47,7 @@ export default function About() {
                 {/* <h1 className="text-xl text-dark md:w-2/5 md:ml-40">
                     Ezek nem egyedi problémák. Kis- és középvállalkozóként rengeteg szerepet töltesz be egyszerre, és nem csoda, hogy nehéz mindent egyszerre profi módon megvalósítani. Mi azért vagyunk itt, hogy ezekben támogassunk, mert hiszünk abban, hogy a vállalkozásod megérdemli, hogy a legjobbat mutassa magából.
                 </h1> */}
-            </div>
+            {/* </div> */}
         </div>
     );
 }

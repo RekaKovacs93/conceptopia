@@ -49,11 +49,13 @@ export default function Contact() {
 
   return (
     <div className="md:min-h-screen flex flex-col items-center md:justify-center md:pt-0 pt-20 md:pb-20">
-      <h1 className="font text-center text-4xl my-10 md:pt-20">Ingyenes Konzultáció – Kezdd el a változást még ma!
+      <h1 className="font text-center text-4xl my-10 md:pt-20">Indulj el a változás útján még ma!
+
       </h1>
-      <h1 className="mx-20 text-center  my-10">Most van itt az idő, hogy te is lépéseket tegyél a vállalkozásod sikeréért. Az első lépés egy egyszerű, de fontos beszélgetés. Tudd meg, hogyan segíthetünk a céljaid elérésében, és hogyan válhatunk igazi partnerekké a növekedésedhez.
-Foglalj egy ingyenes konzultációt, ahol személyesen átbeszélhetjük, mire van szükséged ahhoz, hogy vállalkozásod a következő szintre lépjen. A beszélgetés során nem csupán kérdéseidre adunk válaszokat, hanem közösen kidolgozunk egy olyan tervet, ami valóban segíti a fejlődésedet.
-Ne hagyd ki ezt a lehetőséget! A konzultáció ingyenes, és semmi sem kötelez, csak a sikeres jövődből építhetünk.
+      <h1 className="mx-20 text-center text-xl my-10">Az első lépés egy egyszerű, de egy annál fontosabb beszélgetés. Derítsd ki, hogyan segíthetünk céljaid elérésében, és hogyan lehetünk partnereid a növekedésben.
+Foglalj egy ingyenes konzultációt, ahol egy telefonos vagy online konzultáció keretein belül átbeszéljük mire van szükséged ahhoz, hogy vállalkozásod a következő szintre lépjen. 
+Ne hagyd ki ezt a lehetőséget! A konzultáció díjmentes, és semmilyen kötelezettséggel nem jár.
+
 
       </h1>
       
