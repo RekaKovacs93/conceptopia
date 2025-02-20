@@ -11,7 +11,7 @@ export default function Hero1() {
                 objectFit="cover"
                 className="absolute inset-0 opacity-5 z-0"
             /> */}
-      <h1 className="font text-4xl md:text-9xl text-center gradient-text">
+      <h1 className="font text-4xl md:text-9xl text-center gradient-text scale-90">
         CONCEPTOPIA
       </h1>
       <h1 className="font md:text-3xl text-lg text-center gradient-text mt-5">

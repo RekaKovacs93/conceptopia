@@ -17,7 +17,7 @@ export default function About() {
                 {/* <h1 className="text-xl text-dark">
                     Szakértőket keresel kreatív megoldások terén? Bízd ránk projektjeidet a közösségi média menedzsmenttől a webfejlesztésen át a fotózásig és grafikáig, és emeld új szintre vállalkozásodat!
                 </h1> */}
-                <div className="text-center flex gap-y-5 flex-col justify-center items-center pt-20 px-40">
+                <div className="text-center flex gap-y-5 flex-col justify-center items-center pt-20 px-40 font">
                     {/* <h1 className="font text-2xl md:text-6xl text-dark">
                     Rólad
                     </h1> */}

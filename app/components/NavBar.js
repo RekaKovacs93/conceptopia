@@ -56,10 +56,10 @@ export default function NavBar() {
   
 
         <div className="hidden md:flex flex-grow items-start justify-end space-x-4">
-          <Link href="/#about" className="block md:inline-block mt-4 md:mt-0">
+          <Link href="/#about1" className="block md:inline-block mt-4 md:mt-0 text-sm">
             RÓLUNK
           </Link>
-          <span href="/#szolgaltatasok" className="group block md:inline-block mt-4 md:mt-0 overflow-visible w-52">
+          <span href="/#szolgaltatasok" className="group block md:inline-block mt-4 md:mt-0 overflow-visible w-52 text-sm">
             SZOLGÁLTATÁSOK &#9660;
             <div className="hidden group-hover:flex flex-col place-items-end mt-2 rounded-lg">
               {/* <div className="py-1"> */}
@@ -76,10 +76,10 @@ export default function NavBar() {
           {/* <Link href="./BLOG" className="block md:inline-block mt-4 md:mt-0">
             BLOG
           </Link> */}
-          <Link href="./kapcsolat" className="block md:inline-block mt-4 md:mt-0">
+          <Link href="./kapcsolat" className="block md:inline-block mt-4 md:mt-0 text-sm">
             KAPCSOLAT
           </Link>
-          <Link href="./snake" className="block md:inline-block mt-4 md:mt-0">
+          <Link href="./snake" className="block md:inline-block mt-4 md:mt-0 text-sm">
             ?
           </Link>
         {/* </div> */}

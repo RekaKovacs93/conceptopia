@@ -25,7 +25,7 @@ export default function ServiceClientComponent({ service }) {
   return (
     <main className="flex flex-col items-center bg-dark ">
       <div className="flex flex-col justify-center items-center mt-60 bg-dark min-h-screen">
-          <h1 className="gradient-text text-center font text-4xl md:text-9xl mb-5">{service.title}</h1>
+          <h1 className="gradient-text text-center font text-4xl md:text-9xl mb-5 scale-90">{service.title}</h1>
           <h1 className="font md:text-2xl text-lg text-center gradient-text mb-5">{service.slogan}</h1>
           <p className="md:mx-40 mx-10 font-light text-center pb-60">{service.desc}</p>
         {/* <div className="flex flex-wrap gap-20 items-center justify-center px-20 gradient py-20">
@@ -55,7 +55,7 @@ export default function ServiceClientComponent({ service }) {
                 <h1 id="title" className="absolute text-3xl px-5 font-light md:opacity-100 opacity-0 text-center w-96">{feature.title}</h1>
                 <div id="desc" className="md:opacity-0 opacity-100">
                   <h1 className="text-center text-2xl font-light">{feature.title}</h1>
-                  <p className="font-light text-sm text-center px-5 pt-2 textfont">{feature.desc}</p>
+                  <p className="text-light text-sm text-center px-5 pt-2">{feature.desc}</p>
                 </div>
                 </div>
                 {/* </Link> */}
