@@ -66,7 +66,7 @@ const services = [
         kapcsolat: 
             {
             title: "NINCS SZLOGEN",
-            text: "Foglalj egy ingyenes konzultációt, és nézzük meg, hogyan tehetjük a vizuális kommunikációdat igazán ütőssé!"  
+            text: "A grafikai tervezésünk célja, hogy ne csak látszódj, hanem emlékezzenek is rád. Megoldásaink nem csupán esztétikusak, hanem segítenek abban, hogy a márkád valóban elérje a közönségét. Foglalj egy ingyenes konzultációt, és nézzük meg, hogyan tehetjük a vizuális kommunikációdat igazán ütőssé!"  
             }
         
     },
@@ -138,7 +138,7 @@ const services = [
     {
         title: "Webfejlesztés",
         url: "Webfejlesztes",
-        desc: "A weboldal nem csupán egy online jelenlét – ez a vállalkozásod digitális otthona, ahol a potenciális vásárlóid az első benyomást alkotják rólad. Egy professzionálisan megtervezett és felépített weboldal egyben vonzó és működőképes,, segítve a céged növekedését és elérhetőségeinek bővítését.",
+        desc: "A weboldal nem csupán egy online jelenlét – ez a vállalkozásod digitális otthona, ahol a potenciális vásárlóid az első benyomást alkotják rólad. Egy professzionálisan megtervezett és felépített weboldal egyben vonzó és működőképes,, segítve a céged növekedését és elérhetőségeinek bővítését. Egyedi fejlesztésű, valamint WordPress alapú weboldalakat készítünk, amelyek nemcsak vizuálisan vonzóak, hanem rendkívül funkcionálisak is.",
         features: [
             {
                 title: "Első benyomás",
@@ -162,7 +162,7 @@ const services = [
             },
             {
                 title: "Adatgyűjtés és elemzés",
-                desc: "A weboldal lehetőséget biztosít a látogatói adatok gyűjtésére, amelyek segítségével jobban megértheted a közönséged igényeit. Az elemzések révén optimalizálhatod a marketingstratégiáidat, és így hatékonyabban célozhatod meg a potenciális ügyfeleket."
+                desc: "Egy jó weboldal lehetőséget biztosít a látogatói adatok gyűjtésére, amelyek segítségével jobban megértheted a közönséged igényeit. Az elemzések révén optimalizálhatod a marketingstratégiáidat, és így hatékonyabban célozhatod meg a potenciális ügyfeleket."
             },
             {
                 title: "Versenyelőny",
@@ -202,7 +202,7 @@ const services = [
         ],
         kapcsolat: 
             {
-            title: "IDE KENE SZLOGEN",
+            title: "A weboldalad többet érdemel, mint egy egyszerű bemutatkozó oldal!",
             text: "Ha készen állsz arra, hogy a vállalkozásod számára egyedi és eredményorientált weboldalt építsünk, kérj tőlünk ingyenes konzultációt, és tudd meg, hogyan segíthetünk a sikeres digitális jelenlét kialakításában!"  
             }
         
@@ -211,15 +211,15 @@ const services = [
         title: "Tartalomgyártás",
         slogan:"Segítünk, hogy a márkád szóhoz jusson",
         url: "Tartalomgyartas",
-        desc: "A közösségi média egy olyan dinamikusan változó világ, ahol a figyelemért való verseny egyre erősebbé válik. A sikerhez nem csupán az kell, hogy a vállalkozásod jelen legyen, hanem hogy folyamatosan értékes, figyelemfelkeltő és releváns tartalommal találkozzanak a követőid. Itt jövünk mi!",
+        desc: "A közösségi média egy olyan dinamikusan változó világ, ahol a figyelemért való verseny egyre erősebbé válik. A sikerhez nem csupán az kell, hogy a vállalkozásod jelen legyen, hanem hogy folyamatosan értékes, figyelemfelkeltő és releváns tartalommal találkozzanak a követőid. Itt jövünk mi a képbe!",
         features: [
             {
                 title: "Erős márkaépítés",
-                desc: "A közösségi média az egyik legfontosabb eszköze annak, hogy a márkád valódi kapcsolatot alakítson ki a közönségeddel. Az általad megosztott tartalmaknak nemcsak vonzónak kell lenniük, hanem meg kell mutatniuk a márkád egyediségét és értékeit is."
+                desc: "A közösségi média az egyik legfontosabb eszköze annak, hogy a márkád valódi kapcsolatot alakítson ki a közönségeddel. Az általad megosztott tartalmaknak nemcsak vonzónak kell lenniük, hanem meg kell mutatniuk a vállalkozásod egyediségét és értékeit is."
             },
             {
                 title: "Történetmesélés",
-                desc: "A közösségi média nemcsak egy képről vagy videóról szól – egy jól megírt történet felkelti az érdeklődést és érzelmeket vált ki. Mi segítünk abban, hogy a márkád története szórakoztató, releváns és megnyerő módon jusson el a közönségedhez."
+                desc: " A közösségi média többről szól, mint egy kép vagy videó.  Egy jól megírt történet felkelti az érdeklődést és érzelmeket vált ki. Mi segítünk abban, hogy a márkád története szórakoztató, releváns és megnyerő módon jusson el a közönségedhez."
             },
             {
                 title: "Láthatóság és elérés",
@@ -242,19 +242,19 @@ const services = [
             },
             {
                 title:"Kreatív tartalomkészítés",
-                desc:"Az előzetes tervek és egyeztetések alapján elkészítem a szükséges tartalmakat – legyen szó videós (Reels) vagy képes anyagról. A tartalmak a vállalkozásod arculatához és céljaihoz illeszkedve készülnek el, és mindig arra törekszem, hogy a legjobb minőséget biztosítsam."
+                desc:"Az előzetes tervek és egyeztetések alapján elkészítjük a szükséges tartalmakat – legyen szó videós (Reels) vagy képes anyagról. A tartalmak a vállalkozásod arculatához és céljaihoz illeszkedve készülnek el, és mindig arra törekszünk, hogy a legjobb minőséget biztosítsuk."
             },
             {
                 title:"Díjmentes javítás",
-                desc:"Ha bármi nem felel meg teljes mértékben az elvárásaidnak, biztosítok egy alkalmat a tartalom módosítására díjmentesen, hogy teljesen elégedett legyél."
+                desc:"Ha bármi nem felel meg teljes mértékben az elvárásaidnak, biztosítunk egy alkalmat a tartalom módosítására díjmentesen, hogy teljesen elégedett legyél."
             },
             {
                 title:"Kész tartalmak átadása",
-                desc:"A fejlesztési folyamat végén alapos tesztelést végzünk, hogy minden zökkenőmentesen működjön, majd élesben is elindítjuk a weboldalt."
+                desc:"Az elkészített tartalmakat átadjuk számodra, hogy te magad vagy a csapatod könnyedén kezelhesse a közösségi média felületeken. Ha szükséged van segítségre a kezeléssel kapcsolatban is, az külön díjazás ellenében elérhető."
             },
             {
                 title:"Eredmények mérése és finomhangolás",
-                desc:"A weboldal elindítása után folyamatosan nyomon követjük a teljesítményt, és ha szükséges, finomhangoljuk a stratégiát a legjobb eredmények érdekében."
+                desc:"Az elkészült tartalom mellett folyamatosan alkalmazkodunk az új igényekhez és változó helyzetekhez. Ha valami hirtelen változik, gyorsan reagálunk, és biztosítjuk, hogy a tartalom mindig naprakész és releváns maradjon."
             },
         ],
         kapcsolat: 
@@ -268,59 +268,59 @@ const services = [
         title: "Közösségi média menedzsment", 
         url: "Kozossegimediamenedzsment",
         slogan:"Több időd marad arra, ami igazán fontos", 
-        desc: "A közösségi média ma már a vállalkozások életében kulcsszerepet játszik, de a kezelése rengeteg időt és energiát emészt fel. Nem lenne jobb, ha mindez a kezedben maradna, mégis megszabadulnál a napi teendők terhétől?"
+        desc: "Ha több szakemberrel dolgozol – PPC hirdetővel, fotóssal, grafikussal vagy videóssal –, de nincs, aki átlátja és irányítaná a folyamatokat, akkor eljött az idő, hogy egy kézbe kerüljön a közösségi média menedzsmented. Mi abban segítünk, hogy az elkészült tartalmak és kampányok egységes, átgondolt stratégiát kövessenek, és valódi üzleti eredményeket hozzanak. Ezt a szolgáltatást akkor is neked ajánljuk, ha szereted saját magad készíteni a tartalmaidat, de nem hoznak olyan sikereket, mint szeretnéd. Mi finomhangoljuk a stratégiát, segítünk optimalizálni a posztokat, és biztosítjuk, hogy a közösségi médiára fordított időd megtérüljön."
 ,
         features: [
             {
-                title: "Idő",
-                desc: "Több időd marad az ügyfeleidre, miközben a közösségi oldalad naprakész és hatékony marad."            
+                title: "Összefogolt folyamatok",
+                desc: "A közösségi média menedzser nem tartalmat gyárt, hanem biztosítja, hogy minden tartalom megfelelő időben, megfelelő módon és megfelelő céllal jelenjen meg. Ő az, aki összeköti a grafikusokat, szövegírókat, fotósokat, videósokat és hirdetésszakértőket, hogy a kommunikáció egységes és hatékony legyen."            
             },
             {
-                title: "Nyugalom",
-                desc: "Nem kell azon aggódnod, mikor és mit posztolj – mi mindent kézben tartunk."
+                title: "Stratégiai szemlélet",
+                desc: "Nem elég posztolni – kell egy terv is. Hosszú távú stratégiát alkotunk, kampányokat tervezünk, elemezzük az eredményeket, és finomhangoljuk a folyamatokat, hogy a közösségi média ne csak időrabló tevékenység legyen, hanem valódi üzleti értéket teremtsen."
             },
             {
-                title: "Kapcsolat",
-                desc: "A kommentek, üzenetek és visszajelzések gyors és professzionális kezelése segít ügyfeleid bizalmát erősíteni"
+                title: "Idő és erőforrás optimalizálása",
+                desc: "Egy vállalkozás vezetőjeként nincs időd minden platform működését figyelni, tartalmat készíteni és kampányokat kezelni. Levesszük ezt a terhet a válladról, és biztosítjuk, hogy a megfelelő emberek a megfelelő feladatokra fókuszáljanak."
             },
             {
-                title: "Átgondolt stratégia",
-                desc: "Nem csak posztolunk. Minden lépésünknek célja van: növeljük a láthatóságot és elérjük a potenciális ügyfeleidet."
+                title: "Bizalomépítés és hitelesség",
+                desc: "Egy jól kezelt közösségi oldal azt sugallja, hogy a vállalkozásod megbízható és profi. Ha az emberek látják, hogy aktív vagy, nagyobb eséllyel választanak téged."
             },
             {
-                title: "Ügyféltámogatás",
-                desc: "Foglalkozunk a kommentekkel, üzenetekkel, hogy az ügyfeleid érezzék, mindig ott vagy számukra."
+                title: "Közvetlen kapcsolat az ügyfelekkel:",
+                desc: "A kommentek, üzenetek és interaktív tartalmak lehetőséget adnak arra, hogy közvetlen kapcsolatot építs a követőiddel, és gyorsan reagálj az igényeikre."
             },
             {
-                title: "Adatok, amelyek számítanak",
-                desc: "Rendszeresen megosztjuk veled az eredményeket, hogy lásd, hogyan segítik a céljaidat a közösségi oldalaid."
+                title: "Márkaismertség növelése",
+                desc: "A rendszeres és tudatos kommunikációval egy erős márkaképet alakíthatsz ki, amely hosszú távon megkülönböztet a versenytársaktól."
             }
         
         ],
         timeline: [
             {
-                title:"EZT MEG KELL IRNI MEG",
-                desc:"Az első lépés a közös munka során egy személyre szabott konzultáció, ahol feltérképezzük a vállalkozásod digitális igényeit és céljait. Itt megbeszéljük, hogyan tudunk segíteni a sikeres weboldal kialakításában."
+                title:"Igényfelmérés",
+                desc:"Először meghallgatunk. Megnézzük, hol tart most a vállalkozásod, milyen kihívásokkal küzdesz, és milyen célokat szeretnél elérni a közösségi médiában."
             },
             {
                 title:"Stratégiai tervezés",
-                desc:"Az igényeid alapján kidolgozzuk a weboldal fejlesztésének stratégiáját, figyelembe véve a versenytársakat, a célcsoportot és a piaci trendeket."
+                desc:"Az információk alapján összeállítunk egy személyre szabott közösségi média stratégiát. Meghatározzuk a célcsoportot, a kommunikációs irányokat és a legjobb platformokat."
             },
             {
-                title:"Design és fejlesztés",
-                desc:"A tervezési fázis után csapatunk megalkotja a weboldal dizájnját és felépítését, miközben ügyelünk arra, hogy a dizájn és a funkcionalitás tökéletesen illeszkedjen a márkádhoz."
+                title:"Csapat összehangolása",
+                desc:"Irányítjuk a folyamatokat: grafikusok, szövegírók, fotósok, videósok és hirdetésszakértők együtt dolgoznak azon, hogy minden tartalom és kampány a lehető leghatékonyabb legyen."
             },
             {
-                title:"Reszponzív megoldás",
-                desc:"Gondoskodunk arról, hogy az elkészült weblap minden eszközön tökéletesen működjön"
+                title:"Kivitelezés",
+                desc:"Ütemezzük és kezeljük a posztokat, kampányokat indítunk, optimalizálunk és aktívan figyeljük a közösségi aktivitásokat. Minden lépést átláthatóan kommunikálunk feléd."
             },
             {
-                title:"Tesztelés és indítás",
-                desc:"A fejlesztési folyamat végén alapos tesztelést végzünk, hogy minden zökkenőmentesen működjön, majd élesben is elindítjuk a weboldalt."
+                title:"Elemzés és finomhangolás",
+                desc:"Folyamatosan mérjük az eredményeket, figyeljük, mi működik a legjobban, és ennek megfelelően alakítjuk a stratégiát."
             },
             {
-                title:"Eredmények mérése és finomhangolás",
-                desc:"A weboldal elindítása után folyamatosan nyomon követjük a teljesítményt, és ha szükséges, finomhangoljuk a stratégiát a legjobb eredmények érdekében."
+                title:"Növekedés és stabilitás",
+                desc:"A közösségi média menedzsment hosszú távon építi a vállalkozásodat, növeli a követőbázisodat és a vásárlói bizalmat, így céged stabilabbá és sikeresebbé válik."
             },
         ],
         kapcsolat: 
