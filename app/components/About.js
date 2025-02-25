@@ -22,16 +22,16 @@ export default function About() {
                     Rólad
                     </h1> */}
                 
-                    <div className="bg-dark rounded-lg">
+                    <div className="bg-dark rounded-lg md:w-full w-72">
                         <h1 className="text-xl gradient-text p-5">Úgy érzed, hogy a vállalkozásodban ott rejlik a lehetőség, de a figyelemért vívott harcban gyakran alulmaradsz? </h1>
                     </div>
-                    <div className="bg-dark rounded-lg">
+                    <div className="bg-dark rounded-lg md:w-full w-72">
                         <h1 className="text-xl gradient-text p-5">Talán nincs időd minden marketing feladatot kézben tartani, vagy úgy érzed, hogy a márkád nem tükrözi azt az indentitást, amit valójában képviselsz?</h1>
                     </div>
-                    <div className="bg-dark rounded-lg">
+                    <div className="bg-dark rounded-lg md:w-full w-72">
                         <h1 className="text-xl gradient-text p-5">Ezek nem egyedi problémák. Kis- és középvállalkozóként rengeteg szerepet töltesz be egyszerre, és nem csoda, hogy nehéz mindent egyszerre profi módon megvalósítani.</h1>
                     </div>    
-                    <div className="bg-dark rounded-lg">
+                    <div className="bg-dark rounded-lg md:w-full w-72">
                         <h1 className="text-xl gradient-text p-5">Mi azért vagyunk itt, hogy ezekben támogassunk, mert hiszünk abban, hogy a vállalkozásod megérdemli, hogy a legjobbat mutassa magából.                 </h1>
                     </div>    
                         <h1 className="text-6xl text-dark font rotate-90 hover:scale-120 transition-transform">

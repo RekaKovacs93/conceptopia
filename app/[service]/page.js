@@ -599,7 +599,7 @@ export async function generateStaticParams() {
         <div  className="bg-dark">
             <Mireszamit service={foundService}/>
         </div>
-        <div>
+        <div className='hidden md:flex'>
             <Timeline service={foundService}/>
         </div>
         <div id="contact" className="min-h-screen gradient">

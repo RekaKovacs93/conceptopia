@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Mireszamit({service}) {
     return (
         <div>
-        <h1 className="font bg-dark gradient-text text-center py-20 text-4xl">Mire számíthatsz a közös munka során?</h1>
+        <h1 className="font bg-dark gradient-text text-center py-20 text-4xl mx-10">Mire számíthatsz a közös munka során?</h1>
         <div className='flex flex-wrap '>
           
 

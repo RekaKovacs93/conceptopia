@@ -47,7 +47,7 @@ export default function About(){
                             />
                         </svg>                        
                     </div>
-                    <div className="ml-2 mt-0.5">
+                    <div className="ml-2 md:mt-0.5">
                         <p className="font-light ">conceptopia</p>
                     </div>
                 </div>   
