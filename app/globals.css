@@ -98,6 +98,13 @@ body {
 
 }
 
+.under {
+  border-bottom: 3px solid transparent; /* Transparent border */
+  border-image-source: linear-gradient(45deg, rgba(98,94,235,1) 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%);
+  border-image-slice: 1;
+  
+}
+
 
 #navhover:hover {
   color:blanchedalmond

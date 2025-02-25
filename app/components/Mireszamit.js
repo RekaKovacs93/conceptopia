@@ -1,44 +1,53 @@
 import Image from "next/image";
 
-export default function Mireszamit() {
+export default function Mireszamit({service}) {
     return (
-        <div className="h-screen w-screen relative ">
-           
-            <div className="relative z-10 gap-x-5 md:flex hidden justify-center items-center h-full mx-20">
-                {/* <h1 className="font text-2xl md:text-4xl text-dark mb-10 md:ml-40 mt-10 md:mt-0">
-                    Üdvözlünk a Conceptopia Kreatív Ügynökség oldalán!
-                </h1> */}
-                {/* <h1 className="text-xl text-dark">
-                    Szakértőket keresel kreatív megoldások terén? Bízd ránk projektjeidet a közösségi média menedzsmenttől a webfejlesztésen át a fotózásig és grafikáig, és emeld új szintre vállalkozásodat!
-                </h1> */}
-                <div className="flex flex-col gap-x-20">
-                    <h1 className="font text-2xl md:text-6xl text-dark pb-10">
-                    Mire számíthatsz az együttműködés során?
+        <div>
+        <h1 className="font bg-dark gradient-text text-center py-20 text-4xl">Mire számíthatsz a közös munka során?</h1>
+        <div className='flex flex-wrap '>
+          
 
-                    </h1>
-                
-                    <h1 className="  text-dark py-5">
-                    Az együttműködés során számíthatsz arra, hogy nem csupán egy szolgáltatót találsz, hanem valódi partnereket, akik osztoznak a víziódban. A siker kulcsa a közös gondolkodásban és együttműködésben rejlik.
-                    </h1>
-                    <h1 className="  text-dark pb-5">
-                    Első lépésként figyelmesen meghallgatjuk a céljaidat, majd olyan egyedi megoldásokat kínálunk, amelyek a vállalkozásod igényeihez illeszkednek. Innovatív, kreatív megközelítésünkkel segítünk kiemelkedni a versenytársaid közül, legyen szó webfejlesztésről, grafikai tervezésről vagy közösségi média menedzsmentről. Az iparági trendek és legújabb technológiák folyamatos figyelemmel kísérésével naprakész megoldásokat biztosítunk. Ahogy a vállalkozásod növekszik, úgy egyre több kihívással és kérdéssel kell szembenézned. Az együttműködés nem ér véget a projekt befejezésével; hosszú távú partnerként segítünk a további fejlődésben, biztosítva, hogy minden új kihívásra gyors és hatékony választ találj. Megígérjük, hogy melletted állunk, így a növekedés folyamatos és zökkenőmentes lesz számodra.                    </h1>
-                    <h1 className="  text-dark">
-                    Mivel számodra a leghatékonyabb megoldás a legfontosabb, az együttműködés mindig személyre szabott, és egy igazi közös munkán alapul. Az őszinte kommunikáció, a folyamatos fejlődés és a teljes mértékű szakmai és emberi hozzájárulás mind a te sikeredért van.
-                    </h1>
+        <div className=" w-screen flex flex-col flex-wrap gap-2  md:px-40 px-10 mb-10 ">
+       
+          {service.munka.map((munka, index) => (            
+              <div key={index} className=" rounded-lg">
+
+                <div className="  relative w-full flex flex-col ">
+                    {/* <svg width="1000" height="40" xmlns="http://www.w3.org/2000/svg" className="pos scale">
+                        <defs>
+                        <linearGradient id="gradient" cx="0%" cy="0%" r="100%" fx="0%" fy="50%" gradientTransform="rotate(45)">
+                                                    <stop offset="0%" style={{ stopColor: 'rgba(98, 94, 235, 1)', stopOpacity: 1 }} />
+                                                    <stop offset="50%" style={{ stopColor: 'rgba(243, 125, 206, 1)', stopOpacity: 1 }} />
+                                                    <stop offset="100%" style={{ stopColor: 'rgba(252, 206, 144, 1)', stopOpacity: 1 }} />
+                        </linearGradient>
+                        </defs>
+                        <rect
+                            x="100"
+                            y="40"
+                            rx="20"
+                            ry="20"
+                            width="300"
+                            height="300"
+                            fill="none"
+                            stroke="url(#gradient)"
+                            strokeWidth="5"
+                        />
+                    </svg> */}
+                <div className="  flex flex-col    rounded-lg">
+                <h1 className=" text-2xl font-light under pb-2 mb-2">{munka.title}</h1>
+                <p className="text-light text-sm  px-5 pt-2 mb-5">{munka.desc}</p>
                 </div>
-                {/* <div className="flex flex-col ">
-                    <h1 className="font text-2xl md:text-6xl text-dark">
-                    Rólunk
-                    </h1>
-                
-                <h1 className=" text-light bg-dark rounded-lg p-5  ">
-                A Conceptopia Kreatív Ügynökség azért jött létre, hogy segítsen neked átugrani ezeket az akadályokat, és lehetővé tegye, hogy kiaknázhasd vállalkozásod valódi potenciálját. A kreatív feladatok sokszorosára nőnek a növekedéssel, és ebben kulcsfontosságú, hogy egy profi csapat támogasson. Mi a tervezéstől a kivitelezésig mindent elvégezünk, hogy erősítsük a márkád jelenlétét. Eközben gondoskodunk arról is, hogy mindezt költséghatékony módon valósíthasd meg, így te nyugodtan a növekedésre összpontosíthatsz. Mi minden másról gondoskodunk, hogy sikeresen építhesd a jövődet.
-                </h1>
-                </div> */}
-                {/* <h1 className="text-xl text-dark md:w-2/5 md:ml-40">
-                    Ezek nem egyedi problémák. Kis- és középvállalkozóként rengeteg szerepet töltesz be egyszerre, és nem csoda, hogy nehéz mindent egyszerre profi módon megvalósítani. Mi azért vagyunk itt, hogy ezekben támogassunk, mert hiszünk abban, hogy a vállalkozásod megérdemli, hogy a legjobbat mutassa magából.
-                </h1> */}
             </div>
+          {/* <div id="card" className=" w-full h-full flex flex-col gap-y-5 items-center justify-center bg-dark rounded-2xl py-10 md:py-0">
+            <h1 className="text-center font-light">{munka.title}</h1>
+            <p className="text-light text-sm text-center px-5 pt-2">{munka.desc}</p>
+          </div> */}
+          {/* </Link> */}
+          </div>
+
+          ))}
         </div>
+        </div>
+      </div>
     );
 }

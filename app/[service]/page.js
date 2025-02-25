@@ -5,6 +5,7 @@ import ContactService from "../components/ContactService";
 import Footer from "../components/Footer";
 import Hiba404 from '../components/Hiba404';
 import Timeline from '../components/Timeline';
+import Mireszamit from '../components/Mireszamit';
 
 
 // Define services array
@@ -67,7 +68,38 @@ const services = [
             {
             title: "NINCS SZLOGEN",
             text: "A grafikai tervezésünk célja, hogy ne csak látszódj, hanem emlékezzenek is rád. Megoldásaink nem csupán esztétikusak, hanem segítenek abban, hogy a márkád valóban elérje a közönségét. Foglalj egy ingyenes konzultációt, és nézzük meg, hogyan tehetjük a vizuális kommunikációdat igazán ütőssé!"  
+            },
+        
+        munka: {
+            title: ""
+        },
+        munka: [
+            {
+                title: "Arculattervezés és branding",
+                desc: "Egyedi logók, amelyek egy pillantással elmondják, ki vagy. Színpaletta, betűtípusok és egyéb arculati elemek, amelyek következetessé teszik a megjelenésed.Márkakönyv, hogy a vizuális identitásod minden helyzetben egységes maradjon."
+            },
+            {
+                title: "Közösségi média grafikák",
+                desc: "Egyedi poszt- és storysablonok, amikkel mindig kiemelkedsz a hírfolyamból. Kampányokhoz és promóciókhoz igazított kreatívok, amelyek az üzenetedet erősítik."
+            },
+            {
+                title: "Átlátható működés",
+                desc: "Pontosan tudni fogod, mikor, mi történik: előre elkészített tartalomnaptár, rendszeres riportok és folyamatos egyeztetés biztosítja, hogy mindig képben legyél."
+            },
+            {
+                title: "Rugalmasság és gyors reakció",
+                desc: "Akár egy új ötlet, akár egy váratlan helyzet merül fel, gyorsan alkalmazkodunk és biztosítjuk, hogy a kommunikációd mindig aktuális és releváns maradjon."
+            },
+            {
+                title: "Valódi üzleti eredmények",
+                desc: "A közösségi média nálunk nem csak „szükséges rossz”, hanem eszköz a növekedéshez: következetes márkaépítés, elkötelezett közönség és több ügyfél."
+            },
+            {
+                title: "Szeretnél mindent egy kézben tudni?",
+                desc: "Amennyiben a tartalomgyártást is szeretnéd ránk bízni – legyen szó videókról, képekről vagy grafikákról –, ezt is megoldjuk, külön díjazás ellenében. Így a teljes közösségi média jelenlétedet egy helyen, egységes stratégiával kezelhetjük."
             }
+        ]
+    
         
     },
     { 
@@ -132,7 +164,26 @@ const services = [
             {
             title: "Szeretnéd, ha a márkád vizuálisan is kiemelkedne a tömegből?",
             text: "Tudd meg, hogyan segíthetünk professzionális fotóinkkal a márkád történetének elmesélésében és a közönséged megszólításában. Foglalj egy ingyenes konzultációt, és beszéljük át, hogyan készíthetünk olyan képeket, amelyek valóban tükrözik a márkád egyedi értékeit!"  
+            },
+        munka: [
+            {
+                title: "Személyre szabott megközelítés",
+                desc: "Profi felszerelés és tapasztalatMinden ügyfelünk vállalkozása olyan fontos nekünk, mintha a sajátunk lenne. Figyelünk rád, ezért mi a te igényeidhez és céljaidhoz igazodva készítjük el a fotókat. Megértjük a márkád üzenetét és azt, hogyan szeretnéd, hogy a közönséged lássa.."
+            },
+            {
+                title: "Profi felszerelés és tapasztalat",
+                desc: "Csapatunk professzionális felszereléssel és szakértelemmel rendelkezik, hogy kiváló minőségű képeket készítsen. Az iparági trendek ismerete lehetővé teszi számunkra, hogy a legfrissebb technikákat alkalmazzuk."
+            },
+            {
+                title: "Rugalmasság és gyorsaság",
+                desc: "Tudjuk, hogy az idő kulcsfontosságú. Az általunk végzett munka során rugalmasak vagyunk, és törekszünk arra, hogy a projektjeidet a lehető leghamarabb befejezzük, miközben megőrizzük a legmagasabb minőséget."
+            },
+            {
+                title: "Eredményorientált szemlélet",
+                desc: "Fotóink habár szép képek, de ennél többek. Eszközök is a vállalkozásod céljainak elérésére. Minden felvétel célzottan készült, hogy hozzájáruljon a marketing stratégiád sikeréhez."
             }
+            
+        ]
         
     },
     {
@@ -204,7 +255,33 @@ const services = [
             {
             title: "A weboldalad többet érdemel, mint egy egyszerű bemutatkozó oldal!",
             text: "Ha készen állsz arra, hogy a vállalkozásod számára egyedi és eredményorientált weboldalt építsünk, kérj tőlünk ingyenes konzultációt, és tudd meg, hogyan segíthetünk a sikeres digitális jelenlét kialakításában!"  
-            }
+            },
+        munka: [
+            {
+                title: "Időt és energiát spórolsz",
+                desc: "Nem kell heteket töltened azzal, hogy kitaláld, hogyan épül fel egy weboldal. Mi mindent megoldunk helyetted, hogy te a vállalkozásodra koncentrálhass."
+            },
+            {
+                title: "Olyan weboldalad lesz, ami tényleg hozza az ügyfeleket",
+                desc: "Nem elég, ha egy oldal szép – az a lényeg, hogy működjön is. Olyan megoldásokat építünk be, amelyek segítenek több érdeklődőt és vásárlót szerezni."
+            },
+            {
+                title: "Nem kell állandóan fejlesztőt keresned",
+                desc: "Ha változtatnál valamit, nem kell újra és újra szakember után kutatnod. Olyan weboldalt készítünk, amit könnyen kezelhetsz, és ha kell, mi is itt vagyunk, hogy segítsünk."
+            },
+            {
+                title: "Nincs több elveszett vásárló egy rossz weboldal miatt",
+                desc: "Ha az oldal lassú, bonyolult vagy nem működik jól mobilon, az emberek egyszerűen továbbállnak. Ezt elkerülheted egy modern, gyors és felhasználóbarát megoldással."
+            },
+            {
+                title: "Egyértelmű, átlátható folyamat – rejtett költségek nélkül",
+                desc: "Nem kell aggódnod a bonyolult fejlesztési folyamatok miatt. Pontosan tudni fogod, mire számíthatsz, és nem lesznek meglepetések sem az árban, sem a határidőkben."
+            },
+            {
+                title: "Hosszú távú, megbízható támogatás",
+                desc: "Mi nem csak egy projektet adunk át, hanem egy tartós partneri kapcsolatot építünk. Ha bárminemű kérdésed vagy problémád adódik, mindig számíthatsz ránk."
+            }     
+        ]
         
         },
     { 
@@ -261,7 +338,25 @@ const services = [
             {
             title: "Szeretnéd, ha a tartalom, amit készítesz, valóban megszólítaná a közönséged?",
             text: "Tudd meg, hogyan segíthetünk a márkád hatékonyabb kommunikációjában – foglalj egy ingyenes konzultációt!"  
+            },
+        munka: [
+            {
+                title: "Személyre szabott tartalomkészítés",
+                desc: "Minden egyes poszt, videó és kép a te igényeidhez, céljaidhoz és közönségedhez igazodik. A tartalom készítése során figyelembe vesszük a márkád hangvételét és az általad átadni kívánt üzenetet."
+            },
+            {
+                title: "Professzionális grafikai tervezés",
+                desc: "A képek, infografikák és videók mind esztétikailag vonzóak és a márkádhoz illeszkednek. Az én feladatom az, hogy a vizuális tartalmaid tökéletesen tükrözzék a céged személyiségét."
+            },
+            {
+                title: "Reels és videó tartalom",
+                desc: "Ha dinamikusabb formátumra van szükséged, a Reels videók vagy egyéb videós tartalmak gyártása során kiemelkedő figyelmet fordítunk arra, hogy azok figyelemfelkeltőek, információval teli, ugyanakkor szórakoztatóak legyenek."
+            },
+            {
+                title: "Rugalmas együttműködés",
+                desc: "Az elkészült tartalmakat az igényeid szerint átadjuk, és ha szükséges, igényelheted a kezelésüket is – ezen szolgáltatás ára külön egyeztetés alapján kerül meghatározásra."
             }
+        ]
         
     },
     {
@@ -327,7 +422,33 @@ const services = [
             {
             title: "NINCS SZLOGEN",
             text: "Tudd meg, hogyan segíthetünk a márkád hatékonyabb kommunikációjában – foglalj egy ingyenes konzultációt!"  
+            },
+        munka: [
+            {
+                title: "Teljeskörű menedzsment",
+                desc: "Nem kell külön grafikusokkal, szövegírókkal, fotósokkal és hirdetésszakértőkkel egyeztetned – mi összefogjuk a teljes folyamatot."
+            },
+            {
+                title: "Időt spórolunk neked",
+                desc: "Nem kell napi szinten a közösségi médiával foglalkoznod, mi levesszük ezt a terhet a válladról, hogy te az üzleted építésére koncentrálhass."
+            },
+            {
+                title: "Átlátható működés",
+                desc: "Pontosan tudni fogod, mikor, mi történik: előre elkészített tartalomnaptár, rendszeres riportok és folyamatos egyeztetés biztosítja, hogy mindig képben legyél."
+            },
+            {
+                title: "Rugalmasság és gyors reakció",
+                desc: "Akár egy új ötlet, akár egy váratlan helyzet merül fel, gyorsan alkalmazkodunk és biztosítjuk, hogy a kommunikációd mindig aktuális és releváns maradjon."
+            },
+            {
+                title: "Valódi üzleti eredmények",
+                desc: "A közösségi média nálunk nem csak „szükséges rossz”, hanem eszköz a növekedéshez: következetes márkaépítés, elkötelezett közönség és több ügyfél."
+            },
+            {
+                title: "Szeretnél mindent egy kézben tudni?",
+                desc: "Amennyiben a tartalomgyártást is szeretnéd ránk bízni – legyen szó videókról, képekről vagy grafikákról –, ezt is megoldjuk, külön díjazás ellenében. Így a teljes közösségi média jelenlétedet egy helyen, egységes stratégiával kezelhetjük."
             }
+        ]
         
     },
     
@@ -385,7 +506,26 @@ const services = [
             {
             title: "Szeretnéd, ha a márkád üzenete ne csak elérné a közönséged, hanem igazán meg is maradna bennük?",
             text: "Tudd meg, hogyan segíthetünk dinamikus, figyelemfelkeltő mozgógrafikákkal elérni a közönséged! Foglalj egy ingyenes konzultációt, és beszéljük át, milyen animációk segíthetik a márkád növekedését!"  
+            },
+        munka: [
+            {
+                title: "Személyre szabott megközelítés",
+                desc: "Nem sablonokból dolgozunk. Minden animációt úgy készítünk el, hogy tökéletesen illeszkedjen a márkád stílusához és céljaihoz."
+            },
+            {
+                title: "Professzionális kivitelezés",
+                desc: "Modern technikákkal és kreatív megoldásokkal dolgozunk, hogy a mozgógrafikád ne csak szép, hanem hatékony is legyen."
+            },
+            {
+                title: "Stratégiai szemlélet",
+                desc: "Nemcsak egy látványos animációt kapsz, hanem egy olyan eszközt, amely támogatja a marketing céljaidat, legyen szó hirdetésekről, közösségi médiás posztokról vagy weboldaladra készülő videókról."
+            },
+            {
+                title: "Rugalmasság és gyorsaság",
+                desc: "Tudjuk, hogy az idő pénz. Éppen ezért a mozgógrafikai anyagaidat a lehető legrövidebb időn belül, a legmagasabb minőségben készítjük el."
             }
+            
+        ]
         
     }
     
@@ -456,9 +596,9 @@ export async function generateStaticParams() {
         <div  className=" gradient">
             <ServiceClientComponent service={foundService} />
         </div>
-        {/* <div  className="bg-dark">
-            <Animation />
-        </div> */}
+        <div  className="bg-dark">
+            <Mireszamit service={foundService}/>
+        </div>
         <div>
             <Timeline service={foundService}/>
         </div>

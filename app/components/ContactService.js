@@ -49,6 +49,9 @@ export default function ContactService({service}) {
 
   return (
     <div className="md:min-h-screen flex flex-col items-center md:justify-center md:pt-0 pt-20 md:pb-20 md:mx-20">
+      
+
+
       <h1 className="font text-center text-4xl  md:pt-20">{service.kapcsolat.title}
       </h1>
       <h1 className=" text-center  my-10">{service.kapcsolat.text}
