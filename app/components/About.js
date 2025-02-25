@@ -34,7 +34,7 @@ export default function About() {
                     <div className="bg-dark rounded-lg md:w-full w-72">
                         <h1 className="text-xl gradient-text p-5">Mi azért vagyunk itt, hogy ezekben támogassunk, mert hiszünk abban, hogy a vállalkozásod megérdemli, hogy a legjobbat mutassa magából.                 </h1>
                     </div>    
-                        <h1 className="text-6xl  text-dark font rotate-90 hover:scale-120 transition-transform">
+                        <h1 className="text-4xl  text-dark font rotate-90 hover:scale-120 transition-transform">
                             <a href="/#about1">&gt;</a>
                             </h1>
                     </div>

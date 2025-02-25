@@ -66,13 +66,11 @@ const services = [
         
         kapcsolat: 
             {
-            title: "NINCS SZLOGEN",
+            title: "Szeretnéd, ha a márkád vizuális megjelenése nemcsak profi, hanem emlékezetes is lenne",
             text: "A grafikai tervezésünk célja, hogy ne csak látszódj, hanem emlékezzenek is rád. Megoldásaink nem csupán esztétikusak, hanem segítenek abban, hogy a márkád valóban elérje a közönségét. Foglalj egy ingyenes konzultációt, és nézzük meg, hogyan tehetjük a vizuális kommunikációdat igazán ütőssé!"  
             },
         
-        munka: {
-            title: ""
-        },
+        
         munka: [
             {
                 title: "Arculattervezés és branding",
