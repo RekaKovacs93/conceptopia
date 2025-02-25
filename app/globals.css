@@ -105,6 +105,20 @@ body {
   
 }
 
+.element {
+  position: relative;
+  padding: 10px; /* Space inside the border */
+  border-radius: 20px; /* Makes the border rounded */
+  border: 5px solid transparent; /* Transparent border to apply gradient */
+  
+  background: 
+    linear-gradient(rgb(28, 28, 28), rgb(28, 28, 28)) padding-box, /* Inner background */
+    linear-gradient(45deg, rgba(98,94,235,1) 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%) border-box; /* Gradient border */
+  
+  background-clip: padding-box, border-box;
+}
+
+
 
 #navhover:hover {
   color:blanchedalmond

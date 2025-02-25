@@ -72,9 +72,9 @@ export default function Home() {
         {/* <div id="mireszamit" className="w-full min-h-screen gradient ">
           <Mireszamit />
         </div> */}
-        {/* <div id="values" className="w-full min-h-screen bg-dark">
+        <div id="values" className="w-full min-h-screen bg-dark">
           <Values1 />
-        </div> */}
+        </div>
         <div id="szolgaltatasok" className="w-full min-h-screen gradient">
           <Services />
         </div>
