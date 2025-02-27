@@ -1,6 +1,6 @@
 export default function Timeline({ service }) {
     return (
-        <div className="py-20 bg-dark">
+        <div className="py-20 bg-dark w-screen">
             
             <h1 className="font gradient-text text-center pb-10 text-4xl">Az együttműködés folyamata</h1>
             <div className="flex items-center justify-between grad mx-20 rounded-lg">

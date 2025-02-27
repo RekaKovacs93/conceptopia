@@ -17,7 +17,7 @@ module.exports = {
       },
       cursor: {
         custom: 'url("https://img.icons8.com/stamp/32/FFFFFF/cursor.png"), pointer',
-        hover:  'url("https://img.icons8.com/stamp/32/cursor.png"), pointer',
+        hover:  'url("https://img.icons8.com/stamp/32/625eeb/cursor.png"), pointer',
     },
     },
   },

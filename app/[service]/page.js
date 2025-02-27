@@ -418,7 +418,7 @@ const services = [
         ],
         kapcsolat: 
             {
-            title: "NINCS SZLOGEN",
+            title: "Szeretnéd, ha a közösségi média oldalad nem csak jelen lenne, hanem valóban bevonzaná a közönséged?",
             text: "Tudd meg, hogyan segíthetünk a márkád hatékonyabb kommunikációjában – foglalj egy ingyenes konzultációt!"  
             },
         munka: [
@@ -566,7 +566,7 @@ export async function generateStaticParams() {
 //   }
 
   return (
-    <main className="flex flex-col items-center w-screen min-h-screen">
+    <main className="flex flex-col items-center w-screen min-h-screen cursor-custom">
       <div className="grainy-background  overflow-x-clip">
         <NavBar className="flex flex-col items-center z-20 " />
 

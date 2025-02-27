@@ -239,3 +239,7 @@ button {
   }
 }
 
+.nav-1, .nav-2, .nav-3, .nav-4 {
+  opacity: 0;
+}
+

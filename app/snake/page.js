@@ -28,7 +28,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center cursor-custom">
       <div className="grainy-background min-h-screen">
         <NavBar className="flex flex-col items-end md:flex-row md:items-center z-20" />
 

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <div className="min-h-screen w-screen relative bg-dark py-10">
+        <div className=" w-screen relative bg-dark py-10">
             {/* <Image
                 src="https://cdn.pixabay.com/photo/2017/06/14/13/11/background-2402133_640.png"
                 alt="Interior Photo"

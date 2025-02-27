@@ -6,7 +6,7 @@ export default function Kapcsolat() {
 
 
   return (
-    <div className="grainy-background">
+    <div className="grainy-background curson-custom">
     <NavBar className="flex flex-col items-end md:flex-row md:items-center z-20 bg-dark" />
 
     <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">

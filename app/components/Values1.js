@@ -28,7 +28,7 @@ export default function Values1() {
   };
 
   return (
-    <div className="min-h-screen w-screen flex flex-col items-center justify-center p-6">
+    <div className=" w-screen flex flex-col items-center justify-center p-6">
       <h1 className="font text-4xl text-center gradient-text mb-10">
         Kiemelt értékeink
       </h1>
@@ -57,7 +57,7 @@ export default function Values1() {
           >
             {/* Plus sign in the collapsed state */}
             {expanded !== index && (
-              <span className="absolute top-3 left-1/2 transform -translate-x-1/2 text-3xl text-center aborder rounded-full w-10 h-10">
+              <span className="absolute top-3 left-1/2 transform -translate-x-1/2 text-3xl text-center aborder rounded-full w-10 h-10 cursor-hover">
                 +
               </span>
             )}

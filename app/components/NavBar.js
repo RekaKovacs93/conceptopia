@@ -1,10 +1,21 @@
 'use client'
 
+import gsap from 'gsap';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function NavBar() {
+
+  useEffect(() => {
+    const navtl = gsap.timeline();
+    navtl.to(".nav-1", { opacity: 1, duration: 0.5 }, 0.5);
+    navtl.to(".nav-2", { opacity: 1, duration: 0.5 });
+    navtl.to(".nav-3", { opacity: 1, duration: 0.5 });
+    navtl.to(".nav-4", { opacity: 1, duration: 0.5 });
+  }, [])
+  
+
 
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
@@ -56,10 +67,10 @@ export default function NavBar() {
   
 
         <div className="hidden md:flex flex-grow items-start justify-end space-x-4">
-          <Link href="/#about" className="block md:inline-block mt-4 md:mt-0 text-sm">
+          <Link href="/#about" className="nav-1 block md:inline-block mt-4 md:mt-0 text-sm">
             RÓLUNK
           </Link>
-          <div href="/#szolgaltatasok" className="group block md:inline-block mt-4 md:mt-0 overflow-visible w-52 text-sm">
+          <div href="/#szolgaltatasok" className="nav-2 group block md:inline-block mt-4 md:mt-0 overflow-visible w-52 text-sm">
             <Link href="/#szolgaltatasok">SZOLGÁLTATÁSOK &#9660;</Link>
             <div className="hidden group-hover:flex flex-col place-items-end mt-2 rounded-lg">
               {/* <div className="py-1"> */}
@@ -76,10 +87,10 @@ export default function NavBar() {
           {/* <Link href="./BLOG" className="block md:inline-block mt-4 md:mt-0">
             BLOG
           </Link> */}
-          <Link href="./kapcsolat" className="block md:inline-block mt-4 md:mt-0 text-sm">
+          <Link href="./kapcsolat" className="nav-3 block md:inline-block mt-4 md:mt-0 text-sm">
             KAPCSOLAT
           </Link>
-          <Link href="./snake" className="block md:inline-block mt-4 md:mt-0 text-sm">
+          <Link href="./snake" className="nav-4 block md:inline-block mt-4 md:mt-0 text-sm">
             ?
           </Link>
         {/* </div> */}

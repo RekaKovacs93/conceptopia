@@ -66,13 +66,13 @@ export default function Home() {
         <div id="about" className="w-full min-h-screen gradient ">
           <About />
         </div>
-        <div id="about1" className="w-full min-h-screen  ">
+        <div id="about1" className="w-full  ">
           <About1 />
         </div>
         {/* <div id="mireszamit" className="w-full min-h-screen gradient ">
           <Mireszamit />
         </div> */}
-        <div id="values" className="w-full min-h-screen bg-dark">
+        <div id="values" className="w-full bg-dark">
           <Values1 />
         </div>
         <div id="szolgaltatasok" className="w-full min-h-screen gradient">
