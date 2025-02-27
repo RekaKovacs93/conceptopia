@@ -36,7 +36,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex-col flex min-h-screen items-center justify-between lg:px-24 px-10">
+    <main className="flex-col flex min-h-screen items-center justify-between lg:px-24 px-10 cursor-custom">
       <div className="grainy-background min-h-screen overflow-x-clip">
         <NavBar className="flex flex-col items-end md:flex-row md:items-center z-20" />
 

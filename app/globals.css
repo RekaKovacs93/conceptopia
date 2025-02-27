@@ -26,6 +26,20 @@ body {
   overflow-x: hidden;
  
 }
+/* .custom-cursor {
+  cursor: url('/cursor-alt-svgrepo-com.svg') 10 10, pointer;
+} */
+
+/* Default cursor for all clickable elements */
+button, a, input[type="button"], input[type="submit"], label, select {
+  cursor: url('https://img.icons8.com/stamp/32/625eeb/cursor.png') 10 10, pointer;
+}
+
+/* Change cursor on hover */
+button:hover, a:hover, input:hover, label:hover, select:hover {
+  cursor: url("https://img.icons8.com/stamp/32/625eeb/cursor.png") 10 10, pointer;
+}
+
 
 .grainy-background {
   position: absolute; /* Ensure it's positioned correctly */
@@ -42,11 +56,11 @@ body {
 .font {
   
   font-family: "Michroma";
-  color: rgb(28, 28, 28);
+  color: #1c1c1c;
 }
 
 .text-light {
-  color: blanchedalmond;
+  color: #ffebcd;
   font-family: "Ubuntu";
 }
 
@@ -70,7 +84,7 @@ body {
 }
 
 .gradient-text {
-  background: radial-gradient(circle at var(--gradient-x) var(--gradient-y), rgba(98,94,235,1) 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%);
+  background: radial-gradient(circle at var(--gradient-x) var(--gradient-y), #625eeb 0%, rgba(243,125,206,1) 50%, rgba(252,206,144,1) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

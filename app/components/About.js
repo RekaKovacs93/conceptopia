@@ -34,8 +34,8 @@ export default function About() {
                     <div className="bg-dark rounded-lg md:w-full w-72">
                         <h1 className="text-xl gradient-text p-5">Mi azért vagyunk itt, hogy ezekben támogassunk, mert hiszünk abban, hogy a vállalkozásod megérdemli, hogy a legjobbat mutassa magából.                 </h1>
                     </div>    
-                        <h1 className="text-4xl  text-dark font rotate-90 hover:scale-120 transition-transform">
-                            <a href="/#about1">&gt;</a>
+                        <h1 className="scale-150  hover:cursor-hover transition-transform">
+                            <a href="/#about1"><img width="24" height="24" src="https://img.icons8.com/forma-regular/24/sort-down.png" alt="sort-down"/></a>
                             </h1>
                     </div>
                 {/* <div className="flex flex-col ">

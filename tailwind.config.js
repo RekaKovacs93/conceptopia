@@ -15,6 +15,10 @@ module.exports = {
       colors: {
         dark: 'rgb(var(--dark-rgb))', 
       },
+      cursor: {
+        custom: 'url("https://img.icons8.com/stamp/32/FFFFFF/cursor.png"), pointer',
+        hover:  'url("https://img.icons8.com/stamp/32/cursor.png"), pointer',
+    },
     },
   },
   plugins: [],
