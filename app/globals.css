@@ -74,8 +74,8 @@ button:hover, a:hover, input:hover, label:hover, select:hover {
 
 
 :root {
-  --gradient-x: 50%;
-  --gradient-y: 50%;
+  --gradient-x: 30%;
+  --gradient-y: 70%;
 }
 
 .gradient {

@@ -60,7 +60,7 @@ Ne hagyd ki ezt a lehetőséget! A konzultáció díjmentes, és semmilyen köte
       </h1>
       
       <form onSubmit={handleSubmit}>
-        <div className="flex flex-col justify-center items-center space-y-4 pb-20 md:pb-0">
+        <div className="flex flex-col justify-center items-center space-y-4 pb-20 ">
           
           <div className="flex flex-col items-start w-full">
             <label className="mb-1 font">Név</label>

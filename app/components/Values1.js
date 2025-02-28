@@ -68,7 +68,7 @@ export default function Values1() {
                   {value.name}
                 </h1>
                 <div className="aborder border-l-2 h-96"></div>
-                <p className="p-8">{value.desc}</p>
+                <p className="p-8 text-lg">{value.desc}</p>
               </>
             ) : (
               <h1 className="-rotate-90 text-3xl font flex-shrink-0">{value.name}</h1>
