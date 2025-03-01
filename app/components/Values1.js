@@ -1,5 +1,7 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from 'react';
+import gsap from 'gsap';
+
 
 const values = [
   {
@@ -21,18 +23,83 @@ const values = [
 ];
 
 export default function Values1() {
-  const [expanded, setExpanded] = useState(null); // Track expanded card
+
+  const valtl = gsap.timeline();
+
+  useEffect(() => {
+    const valtl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".val-1", // Start when the first element enters
+        start: "top 50%",
+        toggleActions: "play none none none",
+      },
+    });
+    
+    // valent 1 sliding in from the right
+    valtl.fromTo(".val-1", 
+      {
+        x: "100%", // Start off-screen to the right
+        opacity: 0, // Make it invisible initially
+      }, 
+      {
+        x: "0%", // End at its natural position
+        opacity: 1, 
+        duration: 0.5,
+        ease: "power3.out",
+        delay: 0.5,
+      });
+    
+    // valent 2 sliding in from the right
+    valtl.fromTo(".val-2", 
+      {
+        x: "100%", // Start off-screen to the right
+        opacity: 0, // Make it invisible initially
+      }, 
+      {
+        x: "0%", // End at its natural position
+        opacity: 1, 
+        duration: 0.5,
+        ease: "power3.out",
+      });
+    
+    // valent 3 sliding in from the right
+    valtl.fromTo(".val-3", 
+      {
+        x: "100%", // Start off-screen to the right
+        opacity: 0, // Make it invisible initially
+      }, 
+      {
+        x: "0%", // End at its natural position
+        opacity: 1, 
+        duration: 0.5,
+        ease: "power3.out",
+      });
+    
+    // valent 4 sliding in from the right
+    valtl.fromTo(".val-4", 
+      {
+        x: "100%", // Start off-screen to the right
+        opacity: 0, // Make it invisible initially
+      }, 
+      {
+        x: "0%", // End at its natural position
+        opacity: 1, 
+        duration: 0.5,
+        ease: "power3.out",
+      });
+    
+
+  }, []);
+        
+  const [expanded, setExpanded] = useState(null);
 
   const toggleExpand = (index) => {
-    setExpanded(expanded === index ? null : index); // Toggle expanded state
+    setExpanded(expanded === index ? null : index);
   };
 
   return (
-    <div className=" w-screen flex flex-col items-center justify-center p-6">
-      <h1 className="font text-4xl text-center gradient-text mb-10">
-        Kiemelt értékeink
-      </h1>
-
+    <div className="flex flex-col items-center justify-center p-10 w-full">
+      
       {/* Mobile (Always Open) */}
       <div className="flex flex-col gap-4 w-full md:hidden">
         {values.map((value) => (
@@ -43,36 +110,33 @@ export default function Values1() {
         ))}
       </div>
 
-      {/* Desktop (Original Behavior) */}
-      <div className="hidden md:flex items-center justify-center gap-4">
+      {/* Desktop (Stacked Rows Layout) */}
+      <div className="hidden md:flex flex-col gap-4 w-full max-w-3xl">
         {values.map((value, index) => (
           <div
             key={value.name}
-            className={`relative flex items-center justify-center gradient rounded-lg ${
-              expanded === index
-                ? "w-96 h-96" // Expanded state with width and height
-                : "w-20 h-96 cursor-pointer" // Collapsed state with width and height
+            className={`val-${index + 1} relative flex items-center justify-center gradient p-6 rounded-lg transition-all duration-300 cursor-pointer ${
+              expanded === index ? "h-auto py-8 flex-col" : "h-16 flex items-center justify-center"
             }`}
             onClick={() => toggleExpand(index)}
           >
-            {/* Plus sign in the collapsed state */}
+            {/* Name (Only visible when collapsed) */}
             {expanded !== index && (
-              <span className="absolute top-3 left-1/2 transform -translate-x-1/2 text-3xl text-center aborder rounded-full w-10 h-10 cursor-hover">
-                +
-              </span>
+              <h1 className="text-3xl font ">{value.name}</h1>
             )}
 
-            {expanded === index ? (
-              <>
-                <h1 className="text-3xl font -rotate-90 w-20 flex-shrink-0">
-                  {value.name}
-                </h1>
-                <div className="aborder border-l-2 h-96"></div>
-                <p className="p-8 text-lg">{value.desc}</p>
-              </>
-            ) : (
-              <h1 className="-rotate-90 text-3xl font flex-shrink-0">{value.name}</h1>
+            {/* Expanded Content (Name + Description in Column Layout) */}
+            {expanded === index && (
+              <div className="flex flex-col items-center">
+                <h1 className="text-3xl font">{value.name}</h1>
+                <p className="mt-4 text-lg">{value.desc}</p>
+              </div>
             )}
+
+            {/* Plus/Minus Toggle */}
+            <span className="absolute top-3 right-5 transform -translate-x-1/2 text-3xl text-center aborder rounded-full w-10 h-10 cursor-hover">
+              {expanded === index ? "−" : "+"}
+            </span>
           </div>
         ))}
       </div>

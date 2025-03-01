@@ -9,7 +9,15 @@ export default function NavBar() {
 
   useEffect(() => {
     const navtl = gsap.timeline();
-    navtl.to(".nav-1", { opacity: 1, duration: 0.5 }, 0.5);
+    gsap.from(".logo", {
+      x: 50,   // Start 200px left
+      
+      duration: 1,
+      ease: "power3.out",
+      stagger: 0.2, // Delays each item slightly
+    });
+    navtl.to(".logo", { opacity: 1, duration: 0.5 });
+    navtl.to(".nav-1", { opacity: 1, duration: 0.5 }, 0.8);
     navtl.to(".nav-2", { opacity: 1, duration: 0.5 });
     navtl.to(".nav-3", { opacity: 1, duration: 0.5 });
     navtl.to(".nav-4", { opacity: 1, duration: 0.5 });
@@ -53,7 +61,7 @@ export default function NavBar() {
     <nav className={`bg-dark fixed top-0 w-full z-10 overflow-hidden transition-opacity duration-500 fade-in ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
       <div className="flex items-start justify-between px-10 md:px-8 py-3 md:py-6 font gradient-text">
       {/* <div > */}
-      <Link href="/" className="font-bold text-xl">
+      <Link href="/" className="logo opacity-0 font-bold text-xl">
           <Image
             src="/Logo.svg"
                 alt='kep'
@@ -66,7 +74,7 @@ export default function NavBar() {
         </Link>
   
 
-        <div className="hidden md:flex flex-grow items-start justify-end space-x-4">
+        <div className="nav hidden md:flex flex-grow items-start justify-end space-x-4">
           <Link href="/#about" className="nav-1 block md:inline-block mt-4 md:mt-0 text-sm">
             RÓLUNK
           </Link>

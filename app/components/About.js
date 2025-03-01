@@ -1,6 +1,43 @@
-import Image from "next/image";
+
+'use client'
+
+import gsap from 'gsap';
+import { useEffect } from 'react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
+
+    const elemtl = gsap.timeline();
+    useEffect(() => {
+        const elemtl = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".elem-1", // Start when the first element enters
+              start: "top 50%",
+              toggleActions: "play none none none",
+            },
+          });
+      
+          elemtl
+            .to(".elem-1", { opacity: 1, duration: 0.5 })
+            .to(".elem-2", { opacity: 1, duration: 0.5 })
+            .to(".elem-3", { opacity: 1, duration: 0.5 })
+            .to(".elem-4", { opacity: 1, duration: 0.5 })
+            .to(".elem-5", { opacity: 1, duration: 0.1, onComplete: startBounce }); 
+            ;
+            function startBounce() {
+                gsap.to(".elem-5", {
+                  y: -20, // Move up 20px
+                  duration: 0.5,
+                  yoyo: true, // Makes it return to original position
+                  repeat: 3, // Infinite loop
+                  ease: "power1.inOut",
+                });
+              }
+        }, []);
+
+      
     return (
         <div className=" w-screen  ">
             {/* <Image
@@ -17,25 +54,25 @@ export default function About() {
                 {/* <h1 className="text-xl text-dark">
                     Szakértőket keresel kreatív megoldások terén? Bízd ránk projektjeidet a közösségi média menedzsmenttől a webfejlesztésen át a fotózásig és grafikáig, és emeld új szintre vállalkozásodat!
                 </h1> */}
-                <div className="text-center flex gap-y-5 flex-col justify-center items-center pt-20 px-40 font">
+                <div className="trigger text-center flex gap-y-5 flex-col justify-center items-center pt-20 px-40 font">
                     {/* <h1 className="font text-2xl md:text-6xl text-dark">
                     Rólad
                     </h1> */}
                 
-                    <div className="bg-dark rounded-lg md:w-full w-72">
+                    <div className="elem-1 opacity-0 bg-dark rounded-lg md:w-full w-72">
                         <h1 className="text-xl gradient-text p-5">Úgy érzed, hogy a vállalkozásodban ott rejlik a lehetőség, de a figyelemért vívott harcban gyakran alulmaradsz? </h1>
                     </div>
-                    <div className="bg-dark rounded-lg md:w-full w-72">
+                    <div className="elem-2 opacity-0 bg-dark rounded-lg md:w-full w-72">
                         <h1 className="text-xl gradient-text p-5">Talán nincs időd minden marketing feladatot kézben tartani, vagy úgy érzed, hogy a márkád nem tükrözi azt az indentitást, amit valójában képviselsz?</h1>
                     </div>
-                    <div className="bg-dark rounded-lg md:w-full w-72">
+                    <div className="elem-3 opacity-0 bg-dark rounded-lg md:w-full w-72">
                         <h1 className="text-xl gradient-text p-5">Ezek nem egyedi problémák. Kis- és középvállalkozóként rengeteg szerepet töltesz be egyszerre, és nem csoda, hogy nehéz mindent egyszerre profi módon megvalósítani.</h1>
                     </div>    
-                    <div className="bg-dark rounded-lg md:w-full w-72">
+                    <div className="elem-4 opacity-0 bg-dark rounded-lg md:w-full w-72">
                         <h1 className="text-xl gradient-text p-5">Mi azért vagyunk itt, hogy ezekben támogassunk, mert hiszünk abban, hogy a vállalkozásod megérdemli, hogy a legjobbat mutassa magából.                 </h1>
                     </div>    
-                        <h1 className="scale-150  hover:cursor-hover transition-transform">
-                            <a href="/#about1"><img width="24" height="24" src="https://img.icons8.com/forma-regular/24/sort-down.png" alt="sort-down"/></a>
+                        <h1 className="elem-5 opacity-0 scale-150  hover:cursor-hover transition-transform p-5">
+                            <a href="/#about1"><img width="28" height="28" src="https://img.icons8.com/forma-regular/24/sort-down.png" alt="sort-down"/></a>
                             </h1>
                     </div>
                 {/* <div className="flex flex-col ">

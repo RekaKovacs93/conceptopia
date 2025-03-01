@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Hero1 from './components/Hero1'
 import About from './components/About'
-import About1 from './components/About1'
+import About3 from './components/About3'
 import Mireszamit from './components/Mireszamit';
 import NavBar from './components/NavBar'
 import Services from './components/Services';
@@ -66,15 +66,21 @@ export default function Home() {
         <div id="about" className="w-full min-h-screen gradient ">
           <About />
         </div>
-        <div id="about1" className="w-full  ">
-          <About1 />
-        </div>
+        {/* <div className='md:flex justify-center'> */}
+          <div id="about1" className=" bg-dark ">
+            <About3 />
+          </div>
+          {/* <div id="values" className=" bg-dark">
+          <Values1 />
+        </div> */}
+        {/* </div> */}
+        
         {/* <div id="mireszamit" className="w-full min-h-screen gradient ">
           <Mireszamit />
         </div> */}
-        <div id="values" className="w-full bg-dark">
+        {/* <div id="values" className="w-full bg-dark">
           <Values1 />
-        </div>
+        </div> */}
         <div id="szolgaltatasok" className="w-full min-h-screen gradient">
           <Services />
         </div>

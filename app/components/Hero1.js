@@ -7,8 +7,8 @@ export default function Hero1() {
 
   useEffect(() => {
     const navtl = gsap.timeline();
-    navtl.to(".conc", { opacity: 1, duration: 0.5 }, 0.1);
-    navtl.to(".desc", { opacity: 1, duration: 0.1 });
+    navtl.to(".conc", { opacity: 1, duration: 0.5 }, 0.5);
+    navtl.to(".desc", { opacity: 1, duration: 0.5 });
   }, [])
   
   return (
