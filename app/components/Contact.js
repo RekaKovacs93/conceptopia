@@ -75,7 +75,7 @@ Ne hagyd ki ezt a lehetőséget! A konzultáció díjmentes, és semmilyen köte
           </div>
           
           <div className="flex flex-col items-start w-full">
-            <label className="mb-1 font">Email</label>
+            <label className="mb-1 font">E-mail cím</label>
             <input
               className="w-full h-10 textarea rounded-lg px-4"
               type="email"

@@ -29,7 +29,7 @@ export default function Values1() {
   useEffect(() => {
     const valtl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".val-1", // Start when the first element enters
+        trigger: ".about-1", // Start when the first element enters
         start: "top 50%",
         toggleActions: "play none none none",
       },

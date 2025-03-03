@@ -12,12 +12,12 @@ export default function About3() {
   const abouttl = gsap.timeline();
     
   useEffect(() => {
-    gsap.from([".about-1", ".about-2"], {
+    gsap.from([".about-1", ".about-2", ".about-3"], {
       x: "-100%", // Start from left (off-screen)
       duration: 1,
       ease: "power3.out",
       scrollTrigger: {
-        trigger: ".about-2", // Trigger animation for .about-2 itself
+        trigger: ".about-1", // Trigger animation for .about-2 itself
         start: "top 80%", // Start animation when .about-2 reaches 80% from the top
         toggleActions: "play none none none", // Animation play on scroll
       }

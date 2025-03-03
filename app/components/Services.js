@@ -1,4 +1,9 @@
+'use client'
+
 import Link from "next/link"
+import gsap from 'gsap';
+import { useEffect } from 'react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 let services = [
     {
@@ -36,9 +41,31 @@ let services = [
 ]
 
 export default function Services (){
+
+
+    useEffect(() => {
+        const servtl = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".serv-h", // Start when the first servent enters
+              start: "top 50%",
+              toggleActions: "play none none none",
+            },
+          });
+      
+          servtl
+            .to(".serv-1", { opacity: 1, duration: 0.5 })
+            .to(".serv-2", { opacity: 1, duration: 0.5 })
+            .to(".serv-3", { opacity: 1, duration: 0.5 })
+            .to(".serv-4", { opacity: 1, duration: 0.5 })
+            .to(".serv-5", { opacity: 1, duration: 0.5 })
+            .to(".serv-6", { opacity: 1, duration: 0.5 }); 
+            ;
+            
+        }, []);
+
     return(
         <div className="flex flex-col justify-center items-center">
-            <h1 className="font text-4xl text-center text-dark mb-10 md:pt-20 pt-20">
+            <h1 className="serv-h font text-4xl text-center text-dark mb-10 md:pt-20 pt-20">
                 Megoldásaink
             </h1>
             <h1 className="text-xl text-center text-dark md:mx-20 mx-10 mb-20">Mi nem csak szolgáltatásokat kínálunk – teljes körű megoldásokat biztosítunk a vállalkozásod számára. Tudjuk, hogy minden vállalkozás egyedi, ezért minden ajánlatunkat személyre szabjuk, hogy a legjobban illeszkedjen a te igényeidhez. Legyen szó weboldal fejlesztésről, közösségi média menedzsmentről vagy grafikai tervezésről, minden megoldásunk arra összpontosít, hogy miközben elvégezzük a feladatot, valódi értéket adjunk hozzá márkádhoz. A te sikered a mi sikerünk, és mindent azért teszünk, hogy a legjobb eredményeket érjük el együtt.
@@ -51,7 +78,7 @@ export default function Services (){
                 {/* <div className="w-full h-full hover:scale-125 flex flex-col items-center justify-center">
                 <h1 id="title" className="text-3xl font-light opacity-100 text-center">{service.title}</h1>
                 </div> */}
-                <div id="card" className=" w-full h-full flex flex-col items-center justify-center bg-dark rounded-2xl py-10 md:py-0">
+                <div id="card" className={`serv-${index + 1} opacity-0 w-full h-full flex flex-col items-center justify-center bg-dark rounded-2xl py-10 md:py-0`}>
                 <h1 id="title" className="absolute text-3xl font-light md:opacity-100 opacity-0 text-center w-96">{service.title}</h1>
                 <div id="desc" className="md:opacity-0 opacity-100">
                   <h1 className="text-center text-2xl font-light">{service.title}</h1>

@@ -1,9 +1,14 @@
 "use client";
-
+import gsap from "gsap";
 import { useEffect } from "react";
 
 export default function ServiceClientComponent({ service }) {
   useEffect(() => {
+    const navtl = gsap.timeline();
+    navtl.to(".title", { opacity: 1, duration: 0.5 }, 0.5);
+    navtl.to(".descr", { opacity: 1, duration: 0.5 })
+    navtl.to(".descrl", { opacity: 1, duration: 0.5 });
+
     const handleMouseMove = (e) => {
       const xPercent = (e.clientX / window.innerWidth) * 1000;
       const yPercent = (e.clientY / window.innerHeight) * 800;
@@ -25,9 +30,9 @@ export default function ServiceClientComponent({ service }) {
   return (
     <main className="flex flex-col items-center bg-dark ">
       <div className="flex flex-col justify-center items-center mt-60 bg-dark min-h-screen">
-          <h1 className="gradient-text text-center font text-4xl md:text-9xl mb-5 scale-90">{service.title}</h1>
-          <h1 className="font md:text-2xl text-lg text-center gradient-text mb-5">{service.slogan}</h1>
-          <p className="md:mx-40 mx-10 font-light text-center pb-60">{service.desc}</p>
+          <h1 className="title gradient-text text-center font text-4xl md:text-9xl mb-5 scale-90 opacity-0">{service.title}</h1>
+          <h1 className="descr font md:text-2xl text-lg text-center gradient-text mb-5 opacity-0">{service.slogan}</h1>
+          <p className="descrl md:mx-40 mx-10 font-light text-center pb-60 opacity-0">{service.desc}</p>
         {/* <div className="flex flex-wrap gap-20 items-center justify-center px-20 gradient py-20">
           {service.features.map((feature, index) => (
             <div key={index} className="relative w-96 h-72 flex items-center justify-center bg-dark rounded-lg p-10">
