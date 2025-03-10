@@ -35,7 +35,7 @@ export default function Mireszamit({service}) {
                     </svg> */}
                 <div className="  flex flex-col    rounded-lg">
                 <h1 className=" text-2xl font-light under pb-2 mb-2">{munka.title}</h1>
-                <p className="text-light text-sm  px-5 pt-2 mb-5">{munka.desc}</p>
+                <p className="text-light text-base  px-5 pt-2 mb-5">{munka.desc}</p>
                 </div>
             </div>
           {/* <div id="card" className=" w-full h-full flex flex-col gap-y-5 items-center justify-center bg-dark rounded-2xl py-10 md:py-0">

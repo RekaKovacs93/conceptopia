@@ -20,10 +20,10 @@ export default function About() {
           });
       
           elemtl
-            .to(".elem-1", { opacity: 1, duration: 0.5 })
-            .to(".elem-2", { opacity: 1, duration: 0.5 })
-            .to(".elem-3", { opacity: 1, duration: 0.5 })
-            .to(".elem-4", { opacity: 1, duration: 0.5 })
+            .to(".elem-1", { opacity: 1, duration: 0.2 })
+            .to(".elem-2", { opacity: 1, duration: 0.2 })
+            .to(".elem-3", { opacity: 1, duration: 0.2 })
+            .to(".elem-4", { opacity: 1, duration: 0.2 })
             .to(".elem-5", { opacity: 1, duration: 0.1, onComplete: startBounce }); 
             ;
             function startBounce() {
@@ -72,7 +72,7 @@ export default function About() {
                         <h1 className="text-xl gradient-text p-5">Mi azért vagyunk itt, hogy ezekben támogassunk, mert hiszünk abban, hogy a vállalkozásod megérdemli, hogy a legjobbat mutassa magából.                 </h1>
                     </div>    
                         <h1 className="elem-5 opacity-0 scale-150  hover:cursor-hover transition-transform p-5">
-                            <a href="/#about1"><img width="28" height="28" src="https://img.icons8.com/forma-regular/24/sort-down.png" alt="sort-down"/></a>
+                            <a href="/#about1"><img width="40" height="40" src="https://img.icons8.com/sf-black-filled/64/expand-arrow.png" alt="expand-arrow"/></a>
                             </h1>
                     </div>
                 {/* <div className="flex flex-col ">

@@ -74,7 +74,7 @@ const services = [
         munka: [
             {
                 title: "Arculattervezés és branding",
-                desc: "Egyedi logók, amelyek egy pillantással elmondják, ki vagy. Színpaletta, betűtípusok és egyéb arculati elemek, amelyek következetessé teszik a megjelenésed.Márkakönyv, hogy a vizuális identitásod minden helyzetben egységes maradjon."
+                desc: "Egyedi logók, amelyek egy pillantással elmondják, ki vagy. Színpaletta, betűtípusok és egyéb arculati elemek, amelyek következetessé teszik a megjelenésed. Márkakönyv, hogy a vizuális identitásod minden helyzetben egységes maradjon."
             },
             {
                 title: "Közösségi média grafikák",
@@ -86,7 +86,7 @@ const services = [
             },
             {
                 title: "Rugalmasság és gyors reakció",
-                desc: "Akár egy új ötlet, akár egy váratlan helyzet merül fel, gyorsan alkalmazkodunk és biztosítjuk, hogy a kommunikációd mindig aktuális és releváns maradjon."
+                desc: "Akár egy új ötlet, akár egy váratlan helyzet merül fel, gyorsan alkalmazkodunk, és biztosítjuk, hogy a kommunikációd mindig aktuális és releváns maradjon."
             },
             {
                 title: "Valódi üzleti eredmények",
@@ -104,7 +104,7 @@ const services = [
         title: "Fotózás",
         slogan:"A márkád vizuális történetének megörökítése",
         url: "Fotozas",
-        desc: "A márkád vizuális történetének megörökítése segít kifejezni az értékeidet és elérni a közönségedet. A professzionális fényképezés kulcsfontosságú a márkád hitelességének és vonzerejének növelésében.",
+        desc: "A márkád vizuális történetének megörökítése segít kifejezni az értékeidet, és elérni a közönségedet. A professzionális fényképezés kulcsfontosságú a márkád hitelességének és vonzerejének növelésében.",
         features: [
             {
                 title: "Rugalmasság és különleges pillanatok",
@@ -166,7 +166,7 @@ const services = [
         munka: [
             {
                 title: "Személyre szabott megközelítés",
-                desc: "Profi felszerelés és tapasztalatMinden ügyfelünk vállalkozása olyan fontos nekünk, mintha a sajátunk lenne. Figyelünk rád, ezért mi a te igényeidhez és céljaidhoz igazodva készítjük el a fotókat. Megértjük a márkád üzenetét és azt, hogyan szeretnéd, hogy a közönséged lássa.."
+                desc: "Minden ügyfelünk vállalkozása olyan fontos nekünk, mintha a sajátunk lenne. Figyelünk rád, ezért mi a te igényeidhez és céljaidhoz igazodva készítjük el a fotókat. Megértjük a márkád üzenetét és azt, hogyan szeretnéd, hogy a közönséged lássa.."
             },
             {
                 title: "Profi felszerelés és tapasztalat",
@@ -381,7 +381,7 @@ const services = [
                 desc: "Egy jól kezelt közösségi oldal azt sugallja, hogy a vállalkozásod megbízható és profi. Ha az emberek látják, hogy aktív vagy, nagyobb eséllyel választanak téged."
             },
             {
-                title: "Közvetlen kapcsolat az ügyfelekkel:",
+                title: "Közvetlen kapcsolat az ügyfelekkel",
                 desc: "A kommentek, üzenetek és interaktív tartalmak lehetőséget adnak arra, hogy közvetlen kapcsolatot építs a követőiddel, és gyorsan reagálj az igényeikre."
             },
             {
