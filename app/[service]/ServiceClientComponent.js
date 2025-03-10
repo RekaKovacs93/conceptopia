@@ -30,7 +30,7 @@ export default function ServiceClientComponent({ service }) {
 
   return (
     <main className="flex flex-col items-center bg-dark ">
-      <div className="flex flex-col justify-center items-center mt-60 bg-dark min-h-screen">
+      <div className="flex flex-col justify-center items-center mt-40 bg-dark min-h-screen">
           <h1 className="title gradient-text text-center font text-4xl md:text-9xl pb-5 scale-90 opacity-0">{service.title}</h1>
           <h1 className="descr font md:text-2xl text-lg text-center gradient-text mb-5 opacity-0">{service.slogan}</h1>
           <p className="descrl md:mx-40 mx-10 font-light text-center opacity-0">{service.desc}</p>

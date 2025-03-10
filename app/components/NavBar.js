@@ -21,6 +21,7 @@ export default function NavBar() {
     navtl.to(".nav-2", { opacity: 1, duration: 0.5 });
     navtl.to(".nav-3", { opacity: 1, duration: 0.5 });
     navtl.to(".nav-4", { opacity: 1, duration: 0.5 });
+    navtl.to(".nav-5", { opacity: 1, duration: 0.5 });
   }, [])
   
 
@@ -68,7 +69,7 @@ export default function NavBar() {
                 width={50}
                 height={20}
                 priority={true}
-                className='md:rounded-lg rounded scale-110 md:scale-100'
+                className=' scale-110 md:scale-100'
                 quality={80}
           />
         </Link>
@@ -98,7 +99,10 @@ export default function NavBar() {
           <Link href="./kapcsolat" className="nav-3 block md:inline-block mt-4 md:mt-0 text-sm">
             KAPCSOLAT
           </Link>
-          <Link href="./snake" className="nav-4 block md:inline-block mt-4 md:mt-0 text-sm">
+          <Link href="./gyik" className="nav-4 block md:inline-block mt-4 md:mt-0 text-sm">
+            GYIK
+          </Link>
+          <Link href="./snake" className="nav-5 block md:inline-block mt-4 md:mt-0 text-sm">
             ?
           </Link>
         {/* </div> */}
@@ -157,6 +161,9 @@ export default function NavBar() {
             </Link> */}
             <Link href="./kapcsolat" onClick={closeMenu} className="text-left block pb-2 py-5 px-5 border-b text-grad text-xl">
               KAPCSOLAT
+            </Link>
+            <Link href="./gyik" onClick={closeMenu} className="text-left block pb-2 py-5 px-5 border-b text-grad text-xl">
+              GYIK
             </Link>
           </div>
         </div>
