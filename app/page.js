@@ -4,13 +4,12 @@ import { useState, useEffect } from 'react';
 import Hero1 from './components/Hero1'
 import About from './components/About'
 import About3 from './components/About3'
-import Mireszamit from './components/Mireszamit';
 import NavBar from './components/NavBar'
 import Services from './components/Services';
-import Values1 from './components/Values1';
 import Contact from './components/Contact';
 import Footer from './components/Footer'
-import Facts from './components/Facts';
+import Animation from './components/Animation';
+
 
 export default function Home() {
   useEffect(() => {
@@ -88,6 +87,9 @@ export default function Home() {
           <Facts />
         </div> */}
         <div className='h-20 bg-dark'></div>
+        {/* <div id="footer" className="w-full bg-dark">
+          <Animation />
+        </div> */}
         <div id="contact" className="w-full md:min-h-screen gradient">
           <Contact />
         </div>

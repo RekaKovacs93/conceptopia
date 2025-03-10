@@ -9,15 +9,22 @@ export default function NavBar() {
 
   useEffect(() => {
     const navtl = gsap.timeline();
-    gsap.from(".logo", {
+    gsap.from(".logo",{
       x: 50,   // Start 200px left
       
       duration: 1,
       ease: "power3.out",
       stagger: 0.2, // Delays each item slightly
     });
+    // // gsap.from(".navbar", {
+    // //   x: -50,   // Start 200px left
+      
+    // //   duration: 1,
+    // //   ease: "power3.out",
+    // //   stagger: 0.2, // Delays each item slightly
+    // });
     navtl.to(".logo", { opacity: 1, duration: 0.5 });
-    navtl.to(".nav-1", { opacity: 1, duration: 0.5 }, 0.8);
+    navtl.to(".nav-1", { opacity: 1, duration: 0.5 });
     navtl.to(".nav-2", { opacity: 1, duration: 0.5 });
     navtl.to(".nav-3", { opacity: 1, duration: 0.5 });
     navtl.to(".nav-4", { opacity: 1, duration: 0.5 });
@@ -59,7 +66,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className={`bg-dark fixed top-0 w-full z-10 overflow-hidden transition-opacity duration-500 fade-in ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
+    <nav className={` bg-dark fixed top-0 w-full z-10 overflow-hidden transition-opacity duration-500 fade-in ${visible ? 'opacity-100' : 'opacity-0 -translate-y-full'}`}>
       <div className="flex items-start justify-between px-10 md:px-8 py-3 md:py-6 font gradient-text">
       {/* <div > */}
       <Link href="/" className="logo opacity-0 font-bold text-xl">
@@ -76,10 +83,10 @@ export default function NavBar() {
   
 
         <div className="nav hidden md:flex flex-grow items-start justify-end space-x-4">
-          <Link href="/#about" className="nav-1 block md:inline-block mt-4 md:mt-0 text-sm">
+          <Link href="/#about" className="nav-1 block md:inline-block mt-4 md:mt-0 text-sm opacity-0">
             RÓLUNK
           </Link>
-          <div href="/#szolgaltatasok" className="nav-2 group block md:inline-block mt-4 md:mt-0 overflow-visible w-52 text-sm">
+          <div href="/#szolgaltatasok" className="nav-2 group block md:inline-block mt-4 md:mt-0 overflow-visible w-52 text-sm opacity-0">
             <Link href="/#szolgaltatasok">SZOLGÁLTATÁSOK &#9660;</Link>
             <div className="hidden group-hover:flex flex-col place-items-end mt-2 rounded-lg">
               {/* <div className="py-1"> */}
@@ -96,13 +103,13 @@ export default function NavBar() {
           {/* <Link href="./BLOG" className="block md:inline-block mt-4 md:mt-0">
             BLOG
           </Link> */}
-          <Link href="./kapcsolat" className="nav-3 block md:inline-block mt-4 md:mt-0 text-sm">
+          <Link href="./kapcsolat" className="nav-3 block md:inline-block mt-4 md:mt-0 text-sm opacity-0">
             KAPCSOLAT
           </Link>
-          <Link href="./gyik" className="nav-4 block md:inline-block mt-4 md:mt-0 text-sm">
+          <Link href="./gyik" className="nav-4 block md:inline-block mt-4 md:mt-0 text-sm opacity-0">
             GYIK
           </Link>
-          <Link href="./snake" className="nav-5 block md:inline-block mt-4 md:mt-0 text-sm">
+          <Link href="./snake" className="nav-5 block md:inline-block mt-4 md:mt-0 text-sm opacity-0">
             ?
           </Link>
         {/* </div> */}

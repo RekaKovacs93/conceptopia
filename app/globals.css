@@ -40,8 +40,12 @@ button, a, input[type="button"], input[type="submit"], label, select {
 }
 
 /* Change cursor on hover */
-button:hover, a:hover, input:hover, label:hover, select:hover {
+button:hover, a:hover, label:hover, select:hover {
   cursor: url("https://img.icons8.com/stamp/32/625eeb/cursor.png") 10 10, pointer;
+}
+
+textarea, input {
+  cursor: url('https://img.icons8.com/ios-filled/24/text-cursor.png') 5 5, pointer;
 }
 
 
@@ -67,6 +71,8 @@ button:hover, a:hover, input:hover, label:hover, select:hover {
   color: #ffebcd;
   font-family: "Ubuntu";
 }
+
+
 
 
 .font-light {
@@ -247,3 +253,39 @@ button {
   opacity: 0;
 }
 
+/* 
+
+<span className="conc  font text-4xl md:text-9xl text-center gradient-text scale-90">
+        C
+      </span>
+      <span className="conc  font text-4xl md:text-9xl text-center gradient-text scale-90">
+        O
+      </span>
+      <span className="conc  font text-4xl md:text-9xl text-center gradient-text scale-90">
+        N
+      </span>
+      <span className="conc  font text-4xl md:text-9xl text-center gradient-text scale-90">
+        C
+      </span>
+      <span className="conc  font text-4xl md:text-9xl text-center gradient-text scale-90">
+        E
+      </span>
+      <span className="conc  font text-4xl md:text-9xl text-center gradient-text scale-90">
+        P
+      </span>
+      <span className="conc  font text-4xl md:text-9xl text-center gradient-text scale-90">
+        T
+      </span>
+      <span className="conc  font text-4xl md:text-9xl text-center gradient-text scale-90">
+        O
+      </span>
+      <span className="conc  font text-4xl md:text-9xl text-center gradient-text scale-90">
+        P
+      </span>
+      <span className="conc  font text-4xl md:text-9xl text-center gradient-text scale-90">
+        I
+      </span>
+      <span className="conc  font text-4xl md:text-9xl text-center gradient-text scale-90">
+        A
+      </span>
+      </div> */
